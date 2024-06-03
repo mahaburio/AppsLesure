@@ -1,0 +1,2090 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <!--! ======= CDN-> Bootstrap CSS, Fant Icon, Swiper CSS, Raw CSS ======= -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <script src="https://kit.fontawesome.com/206993456b.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div id="headToFoot">
+      <div class="profile-one message-board-head">
+        <div class="back-btn-section">
+          <div class="left">
+            <a href="../index.html">
+              <button class="back-btn">
+                <i class="fa fa-chevron-left"></i>
+              </button>
+            </a>
+          </div>
+          <div class="center">Message Board</div>
+          <div class="right">
+            <svg id="threeDots"
+              width="20"
+              height="20"
+              viewBox="0 0 6 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="3"
+                cy="3"
+                r="3"
+                transform="rotate(90 3 3)"
+                fill="#667C97"
+              />
+              <circle
+                cx="3"
+                cy="12"
+                r="3"
+                transform="rotate(90 3 12)"
+                fill="#667C97"
+              />
+              <circle
+                cx="3"
+                cy="21"
+                r="3"
+                transform="rotate(90 3 21)"
+                fill="#667C97"
+              />
+            </svg>
+
+            <div class="dropdown-list " id="dropdownList">
+              <ul class="sublist">
+                <li><a href="../html/createPost.html">Create Post</a></li>
+                <li><a href="">show interest</a></li>
+                <li><a href="">recent post</a></li>
+              </ul>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="head-of-section">
+          <div class="follower-html" id="messageBoard">
+            <div class="card-section">
+              <div class="box">
+                <div class="head">
+                  <div class="left">
+                    <div class="img">
+                      <img src="../assets/gym.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="name">gymnastic <span>(buddies)</span></div>
+                    <div class="age">
+                      <div>Ages: 22-28</div>
+                      <div class="avator-img">
+                        <div class="avator">
+                          <img src="../assets/avator1.svg" alt="" />
+                        </div>
+                        <div class="avator">
+                          <img src="../assets/avator2.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="star">★★★★☆</div>
+                  </div>
+                </div>
+                <div class="body">
+                  <p class="title">
+                    players wanted - <span class="sub-title">Gym workout</span>
+                  </p>
+                  <p>
+                    This post for only singles testing. This is for testing of
+                    <span id="readMore" class="read-more">...Read More</span>
+                    <span class="more-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quisquam impedit itaque fuga vitae rerum dolorem autem
+                      obcaecati ex et nam?
+                    </span>
+                  </p>
+                </div>
+                <div class="foots">
+                  <div class="left">
+                    <div
+                      class="one"
+                      data-bs-toggle="modal"
+                      data-bs-target="#playersModal"
+                    >
+                      <div class="circle">
+                        <svg
+                          width="18"
+                          height="16"
+                          viewBox="0 0 19 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.88135 14.8306C5.88135 11.398 8.66399 8.61536 12.0966 8.61536C15.5291 8.61536 18.3118 11.398 18.3118 14.8306V15.5384H5.88135V14.8306Z"
+                            fill="#667c97"
+                          />
+                          <ellipse
+                            cx="12.0962"
+                            cy="4.46153"
+                            rx="3.4529"
+                            ry="3.46153"
+                            fill="#00acee"
+                          />
+                          <path
+                            d="M13.4776 16.7308H13.9776V16.2308V15.523C13.9776 11.8142 10.9711 8.80774 7.26234 8.80774C3.55362 8.80774 0.547119 11.8142 0.547119 15.523V16.2308V16.7308H1.04712H13.4776Z"
+                            fill="#00ACEE"
+                            stroke="#F8F8F8"
+                          />
+                          <path
+                            d="M7.26198 9.11533C9.44628 9.11533 11.2149 7.34051 11.2149 5.15379C11.2149 2.96708 9.44628 1.19226 7.26198 1.19226C5.07768 1.19226 3.30908 2.96708 3.30908 5.15379C3.30908 7.34051 5.07768 9.11533 7.26198 9.11533Z"
+                            fill="#00ACEE"
+                            stroke="#F8F8F8"
+                          />
+                          <path
+                            d="M18.5987 14C18.5987 16.0716 16.9236 17.75 14.8587 17.75C12.7937 17.75 11.1187 16.0716 11.1187 14C11.1187 11.9283 12.7937 10.25 14.8587 10.25C16.9236 10.25 18.5987 11.9283 18.5987 14Z"
+                            fill="#F8F8F8"
+                            stroke="#F8F8F8"
+                            stroke-width="0.5"
+                          />
+                          <rect
+                            x="14.168"
+                            y="11.3846"
+                            width="1.38116"
+                            height="5.53845"
+                            rx="0.69058"
+                            fill="#F8F8F8"
+                          />
+                          <rect
+                            x="17.6206"
+                            y="13.4615"
+                            width="1.38461"
+                            height="5.52464"
+                            rx="0.692307"
+                            transform="rotate(90 17.6206 13.4615)"
+                            fill="#F8F8F8"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+
+                    <!--todo   PLAYERS-MODAL-SECTION  -->
+
+
+                    <div
+                      class="modal fade"
+                      id="playersModal"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="left"></div>
+                            <div class="center">
+                              <h4 class="header-title">Players</h4>
+                            </div>
+                            <div class="right">
+                              <div
+                                class="cancelBtn"
+                                type="button"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <svg
+                                  width="16"
+                                  height="16"
+                                  viewBox="0 0 20 20"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M19.5816 2.43872C20.1395 1.88083 20.1395 0.976311 19.5816 0.418419C19.0237 -0.139473 18.1192 -0.139473 17.5613 0.418419L10 7.9797L2.43872 0.418419C1.88083 -0.139473 0.976311 -0.139473 0.418419 0.418419C-0.139473 0.976311 -0.139473 1.88083 0.418419 2.43872L7.9797 10L0.418419 17.5613C-0.139473 18.1192 -0.139473 19.0237 0.418419 19.5816C0.976311 20.1395 1.88083 20.1395 2.43872 19.5816L10 12.0203L17.5613 19.5816C18.1192 20.1395 19.0237 20.1395 19.5816 19.5816C20.1395 19.0237 20.1395 18.1192 19.5816 17.5613L12.0203 10L19.5816 2.43872Z"
+                                    fill="#667C97"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>louis payne</h4>
+                                <span class="captain">Ⓒ</span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/johan.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>johan smith</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/taylor.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>ore french</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img
+                                      src="../assets/mattyJohnson.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>rob page</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/paulsmith.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>pistol edges</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>louis payne</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>Anderson</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img
+                                      src="../assets/sallyGreen.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>Smith Jack</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/person.svg" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>Rock Domin</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>louis payne</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>louis payne</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>louis payne</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    <!--todo   SHARE-MODAL-SECTION  -->
+                    <!-- -->
+
+
+                  <div class="right">
+                    <div
+                      class="two"
+                      data-bs-toggle="modal"
+                      data-bs-target="#shareModal"
+                    >
+                      <div class="circle">
+                        <svg
+                          class="share-icon"
+                          width="12"
+                          height="14"
+                          viewBox="0 0 17 19"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M16.4999 2.99676C16.4999 4.65182 15.1582 5.99351 13.5032 5.99351C12.6287 5.99351 11.8417 5.61897 11.2939 5.02154L5.82444 8.156C5.93395 8.46728 5.99351 8.80209 5.99351 9.15082C5.99351 9.54431 5.91767 9.92009 5.77981 10.2643L11.2096 13.376C11.7593 12.723 12.5828 12.3081 13.5032 12.3081C15.1582 12.3081 16.4999 13.6498 16.4999 15.3049C16.4999 16.9599 15.1582 18.3016 13.5032 18.3016C11.8481 18.3016 10.5064 16.9599 10.5064 15.3049C10.5064 15.0051 10.5504 14.7157 10.6323 14.4427L5.10853 11.2771C4.56681 11.8151 3.82061 12.1476 2.99676 12.1476C1.34169 12.1476 0 10.8059 0 9.15082C0 7.49575 1.34169 6.15406 2.99676 6.15406C3.86704 6.15406 4.65067 6.52503 5.19815 7.11747L10.6717 3.98069C10.5646 3.67249 10.5064 3.34142 10.5064 2.99676C10.5064 1.34169 11.8481 0 13.5032 0C15.1582 0 16.4999 1.34169 16.4999 2.99676Z"
+                            fill="#00ACEE"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div
+                      class="modal fade"
+                      id="shareModal"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="left"></div>
+                            <div class="center">
+                              <h4 class="header-title"></h4>
+                            </div>
+                            <div class="right">
+                              <div
+                                class="cancelBtn"
+                                type="button"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <svg
+                                  width="16"
+                                  height="16"
+                                  viewBox="0 0 20 20"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M19.5816 2.43872C20.1395 1.88083 20.1395 0.976311 19.5816 0.418419C19.0237 -0.139473 18.1192 -0.139473 17.5613 0.418419L10 7.9797L2.43872 0.418419C1.88083 -0.139473 0.976311 -0.139473 0.418419 0.418419C-0.139473 0.976311 -0.139473 1.88083 0.418419 2.43872L7.9797 10L0.418419 17.5613C-0.139473 18.1192 -0.139473 19.0237 0.418419 19.5816C0.976311 20.1395 1.88083 20.1395 2.43872 19.5816L10 12.0203L17.5613 19.5816C18.1192 20.1395 19.0237 20.1395 19.5816 19.5816C20.1395 19.0237 20.1395 18.1192 19.5816 17.5613L12.0203 10L19.5816 2.43872Z"
+                                    fill="#667C97"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="left">
+                              <div class="border-part">
+                                <div class="img-part">
+                                  <svg
+                                    width="28"
+                                    height="60"
+                                    viewBox="0 0 32 64"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M20.6368 63.25V34.7352H29.8578L31.2401 23.6309H20.6543V16.5431C20.6543 13.3263 21.5116 11.1273 25.9559 11.1273H31.625V1.18617C30.6452 1.05895 27.2857 0.75 23.3663 0.75C15.1951 0.75 9.61352 5.92956 9.61352 15.4345V23.6309H0.375V34.7352H9.61352V63.25H20.6368Z"
+                                      fill="white"
+                                    />
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="center">
+                              <div class="slide"></div>
+                            </div>
+                            <div class="right">
+                              <div class="border-part">
+                                <div class="img-part">
+                                  <svg
+                                    width="54"
+                                    height="46"
+                                    viewBox="0 0 54 50"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M51.4536 0C44.9928 6.90145 38.5291 13.8029 31.9792 20.8009C39.2994 30.4771 46.5879 40.1079 54 49.9063C53.4194 49.9347 53.0487 49.9659 52.678 49.9659C48.114 49.9688 43.5501 49.9432 38.9861 49.9886C38.0923 49.9972 37.5577 49.7018 37.0375 49.006C32.6748 43.1894 28.2775 37.4013 23.8889 31.6047C23.6302 31.261 23.3572 30.9259 23.0152 30.4913C22.6962 30.7895 22.4088 31.0253 22.1587 31.2951C16.6693 37.1457 11.1684 42.985 5.7193 48.8725C4.96918 49.6819 4.23056 50.0909 3.11831 49.983C2.17563 49.8921 1.21571 49.9631 0 49.9631C0.451221 49.4348 0.732876 49.0798 1.04327 48.7504C7.30002 42.0676 13.5453 35.3706 19.8451 28.7248C20.6671 27.8586 20.7016 27.3388 19.9601 26.3703C13.528 17.9722 7.16781 9.51718 0.79323 1.0764C0.534568 0.732746 0.316142 0.360693 0.0804726 0C5.52387 0 10.9701 0 16.4135 0C16.5228 0.227208 16.5975 0.479977 16.7469 0.678784C20.9717 6.27379 25.2052 11.8631 29.4444 17.4467C29.5651 17.6058 29.7548 17.7137 29.9502 17.8784C35.4252 12.0335 40.8514 6.24539 46.2689 0.448736C46.3723 0.337972 46.3867 0.150525 46.4442 0C48.1169 0 49.7838 0 51.4536 0ZM47.1742 46.839C46.9385 46.4442 46.8322 46.2198 46.6827 46.0239C36.0259 31.9284 25.3632 17.8358 14.692 3.75178C14.4994 3.49617 14.1718 3.17523 13.9016 3.16955C11.6082 3.12411 9.31183 3.14399 6.74533 3.14399C7.711 4.43056 8.48411 5.4672 9.26585 6.49815C19.2186 19.6535 29.1713 32.8117 39.1384 45.9557C39.4086 46.3107 39.834 46.785 40.199 46.7992C42.4579 46.8759 44.7198 46.839 47.1742 46.839Z"
+                                      fill="white"
+                                    />
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--todo   DELETE-MODAL-SECTION  -->
+
+                    <div
+                      class="three"
+                      data-bs-toggle="modal"
+                      data-bs-target="#deleteModal"
+                    >
+                      <div class="circle">
+                        <svg
+                          width="15"
+                          height="14"
+                          viewBox="0 0 17 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M5.96717 1.876C6.1206 1.72256 6.32871 1.63636 6.54571 1.63636H9.81843C10.0354 1.63636 10.2435 1.72256 10.397 1.876C10.5504 2.02944 10.6366 2.23755 10.6366 2.45455V3.27273H5.72753V2.45455C5.72753 2.23755 5.81373 2.02944 5.96717 1.876ZM12.273 2.45455V3.27273H13.9093L13.9177 3.27277H15.5455C15.9973 3.27277 16.3636 3.63908 16.3636 4.09095C16.3636 4.54282 15.9973 4.90913 15.5455 4.90913H14.7275V15.5455C14.7275 16.1964 14.4689 16.8208 14.0086 17.2811C13.5483 17.7414 12.924 18 12.273 18H4.09116C3.44018 18 2.81585 17.7414 2.35554 17.2811C1.89522 16.8208 1.63662 16.1964 1.63662 15.5455V4.90913H0.818182C0.366312 4.90913 0 4.54282 0 4.09095C0 3.63908 0.366312 3.27277 0.818182 3.27277H2.44642L2.4548 3.27273H4.09116V2.45455C4.09116 1.80356 4.34977 1.17924 4.81008 0.71892C5.2704 0.258603 5.89472 0 6.54571 0H9.81843C10.4694 0 11.0937 0.258603 11.5541 0.71892C12.0144 1.17924 12.273 1.80356 12.273 2.45455ZM3.27298 4.90913V15.5455C3.27298 15.7625 3.35918 15.9706 3.51262 16.124C3.66606 16.2774 3.87417 16.3636 4.09116 16.3636H12.273C12.49 16.3636 12.6981 16.2774 12.8515 16.124C13.005 15.9706 13.0912 15.7624 13.0912 15.5455V4.90913H3.27298ZM6.54495 7.36373C6.99682 7.36373 7.36313 7.73004 7.36313 8.18191V13.091C7.36313 13.5429 6.99682 13.9092 6.54495 13.9092C6.09308 13.9092 5.72677 13.5429 5.72677 13.091V8.18191C5.72677 7.73004 6.09308 7.36373 6.54495 7.36373ZM10.6364 8.18191C10.6364 7.73004 10.2701 7.36373 9.81818 7.36373C9.36631 7.36373 9 7.73004 9 8.18191V13.091C9 13.5429 9.36631 13.9092 9.81818 13.9092C10.2701 13.9092 10.6364 13.5429 10.6364 13.091V8.18191Z"
+                            fill="#667C97"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div
+                      class="modal fade"
+                      id="deleteModal"
+                      tabindex="-1"
+                      aria-labelledby="deletModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="left"></div>
+                            <div class="center">
+                              <h4 class="header-title">alert</h4>
+                            </div>
+                            <div class="right"></div>
+                          </div>
+                          <div class="modal-body">
+                            <p class="imp-text">
+                              are you sure you want to delete this post?
+                            </p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="cancel-btn" data-bs-dismiss="modal">
+                              cancel
+                            </button>
+                            <button class="ok-btn">ok</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--todo   SHOWINTEREST-MODAL-SECTION  -->
+
+                    <div
+                      class="four"
+                      data-bs-toggle="modal"
+                      data-bs-target="#showInterestModal"
+                    >
+                      <div class="circle">
+                        <svg
+                          width="20"
+                          height="14"
+                          viewBox="0 0 22 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M4.5624 8.04622C5.03874 8.04622 5.4671 7.71381 5.56648 7.22719C6.10108 4.6673 8.39367 2.80992 11.0187 2.80992C13.4381 2.80992 15.5662 4.35203 16.3132 6.65147C16.488 7.19292 17.0706 7.48764 17.6086 7.30944C18.15 7.13467 18.4448 6.5521 18.2666 6.01407C17.2419 2.86818 14.3291 0.753784 11.0187 0.753784C7.71172 0.753784 4.79543 2.91273 3.78107 5.99008H0.666016V8.04622H4.5624ZM12.888 10.245C13.9212 9.21189 13.9212 7.53683 12.888 6.50368C11.8549 5.47054 10.1798 5.47054 9.14666 6.50368C8.11351 7.53683 8.11351 9.21189 9.14666 10.245C10.1798 11.2782 11.8549 11.2782 12.888 10.245ZM17.067 9.99265H17.0773H21.3335V12.0488H17.6941C16.3645 14.4682 13.8149 16 11.0185 16C8.24273 16 5.68626 14.4922 4.34635 12.0659C4.07219 11.569 4.25382 10.9419 4.75072 10.6677C5.24762 10.3936 5.87474 10.5752 6.14889 11.0721C7.12556 12.8438 8.99322 13.9439 11.0185 13.9439C13.2289 13.9439 15.2302 12.6348 16.1177 10.6095C16.2857 10.2222 16.666 9.99265 17.0601 9.99265H17.067Z"
+                            fill="#667C97"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div
+                      class="modal fade"
+                      id="showInterestModal"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="left"></div>
+                            <div class="center">
+                              <h4 class="header-title">teams</h4>
+                            </div>
+                            <div class="right">
+                              <div
+                                class="cancelBtn"
+                                type="button"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <svg
+                                  width="16"
+                                  height="16"
+                                  viewBox="0 0 20 20"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M19.5816 2.43872C20.1395 1.88083 20.1395 0.976311 19.5816 0.418419C19.0237 -0.139473 18.1192 -0.139473 17.5613 0.418419L10 7.9797L2.43872 0.418419C1.88083 -0.139473 0.976311 -0.139473 0.418419 0.418419C-0.139473 0.976311 -0.139473 1.88083 0.418419 2.43872L7.9797 10L0.418419 17.5613C-0.139473 18.1192 -0.139473 19.0237 0.418419 19.5816C0.976311 20.1395 1.88083 20.1395 2.43872 19.5816L10 12.0203L17.5613 19.5816C18.1192 20.1395 19.0237 20.1395 19.5816 19.5816C20.1395 19.0237 20.1395 18.1192 19.5816 17.5613L12.0203 10L19.5816 2.43872Z"
+                                    fill="#667C97"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img
+                                      src="../assets/liverpool-2.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="center">
+                                <div class="slide"></div>
+                              </div>
+                              <div class="right">
+                                <h4>liverpool 🏆</h4>
+
+                                <!-- todo *** When click this button then It will be show interestAlert Modal  -->
+
+                                <button
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#interestAlertModal"
+                                >
+                                  add to this group
+                                </button>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img
+                                      src="../assets/liverpool-2.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="center">
+                                <div class="slide"></div>
+                              </div>
+                              <div class="right">
+                                <h4>liverpool 🏆</h4>
+                                <button
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#interestAlertModal"
+                                >
+                                  add to this group
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--todo   INTEREST ALERT-MODAL-SECTION  -->
+
+                    <div
+                      class="modal fade"
+                      id="interestAlertModal"
+                      tabindex="-1"
+                      aria-labelledby="deletModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="left"></div>
+                            <div class="center">
+                              <h4 class="header-title">alert</h4>
+                            </div>
+                            <div class="right"></div>
+                          </div>
+                          <div class="modal-body">
+                            <p class="imp-text">
+                              are you sure you want to show interest with this
+                              group?
+                            </p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="cancel-btn" data-bs-dismiss="modal">
+                              cancel
+                            </button>
+                                <!-- todo *** When click this OK button then It will be show sent Modal  -->
+
+                            <button
+                              class="ok-btn"
+                              data-bs-toggle="modal"
+                              data-bs-target="#sentModal"
+                            >
+                              ok
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--todo   SENT-MODAL-SECTION  -->
+
+                    <div
+                      class="modal fade"
+                      id="sentModal"
+                      tabindex="-1"
+                      aria-labelledby=""
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="left"></div>
+                            <div class="center">
+                              <h4 class="header-title">sent</h4>
+                            </div>
+                            <div class="right"></div>
+                          </div>
+                          <div class="modal-body">
+                            <p class="imp-text">
+                              Thanks for showing interest. request has been
+                              sent.
+                            </p>
+                          </div>
+
+                          
+                          <div class="modal-footer">
+                            <button class="ok-btn" data-bs-toggle="modal">
+                              ok
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="head">
+                  <div class="left">
+                    <div class="img">
+                      <img src="../assets/gym.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="name">ore french <span>(team)</span></div>
+                    <div class="age">
+                      <div>Age: 24</div>
+                      <div class="avator-img">
+                        <div class="avator">
+                          <img src="../assets/avator1.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="star">★★★★☆</div>
+                  </div>
+                </div>
+                <div class="body">
+                  <p class="title">
+                    i wanted to join - <span class="sub-title">cricket</span>
+                  </p>
+                  <p>
+                    This post for only singles testing. This is for testing of
+                    <span id="readMore" class="read-more">...Read More</span>
+                    <span class="more-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quisquam impedit itaque fuga vitae rerum dolorem autem
+                      obcaecati ex et nam?
+                    </span>
+                  </p>
+                </div>
+                <div class="foots">
+                  <div class="left">
+                    <div
+                      class="one"
+                      data-bs-toggle="modal"
+                      data-bs-target="#playersModal"
+                    >
+                      <div class="circle">
+                        <svg
+                          width="18"
+                          height="16"
+                          viewBox="0 0 19 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.88135 14.8306C5.88135 11.398 8.66399 8.61536 12.0966 8.61536C15.5291 8.61536 18.3118 11.398 18.3118 14.8306V15.5384H5.88135V14.8306Z"
+                            fill="#667c97"
+                          />
+                          <ellipse
+                            cx="12.0962"
+                            cy="4.46153"
+                            rx="3.4529"
+                            ry="3.46153"
+                            fill="#00acee"
+                          />
+                          <path
+                            d="M13.4776 16.7308H13.9776V16.2308V15.523C13.9776 11.8142 10.9711 8.80774 7.26234 8.80774C3.55362 8.80774 0.547119 11.8142 0.547119 15.523V16.2308V16.7308H1.04712H13.4776Z"
+                            fill="#00ACEE"
+                            stroke="#F8F8F8"
+                          />
+                          <path
+                            d="M7.26198 9.11533C9.44628 9.11533 11.2149 7.34051 11.2149 5.15379C11.2149 2.96708 9.44628 1.19226 7.26198 1.19226C5.07768 1.19226 3.30908 2.96708 3.30908 5.15379C3.30908 7.34051 5.07768 9.11533 7.26198 9.11533Z"
+                            fill="#00ACEE"
+                            stroke="#F8F8F8"
+                          />
+                          <path
+                            d="M18.5987 14C18.5987 16.0716 16.9236 17.75 14.8587 17.75C12.7937 17.75 11.1187 16.0716 11.1187 14C11.1187 11.9283 12.7937 10.25 14.8587 10.25C16.9236 10.25 18.5987 11.9283 18.5987 14Z"
+                            fill="#F8F8F8"
+                            stroke="#F8F8F8"
+                            stroke-width="0.5"
+                          />
+                          <rect
+                            x="14.168"
+                            y="11.3846"
+                            width="1.38116"
+                            height="5.53845"
+                            rx="0.69058"
+                            fill="#F8F8F8"
+                          />
+                          <rect
+                            x="17.6206"
+                            y="13.4615"
+                            width="1.38461"
+                            height="5.52464"
+                            rx="0.692307"
+                            transform="rotate(90 17.6206 13.4615)"
+                            fill="#F8F8F8"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div
+                      class="modal fade"
+                      id="playersModal"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="left"></div>
+                            <div class="center">
+                              <h4 class="header-title">Players</h4>
+                            </div>
+                            <div class="right">
+                              <div
+                                class="cancelBtn"
+                                type="button"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <svg
+                                  width="16"
+                                  height="16"
+                                  viewBox="0 0 20 20"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M19.5816 2.43872C20.1395 1.88083 20.1395 0.976311 19.5816 0.418419C19.0237 -0.139473 18.1192 -0.139473 17.5613 0.418419L10 7.9797L2.43872 0.418419C1.88083 -0.139473 0.976311 -0.139473 0.418419 0.418419C-0.139473 0.976311 -0.139473 1.88083 0.418419 2.43872L7.9797 10L0.418419 17.5613C-0.139473 18.1192 -0.139473 19.0237 0.418419 19.5816C0.976311 20.1395 1.88083 20.1395 2.43872 19.5816L10 12.0203L17.5613 19.5816C18.1192 20.1395 19.0237 20.1395 19.5816 19.5816C20.1395 19.0237 20.1395 18.1192 19.5816 17.5613L12.0203 10L19.5816 2.43872Z"
+                                    fill="#667C97"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>louis payne</h4>
+                                <span class="captain">Ⓒ</span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/johan.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>johan smith</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/taylor.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>ore french</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img
+                                      src="../assets/mattyJohnson.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>rob page</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/paulsmith.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>pistol edges</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>louis payne</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>Anderson</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img
+                                      src="../assets/sallyGreen.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>Smith Jack</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/person.svg" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>Rock Domin</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>louis payne</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>louis payne</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>louis payne</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="two">
+                      <div class="circle">
+                        <svg
+                          class="share-icon"
+                          width="12"
+                          height="14"
+                          viewBox="0 0 17 19"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M16.4999 2.99676C16.4999 4.65182 15.1582 5.99351 13.5032 5.99351C12.6287 5.99351 11.8417 5.61897 11.2939 5.02154L5.82444 8.156C5.93395 8.46728 5.99351 8.80209 5.99351 9.15082C5.99351 9.54431 5.91767 9.92009 5.77981 10.2643L11.2096 13.376C11.7593 12.723 12.5828 12.3081 13.5032 12.3081C15.1582 12.3081 16.4999 13.6498 16.4999 15.3049C16.4999 16.9599 15.1582 18.3016 13.5032 18.3016C11.8481 18.3016 10.5064 16.9599 10.5064 15.3049C10.5064 15.0051 10.5504 14.7157 10.6323 14.4427L5.10853 11.2771C4.56681 11.8151 3.82061 12.1476 2.99676 12.1476C1.34169 12.1476 0 10.8059 0 9.15082C0 7.49575 1.34169 6.15406 2.99676 6.15406C3.86704 6.15406 4.65067 6.52503 5.19815 7.11747L10.6717 3.98069C10.5646 3.67249 10.5064 3.34142 10.5064 2.99676C10.5064 1.34169 11.8481 0 13.5032 0C15.1582 0 16.4999 1.34169 16.4999 2.99676Z"
+                            fill="#00ACEE"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div
+                      class="three"
+                      data-bs-toggle="modal"
+                      data-bs-target="#reportModal"
+                    >
+                      <div class="circle">
+                        <svg
+                          width="16"
+                          height="14"
+                          viewBox="0 0 20 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.46932 0.345481C8.84703 0.118987 9.27317 0 9.70662 0C10.1401 0 10.5662 0.118987 10.9439 0.345481C11.3216 0.571975 11.6382 0.898329 11.863 1.29306L11.8654 1.29731L18.9859 13.9582L18.9927 13.9706C19.213 14.3768 19.3295 14.8373 19.3307 15.3063C19.3319 15.7754 19.2179 16.2366 18.9998 16.644C18.7817 17.0515 18.4673 17.3911 18.0877 17.629C17.7082 17.8668 17.2768 17.9947 16.8364 17.9999L16.8272 18L2.57684 17.9999C2.13648 17.9948 1.70508 17.8668 1.32554 17.629C0.945994 17.3911 0.631542 17.0515 0.413468 16.644C0.195393 16.2366 0.0812964 15.7754 0.0825294 15.3063C0.0837625 14.8373 0.200282 14.3768 0.420496 13.9706L0.427325 13.9582L7.54787 1.29732L8.26905 1.75742L7.55028 1.29306C7.77508 0.898329 8.09161 0.571975 8.46932 0.345481ZM8.98886 2.22003L1.87376 14.8713C1.80215 15.0054 1.76429 15.157 1.76388 15.3113C1.76347 15.4677 1.8015 15.6214 1.87419 15.7572C1.94688 15.8931 2.0517 16.0063 2.17822 16.0856C2.30362 16.1641 2.44601 16.2067 2.59145 16.2091H16.8218C16.9672 16.2067 17.1096 16.1641 17.235 16.0856C17.3615 16.0063 17.4664 15.8931 17.5391 15.7572C17.6117 15.6214 17.6498 15.4677 17.6494 15.3113C17.649 15.157 17.6111 15.0054 17.5395 14.8713L10.4254 2.22181C10.4251 2.22122 10.4247 2.22062 10.4244 2.22003C10.3495 2.08925 10.2444 1.98111 10.1191 1.90595C9.99315 1.83045 9.85111 1.79079 9.70662 1.79079C9.56214 1.79079 9.42009 1.83045 9.29419 1.90595C9.16885 1.98111 9.06373 2.08925 8.98886 2.22003Z"
+                            fill="#00ACEE"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.86572 13.5227C8.86572 13.0282 9.24211 12.6273 9.7064 12.6273H9.71481C10.1791 12.6273 10.5555 13.0282 10.5555 13.5227C10.5555 14.0172 10.1791 14.4181 9.71481 14.4181H9.7064C9.24211 14.4181 8.86572 14.0172 8.86572 13.5227Z"
+                            fill="#00ACEE"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M9.7064 5.46423C10.1707 5.46423 10.5471 5.86512 10.5471 6.35963V9.94121C10.5471 10.4357 10.1707 10.8366 9.7064 10.8366C9.24211 10.8366 8.86572 10.4357 8.86572 9.94121V6.35963C8.86572 5.86512 9.24211 5.46423 9.7064 5.46423Z"
+                            fill="#00ACEE"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div
+                      class="modal fade"
+                      id="reportModal"
+                      tabindex="-1"
+                      aria-labelledby="reportModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="left"></div>
+                            <div class="center">
+                              <h4 class="header-title">alert</h4>
+                            </div>
+                            <div class="right"></div>
+                          </div>
+                          <div class="modal-body">
+                            <p class="imp-text">
+                              are you sure you want to report this post?
+                            </p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="cancel-btn" data-bs-dismiss="modal">
+                              cancel
+                            </button>
+                            <button class="ok-btn">ok</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="four">
+                      <div class="circle">
+                        <svg
+                          width="20"
+                          height="14"
+                          viewBox="0 0 22 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M4.5624 8.04622C5.03874 8.04622 5.4671 7.71381 5.56648 7.22719C6.10108 4.6673 8.39367 2.80992 11.0187 2.80992C13.4381 2.80992 15.5662 4.35203 16.3132 6.65147C16.488 7.19292 17.0706 7.48764 17.6086 7.30944C18.15 7.13467 18.4448 6.5521 18.2666 6.01407C17.2419 2.86818 14.3291 0.753784 11.0187 0.753784C7.71172 0.753784 4.79543 2.91273 3.78107 5.99008H0.666016V8.04622H4.5624ZM12.888 10.245C13.9212 9.21189 13.9212 7.53683 12.888 6.50368C11.8549 5.47054 10.1798 5.47054 9.14666 6.50368C8.11351 7.53683 8.11351 9.21189 9.14666 10.245C10.1798 11.2782 11.8549 11.2782 12.888 10.245ZM17.067 9.99265H17.0773H21.3335V12.0488H17.6941C16.3645 14.4682 13.8149 16 11.0185 16C8.24273 16 5.68626 14.4922 4.34635 12.0659C4.07219 11.569 4.25382 10.9419 4.75072 10.6677C5.24762 10.3936 5.87474 10.5752 6.14889 11.0721C7.12556 12.8438 8.99322 13.9439 11.0185 13.9439C13.2289 13.9439 15.2302 12.6348 16.1177 10.6095C16.2857 10.2222 16.666 9.99265 17.0601 9.99265H17.067Z"
+                            fill="#667C97"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box">
+                <div class="head">
+                  <div class="left">
+                    <div class="img">
+                      <img src="../assets/gym.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="name">mike baker <span>(single)</span></div>
+                    <div class="age">
+                      <div>Age: 26</div>
+                      <div class="avator-img">
+                        <div class="avator">
+                          <img src="../assets/avator1.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="star">★★★★☆</div>
+                  </div>
+                </div>
+                <div class="body">
+                  <p class="title">
+                    game wanted - <span class="sub-title">snooker</span>
+                  </p>
+                  <p>
+                    This post for only singles testing. This is for testing of
+                    <span id="readMore" class="read-more">...Read More</span>
+                    <span class="more-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quisquam impedit itaque fuga vitae rerum dolorem autem
+                      obcaecati ex et nam?
+                    </span>
+                  </p>
+                </div>
+                <div class="foots">
+                  <div class="left">
+                    <div
+                      class="one"
+                      data-bs-toggle="modal"
+                      data-bs-target="#playersModal"
+                    >
+                      <div class="circle">
+                        <svg
+                          width="18"
+                          height="16"
+                          viewBox="0 0 19 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.88135 14.8306C5.88135 11.398 8.66399 8.61536 12.0966 8.61536C15.5291 8.61536 18.3118 11.398 18.3118 14.8306V15.5384H5.88135V14.8306Z"
+                            fill="#667c97"
+                          />
+                          <ellipse
+                            cx="12.0962"
+                            cy="4.46153"
+                            rx="3.4529"
+                            ry="3.46153"
+                            fill="#00acee"
+                          />
+                          <path
+                            d="M13.4776 16.7308H13.9776V16.2308V15.523C13.9776 11.8142 10.9711 8.80774 7.26234 8.80774C3.55362 8.80774 0.547119 11.8142 0.547119 15.523V16.2308V16.7308H1.04712H13.4776Z"
+                            fill="#00ACEE"
+                            stroke="#F8F8F8"
+                          />
+                          <path
+                            d="M7.26198 9.11533C9.44628 9.11533 11.2149 7.34051 11.2149 5.15379C11.2149 2.96708 9.44628 1.19226 7.26198 1.19226C5.07768 1.19226 3.30908 2.96708 3.30908 5.15379C3.30908 7.34051 5.07768 9.11533 7.26198 9.11533Z"
+                            fill="#00ACEE"
+                            stroke="#F8F8F8"
+                          />
+                          <path
+                            d="M18.5987 14C18.5987 16.0716 16.9236 17.75 14.8587 17.75C12.7937 17.75 11.1187 16.0716 11.1187 14C11.1187 11.9283 12.7937 10.25 14.8587 10.25C16.9236 10.25 18.5987 11.9283 18.5987 14Z"
+                            fill="#F8F8F8"
+                            stroke="#F8F8F8"
+                            stroke-width="0.5"
+                          />
+                          <rect
+                            x="14.168"
+                            y="11.3846"
+                            width="1.38116"
+                            height="5.53845"
+                            rx="0.69058"
+                            fill="#F8F8F8"
+                          />
+                          <rect
+                            x="17.6206"
+                            y="13.4615"
+                            width="1.38461"
+                            height="5.52464"
+                            rx="0.692307"
+                            transform="rotate(90 17.6206 13.4615)"
+                            fill="#F8F8F8"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div
+                      class="modal fade"
+                      id="playersModal"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="left"></div>
+                            <div class="center">
+                              <h4 class="header-title">Players</h4>
+                            </div>
+                            <div class="right">
+                              <div
+                                class="cancelBtn"
+                                type="button"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <svg
+                                  width="16"
+                                  height="16"
+                                  viewBox="0 0 20 20"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M19.5816 2.43872C20.1395 1.88083 20.1395 0.976311 19.5816 0.418419C19.0237 -0.139473 18.1192 -0.139473 17.5613 0.418419L10 7.9797L2.43872 0.418419C1.88083 -0.139473 0.976311 -0.139473 0.418419 0.418419C-0.139473 0.976311 -0.139473 1.88083 0.418419 2.43872L7.9797 10L0.418419 17.5613C-0.139473 18.1192 -0.139473 19.0237 0.418419 19.5816C0.976311 20.1395 1.88083 20.1395 2.43872 19.5816L10 12.0203L17.5613 19.5816C18.1192 20.1395 19.0237 20.1395 19.5816 19.5816C20.1395 19.0237 20.1395 18.1192 19.5816 17.5613L12.0203 10L19.5816 2.43872Z"
+                                    fill="#667C97"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>louis payne</h4>
+                                <span class="captain">Ⓒ</span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/johan.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>johan smith</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/taylor.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>ore french</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img
+                                      src="../assets/mattyJohnson.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>rob page</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/paulsmith.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>pistol edges</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>louis payne</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>Anderson</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img
+                                      src="../assets/sallyGreen.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>Smith Jack</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/person.svg" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>Rock Domin</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>louis payne</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>louis payne</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>louis payne</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="two">
+                      <div class="circle">
+                        <svg
+                          class="share-icon"
+                          width="12"
+                          height="14"
+                          viewBox="0 0 17 19"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M16.4999 2.99676C16.4999 4.65182 15.1582 5.99351 13.5032 5.99351C12.6287 5.99351 11.8417 5.61897 11.2939 5.02154L5.82444 8.156C5.93395 8.46728 5.99351 8.80209 5.99351 9.15082C5.99351 9.54431 5.91767 9.92009 5.77981 10.2643L11.2096 13.376C11.7593 12.723 12.5828 12.3081 13.5032 12.3081C15.1582 12.3081 16.4999 13.6498 16.4999 15.3049C16.4999 16.9599 15.1582 18.3016 13.5032 18.3016C11.8481 18.3016 10.5064 16.9599 10.5064 15.3049C10.5064 15.0051 10.5504 14.7157 10.6323 14.4427L5.10853 11.2771C4.56681 11.8151 3.82061 12.1476 2.99676 12.1476C1.34169 12.1476 0 10.8059 0 9.15082C0 7.49575 1.34169 6.15406 2.99676 6.15406C3.86704 6.15406 4.65067 6.52503 5.19815 7.11747L10.6717 3.98069C10.5646 3.67249 10.5064 3.34142 10.5064 2.99676C10.5064 1.34169 11.8481 0 13.5032 0C15.1582 0 16.4999 1.34169 16.4999 2.99676Z"
+                            fill="#00ACEE"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="three">
+                      <div class="circle">
+                        <svg
+                          width="16"
+                          height="14"
+                          viewBox="0 0 20 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.46932 0.345481C8.84703 0.118987 9.27317 0 9.70662 0C10.1401 0 10.5662 0.118987 10.9439 0.345481C11.3216 0.571975 11.6382 0.898329 11.863 1.29306L11.8654 1.29731L18.9859 13.9582L18.9927 13.9706C19.213 14.3768 19.3295 14.8373 19.3307 15.3063C19.3319 15.7754 19.2179 16.2366 18.9998 16.644C18.7817 17.0515 18.4673 17.3911 18.0877 17.629C17.7082 17.8668 17.2768 17.9947 16.8364 17.9999L16.8272 18L2.57684 17.9999C2.13648 17.9948 1.70508 17.8668 1.32554 17.629C0.945994 17.3911 0.631542 17.0515 0.413468 16.644C0.195393 16.2366 0.0812964 15.7754 0.0825294 15.3063C0.0837625 14.8373 0.200282 14.3768 0.420496 13.9706L0.427325 13.9582L7.54787 1.29732L8.26905 1.75742L7.55028 1.29306C7.77508 0.898329 8.09161 0.571975 8.46932 0.345481ZM8.98886 2.22003L1.87376 14.8713C1.80215 15.0054 1.76429 15.157 1.76388 15.3113C1.76347 15.4677 1.8015 15.6214 1.87419 15.7572C1.94688 15.8931 2.0517 16.0063 2.17822 16.0856C2.30362 16.1641 2.44601 16.2067 2.59145 16.2091H16.8218C16.9672 16.2067 17.1096 16.1641 17.235 16.0856C17.3615 16.0063 17.4664 15.8931 17.5391 15.7572C17.6117 15.6214 17.6498 15.4677 17.6494 15.3113C17.649 15.157 17.6111 15.0054 17.5395 14.8713L10.4254 2.22181C10.4251 2.22122 10.4247 2.22062 10.4244 2.22003C10.3495 2.08925 10.2444 1.98111 10.1191 1.90595C9.99315 1.83045 9.85111 1.79079 9.70662 1.79079C9.56214 1.79079 9.42009 1.83045 9.29419 1.90595C9.16885 1.98111 9.06373 2.08925 8.98886 2.22003Z"
+                            fill="#00ACEE"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.86572 13.5227C8.86572 13.0282 9.24211 12.6273 9.7064 12.6273H9.71481C10.1791 12.6273 10.5555 13.0282 10.5555 13.5227C10.5555 14.0172 10.1791 14.4181 9.71481 14.4181H9.7064C9.24211 14.4181 8.86572 14.0172 8.86572 13.5227Z"
+                            fill="#00ACEE"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M9.7064 5.46423C10.1707 5.46423 10.5471 5.86512 10.5471 6.35963V9.94121C10.5471 10.4357 10.1707 10.8366 9.7064 10.8366C9.24211 10.8366 8.86572 10.4357 8.86572 9.94121V6.35963C8.86572 5.86512 9.24211 5.46423 9.7064 5.46423Z"
+                            fill="#00ACEE"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="four">
+                      <div class="circle">
+                        <svg
+                          width="20"
+                          height="14"
+                          viewBox="0 0 22 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M4.5624 8.04622C5.03874 8.04622 5.4671 7.71381 5.56648 7.22719C6.10108 4.6673 8.39367 2.80992 11.0187 2.80992C13.4381 2.80992 15.5662 4.35203 16.3132 6.65147C16.488 7.19292 17.0706 7.48764 17.6086 7.30944C18.15 7.13467 18.4448 6.5521 18.2666 6.01407C17.2419 2.86818 14.3291 0.753784 11.0187 0.753784C7.71172 0.753784 4.79543 2.91273 3.78107 5.99008H0.666016V8.04622H4.5624ZM12.888 10.245C13.9212 9.21189 13.9212 7.53683 12.888 6.50368C11.8549 5.47054 10.1798 5.47054 9.14666 6.50368C8.11351 7.53683 8.11351 9.21189 9.14666 10.245C10.1798 11.2782 11.8549 11.2782 12.888 10.245ZM17.067 9.99265H17.0773H21.3335V12.0488H17.6941C16.3645 14.4682 13.8149 16 11.0185 16C8.24273 16 5.68626 14.4922 4.34635 12.0659C4.07219 11.569 4.25382 10.9419 4.75072 10.6677C5.24762 10.3936 5.87474 10.5752 6.14889 11.0721C7.12556 12.8438 8.99322 13.9439 11.0185 13.9439C13.2289 13.9439 15.2302 12.6348 16.1177 10.6095C16.2857 10.2222 16.666 9.99265 17.0601 9.99265H17.067Z"
+                            fill="#667C97"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box">
+                <div class="head">
+                  <div class="left">
+                    <div class="img">
+                      <img src="../assets/gym.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="name">liverpool 🏆 <span>(team)</span></div>
+                    <div class="age">
+                      <div>Ages: 22-28</div>
+                      <div class="avator-img">
+                        <div class="avator">
+                          <img src="../assets/avator1.svg" alt="" />
+                        </div>
+                        <div class="avator">
+                          <img src="../assets/avator2.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="star">★★★★☆</div>
+                  </div>
+                </div>
+                <div class="body">
+                  <p class="title">
+                    game wanted -
+                    <span class="sub-title">football 11-a-side</span>
+                  </p>
+                  <p>
+                    This post for only singles testing. This is for testing of
+                    <span id="readMore" class="read-more">...Read More</span>
+                    <span class="more-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quisquam impedit itaque fuga vitae rerum dolorem autem
+                      obcaecati ex et nam?
+                    </span>
+                  </p>
+                </div>
+                <div class="foots">
+                  <div class="left">
+                    <div
+                      class="one"
+                      data-bs-toggle="modal"
+                      data-bs-target="#playersModal"
+                    >
+                      <div class="circle">
+                        <svg
+                          width="18"
+                          height="16"
+                          viewBox="0 0 19 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.88135 14.8306C5.88135 11.398 8.66399 8.61536 12.0966 8.61536C15.5291 8.61536 18.3118 11.398 18.3118 14.8306V15.5384H5.88135V14.8306Z"
+                            fill="#667c97"
+                          />
+                          <ellipse
+                            cx="12.0962"
+                            cy="4.46153"
+                            rx="3.4529"
+                            ry="3.46153"
+                            fill="#00acee"
+                          />
+                          <path
+                            d="M13.4776 16.7308H13.9776V16.2308V15.523C13.9776 11.8142 10.9711 8.80774 7.26234 8.80774C3.55362 8.80774 0.547119 11.8142 0.547119 15.523V16.2308V16.7308H1.04712H13.4776Z"
+                            fill="#00ACEE"
+                            stroke="#F8F8F8"
+                          />
+                          <path
+                            d="M7.26198 9.11533C9.44628 9.11533 11.2149 7.34051 11.2149 5.15379C11.2149 2.96708 9.44628 1.19226 7.26198 1.19226C5.07768 1.19226 3.30908 2.96708 3.30908 5.15379C3.30908 7.34051 5.07768 9.11533 7.26198 9.11533Z"
+                            fill="#00ACEE"
+                            stroke="#F8F8F8"
+                          />
+                          <path
+                            d="M18.5987 14C18.5987 16.0716 16.9236 17.75 14.8587 17.75C12.7937 17.75 11.1187 16.0716 11.1187 14C11.1187 11.9283 12.7937 10.25 14.8587 10.25C16.9236 10.25 18.5987 11.9283 18.5987 14Z"
+                            fill="#F8F8F8"
+                            stroke="#F8F8F8"
+                            stroke-width="0.5"
+                          />
+                          <rect
+                            x="14.168"
+                            y="11.3846"
+                            width="1.38116"
+                            height="5.53845"
+                            rx="0.69058"
+                            fill="#F8F8F8"
+                          />
+                          <rect
+                            x="17.6206"
+                            y="13.4615"
+                            width="1.38461"
+                            height="5.52464"
+                            rx="0.692307"
+                            transform="rotate(90 17.6206 13.4615)"
+                            fill="#F8F8F8"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div
+                      class="modal fade"
+                      id="playersModal"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="left"></div>
+                            <div class="center">
+                              <h4 class="header-title">Players</h4>
+                            </div>
+                            <div class="right">
+                              <div
+                                class="cancelBtn"
+                                type="button"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <svg
+                                  width="16"
+                                  height="16"
+                                  viewBox="0 0 20 20"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M19.5816 2.43872C20.1395 1.88083 20.1395 0.976311 19.5816 0.418419C19.0237 -0.139473 18.1192 -0.139473 17.5613 0.418419L10 7.9797L2.43872 0.418419C1.88083 -0.139473 0.976311 -0.139473 0.418419 0.418419C-0.139473 0.976311 -0.139473 1.88083 0.418419 2.43872L7.9797 10L0.418419 17.5613C-0.139473 18.1192 -0.139473 19.0237 0.418419 19.5816C0.976311 20.1395 1.88083 20.1395 2.43872 19.5816L10 12.0203L17.5613 19.5816C18.1192 20.1395 19.0237 20.1395 19.5816 19.5816C20.1395 19.0237 20.1395 18.1192 19.5816 17.5613L12.0203 10L19.5816 2.43872Z"
+                                    fill="#667C97"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>louis payne</h4>
+                                <span class="captain">Ⓒ</span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/johan.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>johan smith</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/taylor.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>ore french</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img
+                                      src="../assets/mattyJohnson.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>rob page</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/paulsmith.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>pistol edges</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>louis payne</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>Anderson</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img
+                                      src="../assets/sallyGreen.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>Smith Jack</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/person.svg" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>Rock Domin</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>louis payne</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>louis payne</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="box">
+                              <div class="left">
+                                <div class="border-part">
+                                  <div class="img-part">
+                                    <img src="../assets/friends.png" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="right">
+                                <h4>louis payne</h4>
+                                <span></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="two">
+                      <div class="circle">
+                        <svg
+                          class="share-icon"
+                          width="12"
+                          height="14"
+                          viewBox="0 0 17 19"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M16.4999 2.99676C16.4999 4.65182 15.1582 5.99351 13.5032 5.99351C12.6287 5.99351 11.8417 5.61897 11.2939 5.02154L5.82444 8.156C5.93395 8.46728 5.99351 8.80209 5.99351 9.15082C5.99351 9.54431 5.91767 9.92009 5.77981 10.2643L11.2096 13.376C11.7593 12.723 12.5828 12.3081 13.5032 12.3081C15.1582 12.3081 16.4999 13.6498 16.4999 15.3049C16.4999 16.9599 15.1582 18.3016 13.5032 18.3016C11.8481 18.3016 10.5064 16.9599 10.5064 15.3049C10.5064 15.0051 10.5504 14.7157 10.6323 14.4427L5.10853 11.2771C4.56681 11.8151 3.82061 12.1476 2.99676 12.1476C1.34169 12.1476 0 10.8059 0 9.15082C0 7.49575 1.34169 6.15406 2.99676 6.15406C3.86704 6.15406 4.65067 6.52503 5.19815 7.11747L10.6717 3.98069C10.5646 3.67249 10.5064 3.34142 10.5064 2.99676C10.5064 1.34169 11.8481 0 13.5032 0C15.1582 0 16.4999 1.34169 16.4999 2.99676Z"
+                            fill="#00ACEE"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="three">
+                      <div class="circle">
+                        <svg
+                          width="16"
+                          height="14"
+                          viewBox="0 0 20 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.46932 0.345481C8.84703 0.118987 9.27317 0 9.70662 0C10.1401 0 10.5662 0.118987 10.9439 0.345481C11.3216 0.571975 11.6382 0.898329 11.863 1.29306L11.8654 1.29731L18.9859 13.9582L18.9927 13.9706C19.213 14.3768 19.3295 14.8373 19.3307 15.3063C19.3319 15.7754 19.2179 16.2366 18.9998 16.644C18.7817 17.0515 18.4673 17.3911 18.0877 17.629C17.7082 17.8668 17.2768 17.9947 16.8364 17.9999L16.8272 18L2.57684 17.9999C2.13648 17.9948 1.70508 17.8668 1.32554 17.629C0.945994 17.3911 0.631542 17.0515 0.413468 16.644C0.195393 16.2366 0.0812964 15.7754 0.0825294 15.3063C0.0837625 14.8373 0.200282 14.3768 0.420496 13.9706L0.427325 13.9582L7.54787 1.29732L8.26905 1.75742L7.55028 1.29306C7.77508 0.898329 8.09161 0.571975 8.46932 0.345481ZM8.98886 2.22003L1.87376 14.8713C1.80215 15.0054 1.76429 15.157 1.76388 15.3113C1.76347 15.4677 1.8015 15.6214 1.87419 15.7572C1.94688 15.8931 2.0517 16.0063 2.17822 16.0856C2.30362 16.1641 2.44601 16.2067 2.59145 16.2091H16.8218C16.9672 16.2067 17.1096 16.1641 17.235 16.0856C17.3615 16.0063 17.4664 15.8931 17.5391 15.7572C17.6117 15.6214 17.6498 15.4677 17.6494 15.3113C17.649 15.157 17.6111 15.0054 17.5395 14.8713L10.4254 2.22181C10.4251 2.22122 10.4247 2.22062 10.4244 2.22003C10.3495 2.08925 10.2444 1.98111 10.1191 1.90595C9.99315 1.83045 9.85111 1.79079 9.70662 1.79079C9.56214 1.79079 9.42009 1.83045 9.29419 1.90595C9.16885 1.98111 9.06373 2.08925 8.98886 2.22003Z"
+                            fill="#00ACEE"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.86572 13.5227C8.86572 13.0282 9.24211 12.6273 9.7064 12.6273H9.71481C10.1791 12.6273 10.5555 13.0282 10.5555 13.5227C10.5555 14.0172 10.1791 14.4181 9.71481 14.4181H9.7064C9.24211 14.4181 8.86572 14.0172 8.86572 13.5227Z"
+                            fill="#00ACEE"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M9.7064 5.46423C10.1707 5.46423 10.5471 5.86512 10.5471 6.35963V9.94121C10.5471 10.4357 10.1707 10.8366 9.7064 10.8366C9.24211 10.8366 8.86572 10.4357 8.86572 9.94121V6.35963C8.86572 5.86512 9.24211 5.46423 9.7064 5.46423Z"
+                            fill="#00ACEE"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="four">
+                      <div class="circle">
+                        <svg
+                          width="20"
+                          height="14"
+                          viewBox="0 0 22 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M4.5624 8.04622C5.03874 8.04622 5.4671 7.71381 5.56648 7.22719C6.10108 4.6673 8.39367 2.80992 11.0187 2.80992C13.4381 2.80992 15.5662 4.35203 16.3132 6.65147C16.488 7.19292 17.0706 7.48764 17.6086 7.30944C18.15 7.13467 18.4448 6.5521 18.2666 6.01407C17.2419 2.86818 14.3291 0.753784 11.0187 0.753784C7.71172 0.753784 4.79543 2.91273 3.78107 5.99008H0.666016V8.04622H4.5624ZM12.888 10.245C13.9212 9.21189 13.9212 7.53683 12.888 6.50368C11.8549 5.47054 10.1798 5.47054 9.14666 6.50368C8.11351 7.53683 8.11351 9.21189 9.14666 10.245C10.1798 11.2782 11.8549 11.2782 12.888 10.245ZM17.067 9.99265H17.0773H21.3335V12.0488H17.6941C16.3645 14.4682 13.8149 16 11.0185 16C8.24273 16 5.68626 14.4922 4.34635 12.0659C4.07219 11.569 4.25382 10.9419 4.75072 10.6677C5.24762 10.3936 5.87474 10.5752 6.14889 11.0721C7.12556 12.8438 8.99322 13.9439 11.0185 13.9439C13.2289 13.9439 15.2302 12.6348 16.1177 10.6095C16.2857 10.2222 16.666 9.99265 17.0601 9.99265H17.067Z"
+                            fill="#667C97"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--todo   MENU-BAR-SECTION  -->
+
+        <div class="menu-section">
+          <div class="all-menu">
+            <div class="home bars" id="homeBar">
+              <div class="icon">
+                <svg
+                  width="25"
+                  height="26"
+                  viewBox="0 0 25 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 23.2097V9.9681C0 8.66486 0.634889 7.44333 1.70147 6.69445L10.2015 0.726351C11.5808 -0.242116 13.4192 -0.242117 14.7985 0.72635L23.2985 6.69445C24.3651 7.44333 25 8.66486 25 9.9681V23.2097V23.4672V23.9965C25 25.1011 24.1046 25.9965 23 25.9965H2C0.89543 25.9965 0 25.1011 0 23.9965V23.4672V23.2097ZM8.69565 23.2097H16.3043V14.765C16.3043 13.6604 15.4089 12.765 14.3043 12.765H10.6957C9.59108 12.765 8.69565 13.6604 8.69565 14.765V23.2097Z"
+                    fill="#00ACEE"
+                  />
+                </svg>
+              </div>
+              <div class="text">Home</div>
+            </div>
+            <div class="chats bars" id="chatBar">
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chat-dots"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+                  />
+                  <path
+                    d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"
+                  />
+                </svg>
+              </div>
+              <div class="text">Chat</div>
+            </div>
+            <div class="message-board bars activeBar" id="messageBoardBar">
+              <div class="icon">
+                <svg
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m19.25 11.0016855c.9664983 0 1.75.7835017 1.75 1.75v6.5c0 .9664984-.7835017 1.75-1.75 1.75h-4.5c-.9664983 0-1.75-.7835016-1.75-1.75v-6.5c0-.9664983.7835017-1.75 1.75-1.75zm-9.98180302 4.0124156c.96649832 0 1.75000002.7835017 1.75000002 1.75v2.4875844c0 .9664984-.7835017 1.75-1.75000002 1.75h-4.51440765c-.96649831 0-1.75-.7835016-1.75-1.75v-2.4875844c0-.9664983.78350169-1.75 1.75-1.75zm9.98180302-2.5124156h-4.5c-.1380712 0-.25.1119289-.25.25v6.5c0 .1380712.1119288.25.25.25h4.5c.1380712 0 .25-.1119288.25-.25v-6.5c0-.1380711-.1119288-.25-.25-.25zm-9.98180302 4.0124156h-4.51440765c-.13807119 0-.25.1119288-.25.25v2.4875844c0 .1380712.11192881.25.25.25h4.51440765c.13807118 0 .25-.1119288.25-.25v-2.4875844c0-.1380712-.11192882-.25-.25-.25zm-.01440765-13.5141011c.96649827 0 1.74999997.78350169 1.74999997 1.75v6.5c0 .9181734-.7071102 1.6711923-1.60647276 1.7441988l-.14352721.0058012h-4.5c-.96649831 0-1.75-.7835017-1.75-1.75v-6.5c0-.96649831.78350169-1.75 1.75-1.75zm0 1.5h-4.5c-.13807119 0-.25.11192881-.25.25v6.5c0 .1380712.11192881.25.25.25h4.5l.05732271-.0066027c.11044388-.0259105.19267729-.1250506.19267729-.2433973v-6.5c0-.13807119-.11192881-.25-.25-.25zm9.99621067-1.5c.9664983 0 1.75.78350169 1.75 1.75v2.5c0 .96649831-.7835017 1.75-1.75 1.75h-4.5c-.9664983 0-1.75-.78350169-1.75-1.75v-2.5c0-.96649831.7835017-1.75 1.75-1.75zm-4.5 1.5c-.1380712 0-.25.11192881-.25.25v2.5c0 .13807119.1119288.25.25.25h4.5c.1380712 0 .25-.11192881.25-.25v-2.5c0-.13807119-.1119288-.25-.25-.25z"
+                    fill="#212121"
+                  />
+                </svg>
+              </div>
+              <div class="text">Message Board</div>
+            </div>
+            <div class="notification bars" id="notificationBar">
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-bell"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"
+                  />
+                </svg>
+                <div class="badge"><span>4</span></div>
+              </div>
+              <div class="text">Notifications</div>
+            </div>
+            <div class="menu bars" id="menuBar">
+              <div class="icon">
+                <div class="profile">
+                  <div class="img">
+                    <img src="../assets/menu-person.png" alt="" />
+                  </div>
+                  <div class="icon-bar">
+                    <i class="bi bi-list"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="text">Menu</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--! ======= CDN-> Jquery, Swiper JS, Bootstrap JS, Raw JS ======= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../js/profileMenu.js"></script>
+    <script src="../js/menubar.js"></script>
+
+    <script>
+      // todo== READ-MORE POST/COMMENT SECTION ====?
+
+      const readMoreButtons = document.querySelectorAll(".read-more");
+
+      readMoreButtons.forEach((button) => {
+        const moreText = button.nextElementSibling;
+        moreText.style.display = "none";
+
+        button.addEventListener("click", () => {
+          moreText.style.display = "inline";
+          button.style.display = "none";
+        });
+      });
+    </script>
+  </body>
+</html>
