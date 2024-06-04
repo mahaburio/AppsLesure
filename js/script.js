@@ -1,8 +1,9 @@
 // todo== UPCOMING GAME SECTION SLIDER ====?
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 2,
+  slidesPerView: "auto",
   spaceBetween: 10,
+  loop: true,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
@@ -17,7 +18,7 @@ var personSwiper = new Swiper(".followerPerson", {
   loop: true,
   autoplay: {
     delay: 2000,
-    disableOnInteraction: true,
+    disableOnInteraction: false,
   },
 });
 
