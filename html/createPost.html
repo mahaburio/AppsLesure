@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Follwers</title>
+    <title>Create Post</title>
     <!--! ======= CDN-> Bootstrap CSS, Fant Icon, Swiper CSS, Raw CSS ======= -->
 
     <link
@@ -44,6 +44,83 @@
               <div class="item item4" id="teamsItem">teams</div>
             </div>
           </div>
+
+          <div class="button-container">
+            <button class="button activeBtn" id="joinBtn">
+              I Want To Join
+            </button>
+            <button class="button" id="gameBtn">Game Wanted</button>
+            <button class="button" id="partnerBtn">Partner With Me</button>
+          </div>
+
+          <div class="post-input">
+            <div class="choose-sport">
+              <div class="left">
+                <div>choose sport</div>
+              </div>
+              <div class="right">
+                <select name="" id="">
+                  <option value="">Select Sport</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                </select>
+              </div>
+            </div>
+            <div class="my-age">
+              <div class="left">
+                <div>My age</div>
+              </div>
+              <div class="right">
+                <select name="" id="">
+                  <option value="">13</option>
+                  <option value="">14</option>
+                  <option value="">15</option>
+                  <option value="">16</option>
+                  <option value="">17</option>
+                </select>
+              </div>
+            </div>
+            <div class="ability">
+              <div class="left">
+                <div>ability level</div>
+              </div>
+              <div class="right">
+                <div class="star">★★★★☆</div>
+              </div>
+            </div>
+            <div class="gender">
+              <div class="left">
+                <div>gender</div>
+              </div>
+              <div class="right">
+                <div class="male" id="male">
+                  <svg id="circle" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="9.5" stroke="#667c97"/>
+                    <circle class="second" cx="10" cy="10" r="4" fill="#667c97"/>
+                    </svg>
+                     Male
+                </div>
+                <div class="female" id="female">
+                  <svg id="circle" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="9.5" stroke="#667c97"/>
+                    <circle class="second" cx="10" cy="10" r="4" fill="#667c97"/>
+                    </svg> Female
+                </div>
+                <div class="both" id="both">
+                  <svg id="circle" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="9.5" stroke="#667c97"/>
+                    <circle class="second" cx="10" cy="10" r="4" fill="#667c97"/>
+                    </svg> Both
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="message-box">
+            <textarea name="" id="" placeholder="write your post here..."></textarea>
+          </div>
+
+          <button class="submit-btn">submit your post</button>
         </div>
 
         <!--todo   MENU-BAR-SECTION  -->
@@ -164,6 +241,48 @@
           });
         }
       });
+
+      let joinBtn = document.getElementById("joinBtn");
+      let gameBtn = document.getElementById("gameBtn");
+      let partnerBtn = document.getElementById("partnerBtn");
+
+      let btnItems = [joinBtn, gameBtn, partnerBtn];
+
+      btnItems.forEach((item) => {
+        if (item) {
+          item.addEventListener("click", () => {
+            btnItems.forEach((removeClass) => {
+              removeClass.classList.remove("activeBtn");
+            });
+
+            item.classList.add("activeBtn");
+          });
+        }
+      });
+
+      let male = document.getElementById("male");
+      let female = document.getElementById("female");
+      let both = document.getElementById("both");
+
+      let gender = [male, female, both];
+
+      gender.forEach((item) => {
+        if (item) {
+          item.addEventListener("click", () => {
+            gender.forEach((removeClass) => {
+              removeClass.classList.remove("selectGender");
+            });
+
+            item.classList.add("selectGender");
+          });
+        }
+      });
+
+
+
+      
+
+
     </script>
   </body>
 </html>
