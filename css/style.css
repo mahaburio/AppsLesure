@@ -1054,7 +1054,7 @@ p {
   font-size: var(--fs-eighteen);
   font-weight: 600;
   color: var(--text-color);
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 10px;
   text-transform: capitalize;
 }
@@ -1927,7 +1927,7 @@ p {
 /* ! =========== FOR SIGN-UP PAGE =========  ===== */
 
 .sign-up-page {
-  height: 100vh;
+  min-height: 100vh !important;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -2020,6 +2020,107 @@ p {
   color: var(--white-color);
   transition: 0.3s;
   box-shadow: 0px 0px 4px 0px #12407433;
+}
+
+/* ! =========== FOR OTP VERIFY PAGE =========  ===== */
+
+.otp-verify {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 12px;
+  overflow: hidden;
+}
+
+.otp-verify .head {
+  text-align: center;
+  position: relative;
+  top: -100px;
+}
+
+.otp-verify .head .title {
+  font-size: 22px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.otp-verify .head .sub-title {
+  padding-top: 15px;
+  color: var(--text-color);
+}
+
+.otp-verify .input-section {
+  width: 100%;
+}
+
+.otp-verify .otp-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.otp-verify .otp-box .otp-item {
+  padding: 3px 18px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.otp-verify .verify-btn {
+  width: 100%;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 10px;
+  margin-top: 15px;
+  color: var(--white-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.otp-verify .verify-btn:hover {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-color: var(--white-color);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.otp-verify .resend-otp {
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.otp-verify .resend-otp a {
+  text-decoration: none;
+  color: var(--text-color);
+  text-transform: capitalize;
 }
 
 /* ! ********** FOR PROFILE MENU PAGE ******** */
@@ -2923,6 +3024,7 @@ p {
 #deleteModal .modal-content,
 #reportModal .modal-content,
 #interestAlertModal .modal-content,
+#interestAlertModalTwo .modal-content,
 #sentModal .modal-content {
   border-radius: 6px;
   border: none;
@@ -2932,6 +3034,7 @@ p {
 #deleteModal .modal-content .modal-header,
 #reportModal .modal-content .modal-header,
 #interestAlertModal .modal-content .modal-header,
+#interestAlertModalTwo .modal-content .modal-header,
 #sentModal .modal-content .modal-header {
   border: none;
   padding: 10px 10px;
@@ -2940,6 +3043,7 @@ p {
 #deleteModal .modal-content .modal-header .header-title,
 #reportModal .modal-content .modal-header .header-title,
 #interestAlertModal .modal-content .modal-header .header-title,
+#interestAlertModalTwo .modal-content .modal-header .header-title,
 #sentModal .modal-content .modal-header .header-title {
   color: var(--text-color);
   font-weight: bold;
@@ -2950,6 +3054,7 @@ p {
 #deleteModal .modal-body,
 #reportModal .modal-body,
 #interestAlertModal .modal-body,
+#interestAlertModalTwo .modal-body,
 #sentModal .modal-body {
   padding: 10px;
   border: none;
@@ -2960,6 +3065,7 @@ p {
 #deleteModal .modal-body .imp-text,
 #reportModal .modal-body .imp-text,
 #interestAlertModal .modal-body .imp-text,
+#interestAlertModalTwo .modal-body .imp-text,
 #sentModal .modal-body .imp-text {
   margin: 0;
   text-transform: capitalize;
@@ -2971,6 +3077,7 @@ p {
 #deleteModal .modal-footer,
 #reportModal .modal-footer,
 #interestAlertModal .modal-footer,
+#interestAlertModalTwo .modal-footer,
 #sentModal .modal-footer {
   display: flex;
   justify-content: space-between;
@@ -2982,6 +3089,7 @@ p {
 #deleteModal .modal-footer button,
 #reportModal .modal-footer button,
 #interestAlertModal .modal-footer button,
+#interestAlertModalTwo .modal-footer button,
 #sentModal .modal-footer button {
   background-color: var(--white-color);
   text-transform: capitalize;
@@ -3002,7 +3110,8 @@ p {
 
 #deleteModal .modal-footer .cancel-btn:hover,
 #reportModal .modal-footer .cancel-btn:hover,
-#interestAlertModal .modal-footer .cancel-btn:hover {
+#interestAlertModal .modal-footer .cancel-btn:hover,
+#interestAlertModalTwo .modal-footer .cancel-btn:hover {
   background-color: var(--secondary-color);
   color: var(--white-color);
   transition: 0.3s;
@@ -3012,6 +3121,7 @@ p {
 #deleteModal .modal-footer .ok-btn:hover,
 #reportModal .modal-footer .ok-btn:hover,
 #interestAlertModal .modal-footer .ok-btn:hover,
+#interestAlertModalTwo .modal-footer .ok-btn:hover,
 #sentModal .modal-footer .ok-btn:hover {
   background-color: var(--primary-color);
   color: var(--white-color);
@@ -3098,7 +3208,7 @@ p {
   position: relative;
   top: -5px;
   font-weight: 500;
-  color: var(--text-color);
+  color: var(--alt-color);
 }
 
 #showInterestModal .modal-body .box .right button:hover {
@@ -3377,31 +3487,59 @@ p {
 }
 
 #messageBoard .card-section .box .foots .circle {
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 30px;
   text-align: center;
-  line-height: 20px;
+  line-height: 25px;
   border-radius: 50%;
-  font-size: 14px;
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
   cursor: pointer;
   transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
 }
 
-#messageBoard .card-section .box .foots .circle svg path {
-  fill: var(--primary-color);
+#messageBoard .card-section .box .foots .circle svg {
+  cursor: pointer;
+}
+
+#messageBoard .card-section .box .foots .left .circle svg path {
+  stroke: var(--primary-color);
+}
+
+#messageBoard .card-section .box .foots .right .circle svg path {
+  stroke: var(--alt-color);
   transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
 }
 
-#messageBoard .card-section .box .foots .circle:hover,
+#messageBoard .card-section .box .foots .right .circle svg:hover path {
+  stroke: var(--primary-color);
+}
+
+#messageBoard .card-section .box .foots .right .circle .delete-icon path {
+  stroke: transparent;
+  fill: var(--alt-color);
+}
+
+#messageBoard .card-section .box .foots .right .circle .delete-icon:hover path {
+  fill: var(--primary-color);
+  stroke: transparent;
+}
+
+/* #messageBoard .card-section .box .foots .circle:hover,
 #messageBoard .card-section .box .foots .circle:hover svg path {
   color: var(--primary-color);
   transition: 0.1s;
   fill: var(--primary-color);
   border-color: var(--primary-color);
-}
+} */
 
 #messageBoard .share-icon {
   position: relative;
@@ -4399,6 +4537,7 @@ p {
   #reportModal .modal-content,
   #showInterestModal .modal-content,
   #interestAlertModal .modal-content,
+  #interestAlertModalTwo .modal-content,
   #sentModal .modal-content {
     width: 415px;
     left: 35px;
