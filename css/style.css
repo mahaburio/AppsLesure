@@ -3207,9 +3207,6 @@ p {
 
 /* ! ********** FOR MESSAGE BOARD PAGE ******** */
 
-.message-board-head .back-btn-section .right svg {
-}
-
 .message-board-head .dropdown-list {
   background-color: var(--white-color);
   margin: 0;
@@ -3412,7 +3409,18 @@ p {
   top: 1px;
 }
 
-/* ! ********** CREATE POST PAGE ******** */
+/* ! ********** CREATE POST PAGE (TEAMS, DOUBLES) ******** */
+/**
+ * * 1. Create post page mean doubles page
+ * 
+ * * 2. Double page and Teams Page Similar so No need code again
+ * 
+ * * 3. Same Time create post page css uses all over pages (single, dubbies)
+ * 
+ * * 4. When Need change anything then It will be changes by own ID (#single, #dubbies)
+ * 
+ * 
+ */
 
 #createPost {
   min-height: 100vh;
@@ -3463,6 +3471,10 @@ p {
   transition: 0.3s;
 }
 
+#createPost .post-item a {
+  text-decoration: none;
+}
+
 #createPost .button-container {
   display: flex;
   align-items: center;
@@ -3475,6 +3487,7 @@ p {
   background-color: var(--white-color);
   color: var(--text-color);
   font-weight: 500;
+  text-transform: capitalize;
   cursor: pointer;
   border-left: none;
   font-size: 14px;
@@ -3502,10 +3515,10 @@ p {
 #createPost .activeBtn::after {
   content: "";
   width: 20px;
-  height: 20px;
+  height: 15px;
   position: absolute;
-  bottom: -20px;
-  left: 40%;
+  bottom: -15px;
+  left: 42%;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 16px solid var(--primary-color);
@@ -3551,7 +3564,6 @@ p {
   background-position-y: 50%;
   cursor: pointer;
 }
-
 
 #createPost .post-input .group-name {
   display: flex;
@@ -3619,7 +3631,6 @@ p {
   background-position-x: 85%;
   background-position-y: 50%;
   cursor: pointer;
-  
 }
 
 #createPost .post-input .ability {
@@ -3729,11 +3740,9 @@ p {
   -o-transition: 0.3s;
 }
 
-
-
 /* ! ********** FOR GAME WANTED SECTION ******** */
 
-#createPost .my-age .right{
+#createPost .my-age .right {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -3741,37 +3750,109 @@ p {
   text-align: center;
 }
 
-#createPost .my-age .right .center{
+#createPost .my-age .right .center {
   text-transform: capitalize;
   font-size: 16px;
   font-weight: 500;
   width: 30%;
 }
 
-#createPost .my-age .right .left{
+#createPost .my-age .right .left {
   width: 60%;
 }
 
-#createPost .my-age .right .left select{
+#createPost .my-age .right .left select {
   width: 100%;
 }
 
-
-
-#createPost .my-age .right .right select{
- width: 100%;
- 
+#createPost .my-age .right .right select {
+  width: 100%;
 }
 
-
-#createPost #gameWanted{
+#createPost #doubles #gameWanted {
   display: none;
 }
 
-#createPost #partnerMe{
+#createPost #doubles #partnerMe {
   display: none;
 }
 
+/* ! ********** FOR SINGLE POST PAGE ******** */
+
+#single .game-btn {
+  width: 100%;
+  padding: 8px 3px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: capitalize;
+  margin-top: 15px;
+  border: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  position: relative;
+}
+
+#single .game-btn::after {
+  content: "";
+  width: 20px;
+  height: 15px;
+  position: absolute;
+  bottom: -15px;
+  left: 48%;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 16px solid var(--primary-color);
+}
+
+/* ! ********** FOR BUDDIES PAGE ******** */
+
+#buddies .buddies-btn {
+  margin-top: 15px;
+  display: flex;
+}
+
+#buddies .buddies-btn button {
+  width: 50%;
+  padding: 8px 3px;
+  background-color: var(--white-color);
+  color: var(--text-color);
+  text-transform: capitalize;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 14px;
+  border: 1px solid var(--primary-color);
+  position: relative;
+}
+
+#buddies .buddies-btn .first {
+  border-radius: 4px 0px 0px 4px;
+  -webkit-border-radius: 4px 0px 0px 4px;
+  -moz-border-radius: 4px 0px 0px 4px;
+  -ms-border-radius: 4px 0px 0px 4px;
+  -o-border-radius: 4px 0px 0px 4px;
+}
+
+#buddies .buddies-btn .last {
+  border-radius: 0px 4px 4px 0px;
+  -webkit-border-radius: 0px 4px 4px 0px;
+  -moz-border-radius: 0px 4px 4px 0px;
+  -ms-border-radius: 0px 4px 4px 0px;
+  -o-border-radius: 0px 4px 4px 0px;
+}
+
+#buddies #wantToJoin {
+  display: none;
+}
+
+#buddies #partnerMe {
+  display: block;
+}
 
 /* ! ********** FOR APPROVAL AWAIT PAGE ******** */
 

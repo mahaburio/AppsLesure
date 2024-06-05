@@ -35,22 +35,26 @@
           <p class="right"></p>
         </div>
 
-        <div id="createPost">
+        <div class="buddies" id="createPost">
           <div class="head-of-section">
             <div class="post-item">
-              <div class="item item1" id="singleItem">single</div>
-              <div class="item item2" id="buddiesItem">buddies</div>
-              <div class="item item3 activeItem" id="doublesItem">doubles</div>
-              <div class="item item4" id="teamsItem">teams</div>
+              <a href="../html/single-post.html">
+                <div class="item item1" id="singleItem">single</div>
+              </a>
+              <div class="item item2 activeItem" id="buddiesItem">buddies</div>
+              <a href="../html/doubles.html">
+                <div class="item item3 " id="doublesItem">doubles</div>
+              </a>
+              <a href="../html/teams.html">
+                <div class="item item4" id="teamsItem">teams</div>
+              </a>
             </div>
           </div>
 
-          <div class="button-container">
-            <button class="button activeBtn" id="joinBtn">
-              I Want To Join
-            </button>
-            <button class="button" id="gameBtn">Game Wanted</button>
-            <button class="button" id="partnerBtn">Partner With Me</button>
+         <div id="buddies">
+          <div class="buddies-btn">
+            <button class="first partnerBtn activeBtn" id="partnerBtn">players wanted</button>
+            <button class="last joinBtn" id="joinBtn">i wanted to join</button>
           </div>
 
           <div class="post-input" id="wantToJoin">
@@ -66,7 +70,7 @@
                   <option value="baseball">Baseball</option>
                   <option value="soccer">Soccer</option>
                   <option value="tennis">Tennis</option>
-              </select>
+                </select>
               </div>
             </div>
             <div class="my-age">
@@ -97,144 +101,79 @@
               </div>
               <div class="right">
                 <div class="male" id="male">
-                  <svg id="circle" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="10" cy="10" r="9.5" stroke="#667c97"/>
-                    <circle class="second" cx="10" cy="10" r="4" fill="#667c97"/>
-                    </svg>
-                     Male
+                  <svg
+                    id="circle"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="10" cy="10" r="9.5" stroke="#667c97" />
+                    <circle
+                      class="second"
+                      cx="10"
+                      cy="10"
+                      r="4"
+                      fill="#667c97"
+                    />
+                  </svg>
+                  Male
                 </div>
                 <div class="female" id="female">
-                  <svg id="circle" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="10" cy="10" r="9.5" stroke="#667c97"/>
-                    <circle class="second" cx="10" cy="10" r="4" fill="#667c97"/>
-                    </svg> Female
+                  <svg
+                    id="circle"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="10" cy="10" r="9.5" stroke="#667c97" />
+                    <circle
+                      class="second"
+                      cx="10"
+                      cy="10"
+                      r="4"
+                      fill="#667c97"
+                    />
+                  </svg>
+                  Female
                 </div>
                 <div class="both" id="both">
-                  <svg id="circle" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="10" cy="10" r="9.5" stroke="#667c97"/>
-                    <circle class="second" cx="10" cy="10" r="4" fill="#667c97"/>
-                    </svg> Both
+                  <svg
+                    id="circle"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="10" cy="10" r="9.5" stroke="#667c97" />
+                    <circle
+                      class="second"
+                      cx="10"
+                      cy="10"
+                      r="4"
+                      fill="#667c97"
+                    />
+                  </svg>
+                  Both
                 </div>
               </div>
             </div>
 
             <div class="message-box">
-              <textarea name="" id="" placeholder="write your post here..."></textarea>
+              <textarea
+                name=""
+                id=""
+                placeholder="write your post here..."
+              ></textarea>
             </div>
-  
+
             <button class="submit-btn">submit your post</button>
           </div>
-          
 
-
-
-          <!-- ! For Game Wanted Section -->
-
-          <div class="post-input" id="gameWanted">
-            <div class="choose-sport">
-              <div class="left">
-                <div>choose sport</div>
-              </div>
-              <div class="right">
-                <select id="sport-select">
-                  <option value="" selected>Select Sport</option>
-                  <option value="football">Football</option>
-                  <option value="basketball">Basketball</option>
-                  <option value="baseball">Baseball</option>
-                  <option value="soccer">Soccer</option>
-                  <option value="tennis">Tennis</option>
-              </select>
-              </div>
-            </div>
-            <div class="my-age">
-              <div class="left">
-                <div>My age</div>
-              </div>
-              <div class="right">
-                <div class="left">
-                  <select name="" id="">
-                    <option value="">13</option>
-                    <option value="">14</option>
-                    <option value="">15</option>
-                    <option value="">16</option>
-                    <option value="">17</option>
-                  </select>
-                </div>
-                <div class="center">
-                  to
-                </div>
-                <div class="right">
-                  <select name="" id="">
-                    <option value="">25</option>
-                    <option value="">26</option>
-                    <option value="">27</option>
-                    <option value="">28</option>
-                    <option value="">29</option>
-                    <option value="">30</option>
-                    <option value="">31</option>
-                    <option value="">32</option>
-                    <option value="">33</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="group-name">
-              <div class="left">
-                <div>group name</div>
-              </div>
-              <div class="right">
-                <select id="sport-select">
-                  <option value="" selected>Group Name</option>
-                  <option value="football">Group One</option>
-                  <option value="basketball">Group Two</option>
-                  <option value="baseball">Group Three</option>
-                  <option value="soccer">Group Four</option>
-                  <option value="tennis">Group Five</option>
-              </select>
-              </div>
-            </div>
-            <div class="ability">
-              <div class="left">
-                <div>ability level</div>
-              </div>
-              <div class="right">
-                <div class="star">★★★★☆</div>
-              </div>
-            </div>
-            <div class="gender">
-              <div class="left">
-                <div>gender</div>
-              </div>
-              <div class="right">
-                <div class="male" id="male">
-                  <svg id="circle" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="10" cy="10" r="9.5" stroke="#667c97"/>
-                    <circle class="second" cx="10" cy="10" r="4" fill="#667c97"/>
-                    </svg>
-                     Male
-                </div>
-                <div class="female" id="female">
-                  <svg id="circle" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="10" cy="10" r="9.5" stroke="#667c97"/>
-                    <circle class="second" cx="10" cy="10" r="4" fill="#667c97"/>
-                    </svg> Female
-                </div>
-                <div class="both" id="both">
-                  <svg id="circle" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="10" cy="10" r="9.5" stroke="#667c97"/>
-                    <circle class="second" cx="10" cy="10" r="4" fill="#667c97"/>
-                    </svg> Both
-                </div>
-              </div>
-            </div>
-
-            <div class="message-box">
-              <textarea name="" id="" placeholder="write your post here..."></textarea>
-            </div>
-  
-            <button class="submit-btn">submit your post</button>
-          </div>
-          
           <!-- ! Partner WIth Me -->
 
           <div class="post-input" id="partnerMe">
@@ -250,7 +189,7 @@
                   <option value="baseball">Baseball</option>
                   <option value="soccer">Soccer</option>
                   <option value="tennis">Tennis</option>
-              </select>
+                </select>
               </div>
             </div>
             <div class="my-age">
@@ -267,9 +206,7 @@
                     <option value="">17</option>
                   </select>
                 </div>
-                <div class="center">
-                  to
-                </div>
+                <div class="center">to</div>
                 <div class="right">
                   <select name="" id="">
                     <option value="">25</option>
@@ -297,7 +234,7 @@
                   <option value="baseball">Group Three</option>
                   <option value="soccer">Group Four</option>
                   <option value="tennis">Group Five</option>
-              </select>
+                </select>
               </div>
             </div>
 
@@ -329,36 +266,79 @@
               </div>
               <div class="right">
                 <div class="male" id="male">
-                  <svg id="circle" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="10" cy="10" r="9.5" stroke="#667c97"/>
-                    <circle class="second" cx="10" cy="10" r="4" fill="#667c97"/>
-                    </svg>
-                     Male
+                  <svg
+                    id="circle"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="10" cy="10" r="9.5" stroke="#667c97" />
+                    <circle
+                      class="second"
+                      cx="10"
+                      cy="10"
+                      r="4"
+                      fill="#667c97"
+                    />
+                  </svg>
+                  Male
                 </div>
                 <div class="female" id="female">
-                  <svg id="circle" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="10" cy="10" r="9.5" stroke="#667c97"/>
-                    <circle class="second" cx="10" cy="10" r="4" fill="#667c97"/>
-                    </svg> Female
+                  <svg
+                    id="circle"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="10" cy="10" r="9.5" stroke="#667c97" />
+                    <circle
+                      class="second"
+                      cx="10"
+                      cy="10"
+                      r="4"
+                      fill="#667c97"
+                    />
+                  </svg>
+                  Female
                 </div>
                 <div class="both" id="both">
-                  <svg id="circle" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="10" cy="10" r="9.5" stroke="#667c97"/>
-                    <circle class="second" cx="10" cy="10" r="4" fill="#667c97"/>
-                    </svg> Both
+                  <svg
+                    id="circle"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="10" cy="10" r="9.5" stroke="#667c97" />
+                    <circle
+                      class="second"
+                      cx="10"
+                      cy="10"
+                      r="4"
+                      fill="#667c97"
+                    />
+                  </svg>
+                  Both
                 </div>
               </div>
             </div>
 
             <div class="message-box">
-              <textarea name="" id="" placeholder="write your post here..."></textarea>
+              <textarea
+                name=""
+                id=""
+                placeholder="write your post here..."
+              ></textarea>
             </div>
-  
+
             <button class="submit-btn">submit your post</button>
           </div>
-
-
-
+         </div>
         </div>
 
         <!--todo   MENU-BAR-SECTION  -->
@@ -481,21 +461,19 @@
       });
 
       let joinBtn = document.getElementById("joinBtn");
-      let gameBtn = document.getElementById("gameBtn");
+     
       let partnerBtn = document.getElementById("partnerBtn");
 
-      let wantToJoin = document.getElementById('wantToJoin');
-      let gameWanted = document.getElementById('gameWanted');
-      let partnerMe = document.getElementById('partnerMe');
+      let wantToJoin = document.getElementById("wantToJoin");
+      let partnerMe = document.getElementById("partnerMe");
 
-      let btnItems = [joinBtn, gameBtn, partnerBtn];
+      let btnItems = [joinBtn,  partnerBtn];
 
       btnItems.forEach((item) => {
         if (item) {
           item.addEventListener("click", () => {
             btnItems.forEach((removeClass) => {
               removeClass.classList.remove("activeBtn");
-              
             });
 
             item.classList.add("activeBtn");
@@ -503,34 +481,23 @@
         }
       });
 
-      joinBtn.addEventListener('click', ()=>{
+      joinBtn.addEventListener("click", () => {
         partnerMe.style.display = "none";
-        gameWanted.style.display = "none";
 
         wantToJoin.style.display = "block";
-      })
+      });
 
-      gameBtn.addEventListener('click', ()=>{
-        partnerMe.style.display = "none";
+
+      partnerBtn.addEventListener("click", () => {
         wantToJoin.style.display = "none";
-
-        gameWanted.style.display = "block"
-      })
-
-      partnerBtn.addEventListener('click', ()=>{
-        wantToJoin.style.display = "none";
-        gameWanted.style.display = "none";
-        
         partnerMe.style.display = "block";
-      })
+      });
 
+      let male = document.querySelectorAll(".male");
+      let female = document.querySelectorAll(".female");
+      let both = document.querySelectorAll(".both");
 
-
-      let male = document.getElementById("male");
-      let female = document.getElementById("female");
-      let both = document.getElementById("both");
-
-      let gender = [male, female, both];
+      let gender = [...male, ...female, ...both];
 
       gender.forEach((item) => {
         if (item) {
@@ -543,17 +510,6 @@
           });
         }
       });
-
-
-      
-
-
-
-
-
-      
-
-
     </script>
   </body>
 </html>
