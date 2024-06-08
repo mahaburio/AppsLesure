@@ -20,6 +20,11 @@ barItem.forEach((barMenu) => {
 
 // todo== FROM INDEX.HTML PAGE ====?
 
+homeBar.addEventListener('click',()=>{
+  window.location.href = "./html/timeline.html"
+})
+
+
 menuBar.addEventListener('click',()=>{
   window.location.href = "./html/profile-menu.html"
 })
@@ -37,6 +42,11 @@ messageBoardBar.addEventListener('click',()=>{
 })
 
 // todo== FROM OTHERS PAGE ====?
+
+
+homeBar.addEventListener('click',()=>{
+  window.location.href = "../html/timeline.html"
+})
 
 menuBar.addEventListener('click',()=>{
   window.location.href = "../html/profile-menu.html"

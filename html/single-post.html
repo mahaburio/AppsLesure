@@ -35,146 +35,123 @@
           <p class="right"></p>
         </div>
 
-        <div class="single-post" id="createPost" >
-          <div class="head-of-section">
+        <div class="head-of-section">
+          <div class="single-post" id="createPost">
             <div class="post-item">
               <div class="item item1 activeItem" id="singleItem">single</div>
               <a href="../html/buddies.html">
                 <div class="item item2" id="buddiesItem">buddies</div>
               </a>
               <a href="../html/doubles.html">
-                <div class="item item3 " id="doublesItem">doubles</div>
+                <div class="item item3" id="doublesItem">doubles</div>
               </a>
               <a href="../html/teams.html">
                 <div class="item item4" id="teamsItem">teams</div>
               </a>
             </div>
-          </div>
 
-          <div id="single">
-            
-            <button class="button game-btn" id="gameBtn">Game Wanted</button>
-            
-        
+            <div id="single">
+              <button class="button game-btn" id="gameBtn">Game Wanted</button>
 
-          <div class="post-input" id="wantToJoin">
-            <div class="choose-sport">
-              <div class="left">
-                <div>choose sport</div>
-              </div>
-              <div class="right">
-                <select id="sport-select">
-                  <option value="" selected>Select Sport</option>
-                  <option value="football">Football</option>
-                  <option value="basketball">Basketball</option>
-                  <option value="baseball">Baseball</option>
-                  <option value="soccer">Soccer</option>
-                  <option value="tennis">Tennis</option>
-                </select>
-              </div>
-            </div>
-            <div class="my-age">
-              <div class="left">
-                <div>My age</div>
-              </div>
-              <div class="right">
-                <select name="" id="">
-                  <option value="">13</option>
-                  <option value="">14</option>
-                  <option value="">15</option>
-                  <option value="">16</option>
-                  <option value="">17</option>
-                </select>
-              </div>
-            </div>
-            <div class="ability">
-              <div class="left">
-                <div>ability level</div>
-              </div>
-              <div class="right">
-                <div class="star">★★★★☆</div>
-              </div>
-            </div>
-            <div class="gender">
-              <div class="left">
-                <div>gender</div>
-              </div>
-              <div class="right">
-                <div class="male" id="male">
-                  <svg
-                    id="circle"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="10" cy="10" r="9.5" stroke="#667c97" />
-                    <circle
-                      class="second"
-                      cx="10"
-                      cy="10"
-                      r="4"
-                      fill="#667c97"
-                    />
-                  </svg>
-                  Male
+              <div class="post-input" id="wantToJoin">
+                <div class="choose-sport">
+                  <div class="left">
+                    <div>choose sport</div>
+                  </div>
+                  <div class="right">
+                    <select id="sport-select">
+                      <option value="" selected>Select Sport</option>
+                      <option value="football">Football</option>
+                      <option value="basketball">Basketball</option>
+                      <option value="baseball">Baseball</option>
+                      <option value="soccer">Soccer</option>
+                      <option value="tennis">Tennis</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="female" id="female">
-                  <svg
-                    id="circle"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="10" cy="10" r="9.5" stroke="#667c97" />
-                    <circle
-                      class="second"
-                      cx="10"
-                      cy="10"
-                      r="4"
-                      fill="#667c97"
-                    />
-                  </svg>
-                  Female
+                <div class="my-age">
+                  <div class="left">
+                    <div>My age</div>
+                  </div>
+                  <div class="right">
+                    <select name="" class="singleAge"></select>
+                  </div>
                 </div>
-                <div class="both" id="both">
-                  <svg
-                    id="circle"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="10" cy="10" r="9.5" stroke="#667c97" />
-                    <circle
-                      class="second"
-                      cx="10"
-                      cy="10"
-                      r="4"
-                      fill="#667c97"
-                    />
-                  </svg>
-                  Both
+                <div class="ability">
+                  <div class="left">
+                    <div>ability level</div>
+                  </div>
+                  <div class="right">
+                    <div class="star-rating">
+                      <div class="star"><span>&#9734</span></div>
+                      <div class="star"><span>&#9734</span></div>
+                      <div class="star"><span>&#9734</span></div>
+                      <div class="star"><span>&#9734</span></div>
+                      <div class="star"><span>&#9734</span></div>
+                    </div>
+                  </div>
                 </div>
+                <div class="gender">
+                  <div class="left">
+                    <div>gender</div>
+                  </div>
+                  <div class="right">
+                    <div class="male" id="male">
+                      <svg
+                        id="circle"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="10" cy="10" r="9.5" stroke="#667c97" />
+                        <circle
+                          class="second"
+                          cx="10"
+                          cy="10"
+                          r="4"
+                          fill="#667c97"
+                        />
+                      </svg>
+                      Male
+                    </div>
+                    <div class="female" id="female">
+                      <svg
+                        id="circle"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="10" cy="10" r="9.5" stroke="#667c97" />
+                        <circle
+                          class="second"
+                          cx="10"
+                          cy="10"
+                          r="4"
+                          fill="#667c97"
+                        />
+                      </svg>
+                      Female
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div class="message-box">
+                  <textarea
+                    name=""
+                    id=""
+                    placeholder="write your post here..."
+                  ></textarea>
+                </div>
+
+                <button class="submit-btn">submit your post</button>
               </div>
             </div>
-
-            <div class="message-box">
-              <textarea
-                name=""
-                id=""
-                placeholder="write your post here..."
-              ></textarea>
-            </div>
-
-            <button class="submit-btn">submit your post</button>
           </div>
-          </div>
-            
         </div>
 
         <!--todo   MENU-BAR-SECTION  -->
@@ -275,44 +252,7 @@
     <!--! ======= CDN-> Jquery, Swiper JS, Bootstrap JS, Raw JS ======= -->
 
     <script src="../js/menubar.js"></script>
-
-    <script>
-      let singleItem = document.getElementById("singleItem");
-      let buddiesItem = document.getElementById("buddiesItem");
-      let doublesItem = document.getElementById("doublesItem");
-      let teamsItem = document.getElementById("teamsItem");
-
-      let postItem = [singleItem, buddiesItem, doublesItem, teamsItem];
-
-      postItem.forEach((item) => {
-        if (item) {
-          item.addEventListener("click", () => {
-            postItem.forEach((removeClass) => {
-              removeClass.classList.remove("activeItem");
-            });
-
-            item.classList.add("activeItem");
-          });
-        }
-      });
-
-      let male = document.querySelectorAll(".male");
-      let female = document.querySelectorAll(".female");
-      let both = document.querySelectorAll(".both");
-
-      let gender = [...male, ...female, ...both];
-
-      gender.forEach((item) => {
-        if (item) {
-          item.addEventListener("click", () => {
-            gender.forEach((removeClass) => {
-              removeClass.classList.remove("selectGender");
-            });
-
-            item.classList.add("selectGender");
-          });
-        }
-      });
-    </script>
+    <script src="../js/star-gender-item.js"></script>
+    <script src="../js/single-post.js"></script>
   </body>
 </html>

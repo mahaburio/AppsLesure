@@ -38,9 +38,6 @@ body {
   --fs-twelve: 12px;
 }
 
-p {
-  margin: 0;
-}
 
 .profile-section {
   margin: 0px 12px;
@@ -765,7 +762,7 @@ p {
 
 .see-all-btn {
   width: 100%;
-  height: 32px;
+  height: 38px;
   text-transform: capitalize;
   background-color: var(--button-bg);
   border-radius: 4px;
@@ -939,19 +936,19 @@ p {
 /* ! --> FOR GALLERY HTML SECTION  --> */
 
 .head-of-section {
-  margin: 0px 10px !important;
+  margin: 0px 12px !important;
 }
 
 .back-btn-section {
   display: flex;
-  height: 40px;
+  height: 45px;
   align-items: center;
   border-bottom: 1px solid var(--border-color);
   margin-bottom: 10px;
   position: sticky;
   z-index: 777;
   top: 0;
-  padding: 0px 5px;
+  padding: 0px 10px;
   background-color: var(--white-color);
 }
 
@@ -1415,7 +1412,7 @@ p {
   padding-top: 5px;
 }
 
-.first-content .read-more {
+.read-more {
   color: var(--primary-color) !important;
   cursor: pointer;
 }
@@ -1427,7 +1424,6 @@ p {
 .post .comment {
   display: flex;
   align-items: center;
-  margin-top: 8px;
   padding-top: 0px;
   padding-left: 35px;
   margin-right: 0;
@@ -1479,7 +1475,7 @@ p {
 /* todo --> MENU-BAR-SECTION   --> */
 
 .menu-section {
-  margin-top: 25px;
+  margin-top: 15px;
   padding-bottom: 5px;
   position: sticky !important;
   bottom: 0px !important;
@@ -2145,6 +2141,7 @@ p {
   margin-right: 10px;
   align-items: center;
   justify-content: center;
+  margin-bottom: 0;
 }
 
 #profileHead .setting,
@@ -2155,6 +2152,7 @@ p {
   background-color: #f0f0f0;
   text-align: center;
   line-height: 22px;
+  margin: 0;
 }
 
 #profileHead .setting:hover svg path,
@@ -2387,6 +2385,7 @@ p {
   width: 20%;
   gap: 0px;
   margin-right: 10px;
+  line-height: 45px;
   align-items: center;
   justify-content: flex-end;
 }
@@ -2563,9 +2562,6 @@ p {
 }
 
 /* ! ********** FOR MY CHAT PAGE ******** */
-
-#chatMenu {
-}
 
 #chatMenu a {
   text-decoration: none;
@@ -2871,7 +2867,7 @@ p {
 #playersModal .modal-content .modal-header {
   border: none;
   border-bottom: 1px solid var(--border-color);
-  padding: 10px 12px;
+  padding: 15px 15px;
 }
 
 #playersModal .modal-content {
@@ -2888,7 +2884,8 @@ p {
 #playersModal .modal-content .modal-header .header-title {
   color: var(--text-color);
   font-weight: bold;
-
+  font-size: 20px;
+  margin: 0;
   text-transform: capitalize;
 }
 
@@ -3129,17 +3126,28 @@ p {
   border-color: transparent;
 }
 
-/* todo ==== SHARE-MODAL SECTION ==== --> */
+/* todo ==== SHOW-INTEREST MODAL SECTION ==== --> */
+
 
 #showInterestModal .modal-content {
   border-radius: 6px;
+ 
 }
 
 #showInterestModal .modal-content .modal-header {
   border: none;
-  padding: 5px 12px;
+  padding: 15px 15px;
   border-bottom: 1px solid var(--border-color);
 }
+
+#showInterestModal .modal-content .modal-header .header-title{
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  text-transform: capitalize;
+}
+
 
 #showInterestModal .modal-content .cancelBtn svg path {
   fill: var(--alt-color);
@@ -3149,13 +3157,23 @@ p {
   fill: var(--secondary-color);
 }
 
+#showInterestModal .modal-body{
+  
+}
+
 #showInterestModal .modal-body .box {
   padding: 10px;
   height: auto;
   display: flex;
   justify-content: space-around;
-
+  box-shadow: 0px 0px 5px #1a365756;
+  margin-top: 15px;
+  background-color: var(--white-color);
   border-radius: 6px !important;
+  -webkit-border-radius: 6px !important;
+  -moz-border-radius: 6px !important;
+  -ms-border-radius: 6px !important;
+  -o-border-radius: 6px !important;
 }
 
 #showInterestModal .modal-body .box:nth-child(1) {
@@ -3206,7 +3224,7 @@ p {
   border: 1px solid var(--border-color);
   transition: 0.3s;
   position: relative;
-  top: -5px;
+  top: 0px;
   font-weight: 500;
   color: var(--alt-color);
 }
@@ -3316,6 +3334,14 @@ p {
 }
 
 /* ! ********** FOR MESSAGE BOARD PAGE ******** */
+
+.message-board-head .back-btn-section .create-post{
+  padding-right: 15px;
+}
+
+.message-board-head .back-btn-section .create-post svg path{
+  fill: var(--alt-color);
+}
 
 .message-board-head .dropdown-list {
   background-color: var(--white-color);
@@ -3493,9 +3519,9 @@ p {
   line-height: 25px;
   border-radius: 50%;
   font-size: 18px;
-  font-weight: 500;
   cursor: pointer;
   transition: 0.1s;
+  overflow: hidden;
   -webkit-transition: 0.1s;
   -moz-transition: 0.1s;
   -ms-transition: 0.1s;
@@ -3507,11 +3533,12 @@ p {
 }
 
 #messageBoard .card-section .box .foots .left .circle svg path {
-  stroke: var(--primary-color);
+  fill: var(--primary-color);
 }
 
 #messageBoard .card-section .box .foots .right .circle svg path {
-  stroke: var(--alt-color);
+  stroke: transparent;
+  fill: var(--alt-color);
   transition: 0.1s;
   -webkit-transition: 0.1s;
   -moz-transition: 0.1s;
@@ -3523,10 +3550,30 @@ p {
   stroke: var(--primary-color);
 }
 
+
+
 #messageBoard .card-section .box .foots .right .circle .delete-icon path {
   stroke: transparent;
   fill: var(--alt-color);
 }
+
+#messageBoard .card-section .box .foots .right .circle .report path {
+  fill: var(--alt-color);
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+}
+
+#messageBoard .card-section .box .foots .circle i{
+  font-size: 20px;
+  font-weight: 800;
+  position: relative;
+  top: 3px;
+  color: var(--alt-color);
+}
+
 
 #messageBoard .card-section .box .foots .right .circle .delete-icon:hover path {
   fill: var(--primary-color);
@@ -3560,16 +3607,13 @@ p {
  * 
  */
 
+
+ 
 #createPost {
-  min-height: 100vh;
-  padding: 10px;
+  min-height: 85vh;
   padding-top: 0;
 }
 
-#createPost .head-of-section {
-  padding: 0;
-  margin: 0 !important;
-}
 
 #createPost .post-item {
   display: flex;
@@ -3747,12 +3791,15 @@ p {
   margin-top: 15px;
 }
 
+
+
 #createPost .post-input .my-age .right {
   width: 60%;
 }
 
 #createPost .post-input .my-age .right select {
   width: 35%;
+
   padding: 5px;
   padding-right: 10px;
   border-radius: 4px;
@@ -3777,23 +3824,30 @@ p {
   align-items: center;
 }
 
-#createPost .post-input .ability .right .star {
+#createPost .post-input .ability .right .star-rating{
+  display: flex;
+}
+
+#createPost .post-input .ability .right .star-rating .star {
   color: var(--rating-color);
   font-size: 25px;
   padding: 0;
   margin: 0;
+  cursor: pointer;
 }
 
 #createPost .post-input .gender {
   margin-top: 10px;
   display: flex;
+
 }
+
 
 #createPost .post-input .gender .right {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 60%;
+  gap: 10px;
 }
 
 #createPost .post-input .gender .right,
@@ -3810,6 +3864,10 @@ p {
   top: -1px;
 }
 
+#createPost .post-input .gender .right svg .second{
+  display: none;
+}
+
 .selectGender {
   color: var(--primary-color);
 }
@@ -3818,9 +3876,11 @@ p {
   stroke: var(--primary-color);
 }
 
-.selectGender svg .second {
+.selectGender  svg .second {
   fill: var(--primary-color);
+  display: block !important;
 }
+
 
 #createPost .message-box {
   margin-top: 15px;
@@ -4242,9 +4302,6 @@ p {
 
 /* ! ********** FOR HISTORY PAGE ******** */
 
-#historySec {
-}
-
 #historySec .history-head {
   display: flex;
   gap: 5px;
@@ -4278,6 +4335,7 @@ p {
   left: -1px;
   top: 1px;
 }
+
 #historySec .card-section .box {
   margin-top: 10px;
   border-radius: 7px;
@@ -4478,6 +4536,457 @@ p {
   color: var(--text-color);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ! ==== TIMELINE-SECTION ==== --> */
+
+#timeline{
+  min-height: 100vh;
+  margin: 0;
+  
+}
+
+#timeline .timeline-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 12px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+#timeline .timeline-header .left{
+  
+}
+
+#timeline .timeline-header .left .img{
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#timeline .timeline-header .left .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#timeline .timeline-header .center{
+  width: 85%;
+  padding: 0px 12px;
+}
+
+#timeline .timeline-header .center input{
+  border: 1px solid var(--border-color);
+  padding: 5px 15px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  outline: none;
+  width: 100%;
+  font-size: 15px;
+}
+
+#timeline .timeline-header .center input::placeholder{
+  color: var(--alt-color);
+  text-transform: capitalize;
+  font-weight: 500;
+
+}
+
+#timeline .timeline-header .right{
+  cursor: pointer;
+}
+
+#timeline .timeline-header .right .gallery svg path{
+  fill: var(--primary-color);
+}
+
+/* todo ==== TIMELINE-POST-SECTION ==== --> */
+
+#timeline .timeline-post{
+  border-bottom: 2px solid var(--border-color);
+}
+
+#timeline .timeline-post a{
+  text-decoration: none;
+}
+
+#timeline .timeline-post .post-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 12px;
+}
+
+#timeline .timeline-post .post-header .left{
+  display: flex;
+  gap: 10px;
+}
+
+#timeline .timeline-post .post-header .left .img{
+  height: 55px;
+  width: 55px;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  
+}
+
+#timeline .timeline-post .post-header .left .img img{
+  height: 100%;
+  width: 100%;
+}
+
+#timeline .timeline-post .post-header .left .user{
+  line-height: 20px;
+}
+
+#timeline .timeline-post .post-header .left .user .name{
+  text-transform: capitalize;
+  font-size: 17px;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+#timeline .timeline-post .post-header .left .user .time{
+  font-size: 14px;
+  color: var(--alt-color);
+  text-transform: capitalize;
+}
+
+#timeline .timeline-post .post-header .right{
+  display: flex;
+  gap: 20px;
+}
+
+#timeline .timeline-post .post-content{
+  padding: 12px;
+  text-transform: capitalize;
+  color: var(--text-color);
+  font-size: 16px;
+  padding-top: 0;
+}
+
+#timeline .timeline-post .post-image{
+  height: 100%;
+  width: 100%;
+}
+
+#timeline .timeline-post .post-image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+#timeline .timeline-post .post-reaction{
+  padding: 10px 12px;
+
+}
+
+#timeline .timeline-post .post-reaction .reaction-count{
+  display: flex;
+  padding-bottom: 5px;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+}
+
+
+
+#timeline .timeline-post .reaction-count .left{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#timeline .timeline-post .reaction-count .left .icon{
+  display: flex;
+  align-items: center;
+}
+
+#timeline .timeline-post .reaction-count .left .icon .like{
+
+  z-index: 30;
+}
+
+#timeline .timeline-post .reaction-count .left .icon .love{
+  position: relative;
+  left: -3px;
+  z-index: 20;
+}
+
+#timeline .timeline-post .reaction-count .left .icon .emoji{
+  position: relative;
+  left: -6px;
+  z-index: 10;
+}
+
+
+#timeline .timeline-post .reaction-count .left .total-like{
+  font-size: 14px;
+  color: var(--alt-color);
+}
+
+#timeline .timeline-post .reaction-count .right{
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+#timeline .timeline-post .reaction-count .right .comments{
+  font-size: 14px;
+  color: var(--alt-color);
+  text-transform: capitalize;
+}
+
+#timeline .timeline-post .reaction-count .right .share{
+  font-size: 14px;
+  color: var(--alt-color);
+  text-transform: capitalize;
+}
+
+
+/* todo REACTION BUTTON */
+
+#timeline .timeline-post .reaction-btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+}
+
+#timeline .timeline-post .reaction-btn .text{
+  font-size: 14px;
+  color: var(--alt-color);
+  position: relative;
+  top: 1px;
+}
+
+#timeline .timeline-post .reaction-btn .left{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+
+#timeline .timeline-post .reaction-btn .left .icon svg path{
+  stroke: var(--alt-color);
+}
+
+#timeline .timeline-post .reaction-btn .center{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+
+#timeline .timeline-post .reaction-btn .right{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+
+/* todo **** TIMELINE HISTORY-POST  **** */
+
+#timeline .history-post{
+  
+}
+
+
+#timeline .history-post .post-content .title{
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+#timeline  .card-section{
+  padding: 10px 12px;
+}
+
+#timeline  .card-section .box {
+  border-radius: 7px;
+  background-color: #fff;
+  overflow: hidden;
+
+  box-shadow: 0px 0px 5px #1a365756;
+}
+
+#timeline  .card-section .box .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 5px #1a365756;
+
+  padding: 5px 10px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #f8f8f8;
+  border-radius: 26px;
+  margin: 10px;
+  margin-bottom: 0;
+
+  /* border: 1px solid #d8d8d877; */
+}
+
+#timeline  .card-section .box .body {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 10px;
+  text-align: center;
+  gap: 0px;
+  position: relative;
+  align-items: flex-end;
+}
+
+#timeline  .card-section .box .body .img {
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+#timeline  .card-section .box .body .img img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+#timeline  .card-section .box .group-icon svg {
+  position: relative;
+  top: 10px;
+}
+#timeline  .card-section .box .center {
+  line-height: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#timeline  .card-section .box .center .game-name {
+  text-transform: capitalize;
+  font-size: 15px;
+  color: var(--text-color);
+}
+
+#timeline  .card-section .box .body .center .score {
+  font-weight: bold;
+  font-size: 32px;
+  color: var(--text-color);
+  margin: 0;
+}
+
+#timeline  .card-section .box .body .center .line {
+  background-color: var(--border-color);
+  height: 70px;
+  width: 2px;
+}
+
+#timeline  .card-section .box .body .center .time {
+  text-transform: capitalize;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+#timeline  .card-section .box .circle {
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+  font-size: 14px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+#timeline  .card-section .box .body .name {
+  margin: 0;
+  line-height: 17px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+#timeline  .card-section .box .body .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#timeline  .card-section .box .body .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#timeline  .card-section .box .body .left .win-box {
+  height: 25px;
+  width: 25px;
+  background-color: #13ab06;
+  color: var(--white-color);
+  font-size: 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+#timeline  .card-section .box .body .right .lose-box {
+  height: 25px;
+  width: 25px;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  font-size: 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+  text-transform: uppercase;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+
+
+
+
+
 /* todo ==== RESPONSIVE-SECTION ==== --> */
 
 @media screen and (min-width: 576px) {
@@ -4490,7 +4999,6 @@ p {
 
   .profile-one {
     width: 432px !important;
-    margin: 0px 12px !important;
     position: relative;
   }
 
