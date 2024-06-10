@@ -979,20 +979,19 @@ body {
   cursor: pointer;
 }
 
-.back-btn:active {
+.back-btn:focus{
   background-color: var(--white-color);
-  border-radius: 4px;
 }
 
-.back-btn i {
-  padding-right: 5px;
-  font-size: 20px;
-  color: var(--alt-color);
+.back-btn svg path{
+  fill: var(--alt-color);
 }
 
-.back-btn:hover i {
-  color: var(--primary-color);
+.back-btn:focus svg path{
+  fill: var(--primary-color);
 }
+
+
 
 .back-btn-section .right svg {
   width: 25px;
@@ -2869,7 +2868,7 @@ body {
 
 /* todo ==== PLAYERS MODAL SECTION ==== --> */
 
-#playersModal .modal-content .modal-header {
+.modal-content .modal-header {
   border: none;
   border-bottom: 1px solid var(--border-color);
   padding: 15px 15px;
@@ -2883,15 +2882,15 @@ body {
   box-shadow: none !important;
   margin-top: 10px !important;
   border-radius: 4px !important;
-  /* border: none !important; */
 }
 
-#playersModal .modal-content .modal-header .header-title {
+.modal-content .modal-header .header-title {
   color: var(--text-color);
   font-weight: bold;
   font-size: 20px;
   margin: 0;
   text-transform: capitalize;
+  font-weight: 600;
 }
 
 #playersModal .modal-content .cancelBtn svg path {
@@ -3043,7 +3042,7 @@ body {
   padding: 10px 10px;
 }
 
-#deleteModal .modal-content .modal-header .header-title,
+/* #deleteModal .modal-content .modal-header .header-title,
 #reportModal .modal-content .modal-header .header-title,
 #interestAlertModal .modal-content .modal-header .header-title,
 #interestAlertModalTwo .modal-content .modal-header .header-title,
@@ -3052,7 +3051,7 @@ body {
   font-weight: bold;
   margin: 0;
   text-transform: capitalize;
-}
+} */
 
 #deleteModal .modal-body,
 #reportModal .modal-body,
@@ -3144,13 +3143,6 @@ body {
   border-bottom: 1px solid var(--border-color);
 }
 
-#showInterestModal .modal-content .modal-header .header-title {
-  color: var(--text-color);
-  font-weight: bold;
-  font-size: 20px;
-  margin: 0;
-  text-transform: capitalize;
-}
 
 #showInterestModal .modal-content .cancelBtn svg path {
   fill: var(--alt-color);
@@ -3843,7 +3835,7 @@ body {
   display: flex;
   align-items: center;
   width: 60%;
-  gap: 10px;
+  gap: 5px;
 }
 
 #createPost .post-input .gender .right,
@@ -3853,6 +3845,7 @@ body {
   color: var(--alt-color);
   font-weight: 500;
   cursor: pointer;
+  font-size: 15px;
 }
 
 #createPost .post-input .gender .right svg {
@@ -4655,6 +4648,13 @@ body {
 #timeline .timeline-post .post-header .right {
   display: flex;
   gap: 20px;
+
+}
+
+#timeline .timeline-post .post-header .right svg{
+  cursor: pointer;
+  height: 25px;
+
 }
 
 #timeline .timeline-post .post-content {
@@ -4959,20 +4959,6 @@ body {
 
 /* todo **** TIMELINE MENU MODAL  **** */
 
-#menuModal {
-}
-
-#menuModal .modal-content {
-}
-
-#menuModal .modal-header {
-  padding: 15px;
-}
-
-#menuModal .header-title {
-  font-size: 20px;
-  margin: 0;
-}
 
 #menuModal .modal-body {
   border: 1px solid var(--border-color);
@@ -5015,6 +5001,45 @@ body {
 #menuModal .modal-body a:last-child {
   border-bottom: none;
 }
+
+/* todo **** DEFENSE MODAL  **** */
+
+#defenseModal .modal-body{
+  padding: 0;
+  padding-bottom: 15px;
+}
+
+#defenseModal .box{
+  padding: 10px 15px;
+  padding-bottom: 5px;
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+#defenseModal .box .right .name{
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--text-color);
+}
+
+#defenseModal .box .right .details{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: var(--text-color);
+
+}
+
+#defenseModal .box svg{
+  position: relative;
+  top: 2px;
+}
+
+
+
+
+
 
 /* todo **** SPORTS SECTION  **** */
 
@@ -5392,6 +5417,82 @@ body {
 }
 
 
+/* todo ==== CONTACT-PAGE ==== --> */
+
+#contactPage{
+  min-height: 100vh;
+  padding-bottom: 10px;
+}
+
+#contactPage .head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+
+}
+
+#contactPage .head .img img{
+  height: 100%;
+  width: 150px;
+  
+}
+
+#contactPage .body{
+
+  margin-top: 20px;
+} 
+
+#contactPage .body .input-section input,#contactPage .body .input-section textarea{
+  width: 100%;
+  display: block;
+  padding: 12px 10px;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  font-size: 16px;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+#contactPage .body .input-section input::placeholder,
+#contactPage .body .input-section textarea::placeholder{
+  color: var(--alt-color);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+#contactPage .body .input-section textarea{
+  min-height: 120px;
+  max-height: 200px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+#contactPage .body .submit-btn{
+  width: 100%;
+  background-color: var(--primary-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 16px;
+  color: var(--white-color);
+  margin-top: 15px;
+  border: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+
+
 
 /* todo ==== RESPONSIVE-SECTION ==== --> */
 
@@ -5453,9 +5554,10 @@ body {
   #interestAlertModal .modal-content,
   #interestAlertModalTwo .modal-content,
   #sentModal .modal-content,
-  #menuModal .modal-content {
-    width: 415px;
-    left: 35px;
+  #menuModal .modal-content,
+  #defenseModal .modal-content {
+    width: 425px;
+    left: 30px;
   }
 }
 
