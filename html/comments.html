@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timeline</title>
+    <!--! ======= CDN-> Bootstrap CSS, Fant Icon, Swiper CSS, Raw CSS ======= -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <script src="https://kit.fontawesome.com/206993456b.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div id="headToFoot">
+      <div class="profile-one" id="forBackground">
+        <div class="back-btn-section">
+          <div class="left">
+            <a href="../html/timeline.html">
+              <button class="back-btn">
+                <svg
+                  width="12"
+                  height="18"
+                  viewBox="0 0 12 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.7043 0.418419C11.2467 0.976311 11.2467 1.88083 10.7043 2.43872L3.35305 10L10.7043 17.5613C11.2467 18.1192 11.2467 19.0237 10.7043 19.5816C10.1619 20.1395 9.2825 20.1395 8.7401 19.5816L0.406769 11.0102C-0.135625 10.4523 -0.135625 9.54774 0.406769 8.98985L8.7401 0.418419C9.2825 -0.139473 10.1619 -0.139473 10.7043 0.418419Z"
+                    fill="#667C97"
+                  />
+                </svg>
+              </button>
+            </a>
+          </div>
+          <div class="center">Comments</div>
+          <div class="right">
+            <svg
+              data-bs-toggle="modal"
+              data-bs-target="#menuModal"
+              width="6"
+              height="20"
+              viewBox="0 0 6 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="3"
+                cy="3"
+                r="3"
+                transform="rotate(90 3 3)"
+                fill="#667C97"
+              />
+              <circle
+                cx="3"
+                cy="12"
+                r="3"
+                transform="rotate(90 3 12)"
+                fill="#667C97"
+              />
+              <circle
+                cx="3"
+                cy="21"
+                r="3"
+                transform="rotate(90 3 21)"
+                fill="#667C97"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="head-of-section">
+          <div id="commentsPage">
+            <div class="head">
+              <div class="left">
+                <div class="reaction-count">
+                  <div class="left">
+                    <div class="icon">
+                      <svg
+                        class="like"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="8" cy="8" r="8" fill="#00ACEE" />
+                        <path
+                          d="M4.84869 11.8313H3.09807C2.86034 11.8313 2.6665 11.6338 2.6665 11.3903V6.68875C2.6665 6.44528 2.86034 6.24902 3.09807 6.24902H4.84869C5.08764 6.24902 5.28025 6.44653 5.28025 6.68875V11.3903C5.28147 11.6338 5.08764 11.8313 4.84869 11.8313Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M5.99146 6.45545C6.2816 6.39085 6.68512 6.26167 7.10084 5.98343C7.67625 5.59836 8.02126 5.09777 8.22363 4.70401C8.36626 4.42577 8.43575 4.11523 8.43575 3.80221V3.36373C8.47354 2.96376 8.81123 2.65943 9.19891 2.66688C9.57439 2.67433 9.89379 2.97494 9.93037 3.36373C9.94378 3.75998 9.93646 4.2146 9.8877 4.71395C9.83528 5.23938 9.7475 5.70643 9.64997 6.10764H12.5502C12.8172 6.10764 13.0781 6.23186 13.2232 6.46041C13.289 6.56476 13.3292 6.68028 13.3329 6.79704C13.3463 7.21067 12.9196 7.65164 12.3271 7.62928C12.7831 7.69263 13.1098 8.01932 13.1281 8.33482C13.1512 8.73231 12.688 9.21178 12.0467 9.13601C12.4917 9.18445 12.8184 9.51859 12.8404 9.8577C12.8684 10.2825 12.4222 10.7545 11.8285 10.6899C12.2991 10.6527 12.6794 11.0191 12.6843 11.4191C12.6868 11.5806 12.627 11.7396 12.5234 11.87C12.3759 12.0538 12.1455 12.1482 11.9126 12.1482H8.14926C7.97127 12.1482 7.79938 12.0874 7.65918 11.9743L7.38611 11.7532C7.24713 11.6402 7.07402 11.5793 6.89603 11.5793H6.02071L5.99146 6.45545Z"
+                          fill="white"
+                        />
+                      </svg>
+
+                      <svg
+                        class="love"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="8" cy="8" r="8" fill="#DD2E44" />
+                        <path
+                          d="M13.3332 6.49832C13.3332 4.87312 12.0157 3.55566 10.3908 3.55566C9.40437 3.55566 8.53392 4.04263 7.99984 4.78694C7.46576 4.04263 6.59531 3.55566 5.60916 3.55566C3.98396 3.55566 2.6665 4.87282 2.6665 6.49832C2.6665 6.72853 2.69573 6.95158 2.74583 7.16659C3.15436 9.70518 5.97684 12.3833 7.99984 13.1187C10.0225 12.3833 12.8453 9.70518 13.2533 7.16688C13.3039 6.95188 13.3332 6.72883 13.3332 6.49832Z"
+                          fill="white"
+                        />
+                      </svg>
+                      <svg
+                        class="emoji"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 8C16 12.4182 12.4182 16 8 16C3.58222 16 0 12.4182 0 8C0 3.58222 3.58222 0 8 0C12.4182 0 16 3.58222 16 8Z"
+                          fill="#FFCC4D"
+                        />
+                        <path
+                          d="M6.86948 7.02881C6.84281 6.96881 6.20326 5.56348 4.88859 5.56348C3.57437 5.56348 2.93437 6.96881 2.9077 7.02881C2.86681 7.12081 2.89348 7.22837 2.9717 7.29148C3.05037 7.35503 3.16148 7.35681 3.24281 7.2977C3.24859 7.2937 3.8037 6.89681 4.88859 6.89681C5.96681 6.89681 6.52148 7.28837 6.53392 7.29725C6.57304 7.32659 6.6197 7.34125 6.66637 7.34125C6.71526 7.34125 6.76459 7.32481 6.80459 7.29281C6.88415 7.2297 6.91037 7.12125 6.86948 7.02881Z"
+                          fill="#66471B"
+                        />
+                        <path
+                          d="M13.7778 6.00009C13.7778 7.59565 12.4844 8.88898 10.8889 8.88898C9.29333 8.88898 8 7.59565 8 6.00009C8 4.40454 9.29333 3.11121 10.8889 3.11121C12.4844 3.11121 13.7778 4.40454 13.7778 6.00009Z"
+                          fill="#F5F8FA"
+                        />
+                        <path
+                          d="M10.8892 7.11102C11.5028 7.11102 12.0003 6.61355 12.0003 5.99991C12.0003 5.38626 11.5028 4.88879 10.8892 4.88879C10.2755 4.88879 9.77808 5.38626 9.77808 5.99991C9.77808 6.61355 10.2755 7.11102 10.8892 7.11102Z"
+                          fill="#292F33"
+                        />
+                        <path
+                          d="M3.11133 9.44995C3.11133 11.2117 5.154 13.45 8.00022 13.45C10.8464 13.45 12.8891 11.2277 12.8891 9.44995C12.8891 9.44995 8.29666 10.6748 3.11133 9.44995Z"
+                          fill="#66471B"
+                        />
+                        <path
+                          d="M8.24238 10.4907L7.7575 10.4885C6.32816 10.4556 5.3335 10.2236 5.3335 10.2236V13.3174C5.3335 14.6507 6.22238 15.9841 8.00016 15.9841C9.77794 15.9841 10.6668 14.6507 10.6668 13.3174V10.2419C9.81261 10.417 8.98372 10.4827 8.24238 10.4907Z"
+                          fill="#DD2E44"
+                        />
+                        <path
+                          d="M7.99975 14.1528C8.13352 14.1528 8.24197 14.0443 8.24197 13.9105V10.491L7.75708 10.4888V13.9105C7.75752 14.0443 7.86597 14.1528 7.99975 14.1528Z"
+                          fill="#A0041E"
+                        />
+                      </svg>
+                      <a href="../html/comments.html" class="total-like"
+                        >Noman and others 324
+                        <svg
+                          class="ms-1"
+                          width="10"
+                          height="17"
+                          viewBox="0 0 12 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M0.406796 19.5816C-0.135599 19.0237 -0.135599 18.1192 0.406796 17.5613L7.75804 10L0.406796 2.43872C-0.135599 1.88083 -0.135599 0.976311 0.406796 0.418419C0.949191 -0.139475 1.82859 -0.139475 2.37098 0.418419L10.7043 8.98985C11.2467 9.54774 11.2467 10.4523 10.7043 11.0102L2.37098 19.5816C1.82859 20.1395 0.949191 20.1395 0.406796 19.5816Z"
+                            fill="#667C97"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <svg
+                  width="26"
+                  height="22"
+                  viewBox="0 0 26 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.65156 20.3317H1.91992C1.41318 20.3317 1 19.9151 1 19.4015V9.48418C1 8.97063 1.41318 8.55664 1.91992 8.55664H5.65156C6.1609 8.55664 6.57148 8.97325 6.57148 9.48418V19.4015C6.57408 19.9151 6.1609 20.3317 5.65156 20.3317Z"
+                    stroke="#667C97"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M9.35034 8.99179C9.96882 8.85554 10.829 8.58304 11.7151 7.99612C12.9417 7.18387 13.6771 6.12795 14.1084 5.29735C14.4125 4.71044 14.5606 4.05539 14.5606 3.39511V2.4702C14.6412 1.6265 15.361 0.984562 16.1874 1.00028C16.9877 1.016 17.6686 1.65008 17.7465 2.4702C17.7751 3.30603 17.7595 4.26501 17.6556 5.31831C17.5438 6.42664 17.3567 7.41183 17.1489 8.25814H23.331C23.9001 8.25814 24.4562 8.52016 24.7655 9.00227C24.9058 9.22236 24.9915 9.46604 24.9993 9.71233C25.0279 10.5848 24.1184 11.515 22.8555 11.4678C23.8274 11.6015 24.5238 12.2906 24.5628 12.9561C24.6121 13.7945 23.6247 14.8059 22.2578 14.6461C23.2063 14.7483 23.9027 15.4531 23.9495 16.1684C24.0093 17.0645 23.0582 18.0602 21.7926 17.9239C22.7957 17.8453 23.6065 18.6183 23.6169 19.462C23.6221 19.8026 23.4947 20.138 23.2738 20.4131C22.9594 20.8009 22.4683 21 21.9719 21H13.9499C13.5705 21 13.2041 20.8716 12.9053 20.6332L12.3232 20.1668C12.0269 19.9284 11.6579 19.8 11.2785 19.8H9.41271L9.35034 8.99179Z"
+                    stroke="#667C97"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <ul>
+                <li id="dropdown">
+                  Most Relevent <i class="fa fa-chevron-down"></i>
+
+                  <ul class="sublist" id="subList">
+                    <li>Most Favourite</li>
+                    <li>Most Recent</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+
+
+            <div class="all-comments" id="commentsContainer">
+              <div class="comment-box">
+                <div class="left">
+                  <div class="img">
+                    <img src="../assets/person.svg" alt="" />
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="box">
+                    <div class="name">self defense tip</div>
+                    <div class="details">
+                      Lorem ipsum dolor sit amet lorem, and. Lorem ipsum dolor
+                      sit amet, and. Lorem ipsum dolor sit consecte.
+                    </div>
+                  </div>
+
+                  <div class="reply-section">
+                    <div class="time">2h</div>
+                    <div class="like">like</div>
+                    <div class="reply">reply</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="comment-box">
+                <div class="left">
+                  <div class="img">
+                    <img src="../assets/taylor.png" alt="" />
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="box">
+                    <div class="name">self defense tip</div>
+                    <div class="details">
+                      Lorem ipsum dolor sit amet lorem, and. Lorem ipsum dolor
+                      sit amet, and. Lorem ipsum dolor sit consecte.
+                    </div>
+                  </div>
+
+                  <div class="reply-section">
+                    <div class="time">2h</div>
+                    <div class="like">like</div>
+                    <div class="reply">reply</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="comment-box">
+                <div class="left">
+                  <div class="img">
+                    <img src="../assets/sallyGreen.png" alt="" />
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="box">
+                    <div class="name">self defense tip</div>
+                    <div class="details">
+                      Lorem ipsum dolor sit amet lorem, and. Lorem ipsum dolor
+                      sit amet, and. Lorem ipsum dolor sit consecte.
+                    </div>
+                  </div>
+
+                  <div class="reply-section">
+                    <div class="time">2h</div>
+                    <div class="like">like</div>
+                    <div class="reply">reply</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="comment-box">
+                <div class="left">
+                  <div class="img">
+                    <img src="../assets/mikeBekar.png" alt="" />
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="box">
+                    <div class="name">self defense tip</div>
+                    <div class="details">
+                      Lorem ipsum dolor sit amet lorem, and. Lorem ipsum dolor
+                      sit amet, and. Lorem ipsum dolor sit consecte.
+                    </div>
+                  </div>
+
+                  <div class="reply-section">
+                    <div class="time">2h</div>
+                    <div class="like">like</div>
+                    <div class="reply">reply</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="comment-box">
+                <div class="left">
+                  <div class="img">
+                    <img src="../assets/paulsmith.png" alt="" />
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="box">
+                    <div class="name">self defense tip</div>
+                    <div class="details">
+                      Lorem ipsum dolor sit amet lorem, and. Lorem ipsum dolor
+                      sit amet, and. Lorem ipsum dolor sit consecte.
+                    </div>
+                  </div>
+
+                  <div class="reply-section">
+                    <div class="time">2h</div>
+                    <div class="like">like</div>
+                    <div class="reply">reply</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reply-box">
+                <div class="left">
+                  <div class="img">
+                    <img src="../assets/mattyJohnson.png" alt="" />
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="box">
+                    <div class="name">Mattey Johnson</div>
+                    <div class="details">
+                      Lorem ipsum dolor sit amet lorem, and. Lorem ipsum dolor.
+                    </div>
+                  </div>
+
+                  <div class="reply-section">
+                    <div class="time">2h</div>
+                    <div class="like">like</div>
+                    <div class="reply">reply</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment-btn">
+          <textarea autofocus
+            autocomplete="off"
+            class="comment-input"
+            name=""
+            id="commentInput"
+            placeholder="Write a comment"
+          ></textarea>
+          <div class="hide-box" id="hideBox">
+            <div class="left">
+              <div>
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  height="20px"
+                  width="20px"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12,8c-3.309,0-6,2.691-6,6s2.691,6,6,6,6-2.691,6-6-2.691-6-6-6Zm0,11c-2.757,0-5-2.243-5-5s2.243-5,5-5,5,2.243,5,5-2.243,5-5,5Zm7.5-15h-1.25l-2.25-3c-.47-.626-1.218-1-2-1h-4c-.782,0-1.53,.374-2,1l-2.25,3h-1.25C2.019,4,0,6.019,0,8.5v11c0,2.481,2.019,4.5,4.5,4.5h15c2.481,0,4.5-2.019,4.5-4.5V8.5c0-2.481-2.019-4.5-4.5-4.5ZM8.8,1.6c.282-.376,.73-.6,1.2-.6h4c.47,0,.918,.224,1.2,.6l1.8,2.4H7l1.8-2.4Zm14.2,17.9c0,1.93-1.57,3.5-3.5,3.5H4.5c-1.93,0-3.5-1.57-3.5-3.5V8.5c0-1.93,1.57-3.5,3.5-3.5h15c1.93,0,3.5,1.57,3.5,3.5v11Z"
+                  />
+                </svg>
+              </div>
+
+              <div>
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  height="20px"
+                  width="20px"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="m19.5,2H4.5C2.019,2,0,4.019,0,6.5v11c0,2.481,2.019,4.5,4.5,4.5h15c2.481,0,4.5-2.019,4.5-4.5V6.5c0-2.481-2.019-4.5-4.5-4.5Zm3.5,15.5c0,1.93-1.57,3.5-3.5,3.5H4.5c-1.93,0-3.5-1.57-3.5-3.5V6.5c0-1.93,1.57-3.5,3.5-3.5h15c1.93,0,3.5,1.57,3.5,3.5v11ZM13,7.5v9c0,.276-.224.5-.5.5s-.5-.224-.5-.5V7.5c0-.276.224-.5.5-.5s.5.224.5.5Zm7,0c0,.276-.224.5-.5.5h-2.5c-.552,0-1,.449-1,1v2h2.5c.276,0,.5.224.5.5s-.224.5-.5.5h-2.5v4.5c0,.276-.224.5-.5.5s-.5-.224-.5-.5v-7.5c0-1.103.897-2,2-2h2.5c.276,0,.5.224.5.5Zm-15,2.5v4c0,1.103.897,2,2,2s2-.897,2-2v-.5c0-.276-.225-.5-.5-.5h-1c-.276,0-.5-.224-.5-.5s.224-.5.5-.5h1c.827,0,1.5.673,1.5,1.5v.5c0,1.654-1.346,3-3,3s-3-1.346-3-3v-4c0-1.654,1.346-3,3-3s3,1.346,3,3c0,.276-.224.5-.5.5s-.5-.224-.5-.5c0-1.103-.897-2-2-2s-2,.897-2,2Z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12,24C5.383,24,0,18.617,0,12S5.383,0,12,0s12,5.383,12,12-5.383,12-12,12ZM12,1C5.935,1,1,5.935,1,12s4.935,11,11,11,11-4.935,11-11S18.065,1,12,1Zm0,18c-3.051,0-5.596-1.854-6.764-3.69-.331-.521-.316-1.16,.039-1.668,.353-.505,.943-.739,1.542-.606,.288,.063,.614,.156,.981,.262,1.028,.296,2.436,.702,4.197,.702,1.764,0,3.176-.407,4.206-.703,.367-.105,.693-.199,.979-.261,.604-.134,1.191,.101,1.543,.606,.355,.508,.37,1.147,.039,1.668h0c-1.168,1.836-3.713,3.69-6.764,3.69Zm-5.509-5c-.227,0-.357,.16-.396,.215-.045,.065-.181,.297-.015,.558,1.021,1.606,3.248,3.227,5.92,3.227s4.898-1.621,5.92-3.227h0c.166-.261,.03-.493-.015-.558-.045-.064-.213-.265-.51-.203-.268,.059-.573,.147-.917,.246-1.088,.312-2.578,.741-4.482,.742-1.902,0-3.389-.429-4.474-.741-.344-.099-.649-.188-.919-.247-.039-.009-.077-.012-.112-.012Zm2.509-4c0,.552-.448,1-1,1s-1-.448-1-1,.448-1,1-1,1,.448,1,1Zm7-1c-.552,0-1,.448-1,1s.448,1,1,1,1-.448,1-1-.448-1-1-1Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="right">
+              <div>
+                <svg
+                  id="sendButton"
+                  width="29"
+                  height="28"
+                  viewBox="0 0 27 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M25.5936 6.37206L11.5171 12.8173"
+                    stroke="#B5BCDC"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M25.5936 6.26085L12.0535 21.9254L11.5172 12.7061L4.58244 6.41643L25.5936 6.26085Z"
+                    stroke="#B5BCDC"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--! ======= CDN-> Jquery, Swiper JS, Bootstrap JS, Raw JS ======= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- <script src="../js/menubar.js"></script> -->
+    <script src="../js/comments.js"></script>
+  </body>
+</html>

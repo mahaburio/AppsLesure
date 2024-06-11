@@ -169,35 +169,99 @@ readMoreButtons.forEach((button) => {
     button.style.display = "none";
   });
 
-
   document.body.addEventListener("click", () => {
     moreText.style.display = "none";
     button.style.display = "inline";
   });
 });
 
-
-
-
 // todo== READ-MORE POST/COMMENT SECTION ====?
 
+const postsContainer = document.getElementById("postsContainer");
+const seeMoreBtn = document.getElementById("seeMoreBtn");
+let postCount = 0;
+let val = "mahabur"
 
-const seeMoreButton = document.getElementById("seeMoreBtn");
-const hiddenPosts = Array.from(document.querySelectorAll(".hidden-post"));
+function createPost() {
+  if (postCount >= 9) {
+    alert("Maximum post limit reached!");
+  }
 
-let postsToShow = 3;
+  const postDiv = document.createElement("div");
+  postDiv.classList.add("post");
+  postDiv.innerHTML = `
+  <div class="header">
+  <img src="../assets/post-person.svg" alt="Profile Picture" />
+  <div class="info">
+    <h2 class="name">James Smith</h2>
+    <p>Game: <span class="game-name">Football</span></p>
+    <p class="team-name">Side Side VS Jessica West</p>
+    <div class="stars">
+      <span class="star">★★★★★</span>
+      <span class="breaker">|</span>
+      <span class="weeks">2 week ago</span>
+    </div>
+  </div>
+  <span class="date">Nov 09, 2024</span>
+</div>
+<div class="first-content">
+<p>
+  Lorem Ipsum is simply dummy text of the printing and
+  typesetting industry. Lorem Ipsum has been the industry's
+  standard dummy text ever since the 1500s al over
+  <span id="readMore" class="read-more">...Read More</span
+  ><span class="more-text"
+    >It was popularised in the 1960s with the release of
+    Letrase. Lorem ipsum dolor sit amet consectetur
+    adipisicing elit. Facere, eaque.</span
+  >
+</p>
+</div>
+    <div class="comment">
+    <img src="../assets/post-person.svg" alt="Profile Picture" />
+    <h2 class="name">James Smith</h2>
+  </div>
+  <div class="comment-content">
+  <p>
+    Lorem Ipsum is simply dummy text of the printing &
+    typesetting industry<span
+      class="read-more"
+      id="readCommentMore"
+      >....Read More</span
+    >
+    <span class="more-text" id="moreCommentText">
+      It has survived not only five centuries, but also the
+      leap into electronic typesetting, remaining essentially
+      unchanged.</span
+    >
+  </p>
+</div>
+  `;
+  postsContainer.appendChild(postDiv);
 
-seeMoreButton.addEventListener("click", () => {
-  for (let i = 0; i < postsToShow; i++) {
-    if (hiddenPosts.length > 0) {
-      hiddenPosts.shift().classList.remove("hidden-post");
-    } else {
-      seeMoreButton.style.display = "block";
-      break;
-    }
+  const readMoreButtons = document.querySelectorAll(".read-more");
+
+  readMoreButtons.forEach((button) => {
+    const moreText = button.nextElementSibling;
+    moreText.style.display = "none";
+
+    button.addEventListener("click", (event) => {
+      event.stopPropagation();
+      moreText.style.display = "inline";
+      button.style.display = "none";
+    });
+
+    document.body.addEventListener("click", () => {
+      moreText.style.display = "none";
+      button.style.display = "inline";
+    });
+  });
+
+  postCount++;
+}
+
+seeMoreBtn.addEventListener("click", () => {
+  for (let i = 0; i < 3 && postCount < 9; i++) {
+    createPost();
   }
 });
-
-
-
-
