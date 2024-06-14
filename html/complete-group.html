@@ -22,10 +22,10 @@
 
   <body>
     <div id="headToFoot">
-      <div class="profile-one">
+      <div class="profile-one" id="forBackground">
         <div class="back-btn-section">
           <div class="left">
-            <a href="../index.html">
+            <a href="../html/chats.html">
               <button class="back-btn">
                 <svg width="12" height="18" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7043 0.418419C11.2467 0.976311 11.2467 1.88083 10.7043 2.43872L3.35305 10L10.7043 17.5613C11.2467 18.1192 11.2467 19.0237 10.7043 19.5816C10.1619 20.1395 9.2825 20.1395 8.7401 19.5816L0.406769 11.0102C-0.135625 10.4523 -0.135625 9.54774 0.406769 8.98985L8.7401 0.418419C9.2825 -0.139473 10.1619 -0.139473 10.7043 0.418419Z" fill="#667C97"/>
@@ -33,122 +33,152 @@
               </button>
             </a>
           </div>
-          <div class="center">Players</div>
+          <div class="center">complete your group</div>
           <div class="right"></div>
         </div>
+
         <div class="head-of-section">
-          <div class="" id="players">
-            <div class="all-players">
-              <div class="box">
-                <div class="left">
-                  <div class="border-part">
-                    <div class="img-part">
-                      <img src="../assets/person.svg" alt="" />
-                    </div>
-                  </div>
-                </div>
+          <!--todo   SPORTS-SECTION  -->
 
-                <div class="right">
-                  <h4 class="name">
-                    johan smith <span class="captain">Ⓒ</span>
-                  </h4>
-                  <span></span>
-                  <p class="join-time">Member since 2024</p>
-                </div>
+          <div id="completeGroup">
+            <div class="group-head">
+              <button class="buddies">buddies</button>
+              <button class="doubles activeBtn">doubles</button>
+              <button class="teams">teams</button>
+            </div>
+
+            <div class="search-bar">
+              <div class="input">
+                <input type="text" placeholder="enter team name" />
+                
               </div>
-              <div class="box">
-                <div class="left">
-                  <div class="border-part">
-                    <div class="img-part">
-                      <img src="../assets/mattyJohnson.png" alt="" />
-                    </div>
-                  </div>
-                </div>
+            </div>
 
-                <div class="right">
-                  <h4 class="name">johan smith</h4>
-                  <span></span>
-                  <p class="join-time">Member since 2024</p>
-                </div>
+
+
+            <div class="choose-sport">
+              <div class="left">
+                <div>choose sport</div>
               </div>
-              <div class="box">
-                <div class="left">
-                  <div class="border-part">
-                    <div class="img-part">
-                      <img src="../assets/sallyGreen.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="right">
-                  <h4 class="name">johan smith</h4>
-                  <span></span>
-                  <p class="join-time">Member since 2024</p>
-                </div>
+              <div class="right">
+                <select id="sport-select">
+                  <option value="" selected>Select Sport </option>
+                  <option value="football">Football</option>
+                  <option value="basketball">Basketball</option>
+                  <option value="baseball">Baseball</option>
+                  <option value="soccer">Soccer</option>
+                  <option value="tennis">Tennis</option>
+                </select>
               </div>
-              <div class="box">
-                <div class="left">
-                  <div class="border-part">
-                    <div class="img-part">
-                      <img src="../assets/mikeBekar.png" alt="" />
-                    </div>
-                  </div>
-                </div>
+            </div>
 
-                <div class="right">
-                  <h4 class="name">johan smith</h4>
-                  <span></span>
-                  <p class="join-time">Member since 2024</p>
-                </div>
+            <div class="group-image">
+              <div class="left">
+                <div>group image</div>
               </div>
-              <div class="box">
-                <div class="left">
-                  <div class="border-part">
-                    <div class="img-part">
-                      <img src="../assets/person.svg" alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="right">
-                  <h4 class="name">johan smith</h4>
-                  <span></span>
-                  <p class="join-time">Member since 2024</p>
-                </div>
+              <div class="right">
+                <a href="../html/profile-image.html"><button class="upload">upload</button></a>
               </div>
-              <div class="box">
-                <div class="left">
-                  <div class="border-part">
-                    <div class="img-part">
-                      <img src="../assets/paulsmith.png" alt="" />
-                    </div>
-                  </div>
-                </div>
+            </div>
 
-                <div class="right">
-                  <h4 class="name">johan smith</h4>
-                  <span></span>
-                  <p class="join-time">Member since 2024</p>
-                </div>
-              </div>
-              <div class="box">
-                <div class="left">
-                  <div class="border-part">
-                    <div class="img-part">
-                      <img src="../assets/person.svg" alt="" />
-                    </div>
+            <div class="add-players">
+              <div class="add">add players from my friends</div>
+              <div class="search-box">
+                <div class="search">
+                  <div class="input">
+                    <input type="text" placeholder="search friend" />
+                    <span class="search-icon"
+                      ><svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.8 8.09999C1.8 4.6206 4.6206 1.8 8.09999 1.8C11.5794 1.8 14.4 4.6206 14.4 8.09999C14.4 9.79784 13.7283 11.3388 12.6363 12.4717C12.6059 12.4952 12.5767 12.5208 12.5489 12.5486C12.521 12.5765 12.4954 12.6057 12.4719 12.6361C11.339 13.7283 9.79794 14.4 8.09999 14.4C4.6206 14.4 1.8 11.5794 1.8 8.09999ZM13.156 14.4286C11.7703 15.5371 10.0126 16.2 8.09999 16.2C3.62649 16.2 0 12.5735 0 8.09999C0 3.62649 3.62649 0 8.09999 0C12.5735 0 16.2 3.62649 16.2 8.09999C16.2 10.0124 15.5372 11.7701 14.4288 13.1558L17.7366 16.4636C18.0881 16.8151 18.0881 17.3849 17.7366 17.7364C17.3852 18.0879 16.8153 18.0879 16.4639 17.7364L13.156 14.4286Z"
+                          fill="#C8C8C8"
+                        />
+                      </svg>
+                    </span>
                   </div>
-                </div>
-
-                <div class="right">
-                  <h4 class="name">johan smith</h4>
-                  <span></span>
-                  <p class="join-time">Member since 2024</p>
                 </div>
               </div>
             </div>
+
+
+            <div class="players-box">
+              <div class="player">
+                <div class="left">
+                  <div class="img">
+                    <img src="../assets/person.svg" alt="">
+                  </div>
+                  <div class="name">Johan Smith</div>
+                </div>
+                <div class="right">
+                  <input type="checkbox" >
+                </div>
+              </div>
+
+              <div class="player">
+                <div class="left">
+                  <div class="img">
+                    <img src="../assets/person.svg" alt="">
+                  </div>
+                  <div class="name">Johan Smith</div>
+                </div>
+                <div class="right">
+                  <input type="checkbox" >
+                </div>
+              </div>
+
+              <div class="player">
+                <div class="left">
+                  <div class="img">
+                    <img src="../assets/person.svg" alt="">
+                  </div>
+                  <div class="name">Johan Smith</div>
+                </div>
+                <div class="right">
+                  <input type="checkbox" >
+                </div>
+              </div>
+
+              <div class="player">
+                <div class="left">
+                  <div class="img">
+                    <img src="../assets/person.svg" alt="">
+                  </div>
+                  <div class="name">Johan Smith</div>
+                </div>
+                <div class="right">
+                  <input type="checkbox" >
+                </div>
+              </div>
+
+              <div class="player">
+                <div class="left">
+                  <div class="img">
+                    <img src="../assets/person.svg" alt="">
+                  </div>
+                  <div class="name">Johan Smith</div>
+                </div>
+                <div class="right">
+                  <input type="checkbox" >
+                </div>
+              </div>
+            </div>
+
+            <button class="create-btn myBtn">create</button>
+
+            
           </div>
         </div>
+
+
+
 
         <!--todo   MENU-BAR-SECTION  -->
 
@@ -173,7 +203,7 @@
               </div>
               <div class="text">Home</div>
             </div>
-            <div class="chats bars" id="chatBar">
+            <div class="chats bars activeBar" id="chatBar">
               <div class="icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -242,12 +272,36 @@
             </div>
           </div>
         </div>
+
+
       </div>
     </div>
 
     <!--! ======= CDN-> Jquery, Swiper JS, Bootstrap JS, Raw JS ======= -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/chat.js"></script>
+
     <script src="../js/menubar.js"></script>
+
+    <script>
+
+      let buddies = document.querySelectorAll(".buddies");
+
+      let doubles = document.querySelectorAll(".doubles");
+      let teams = document.querySelectorAll(".teams");
+
+      let btnItems = [...buddies, ...doubles, ...teams];
+
+      btnItems.forEach((item) => {
+        if (item) {
+          item.addEventListener("click", () => {
+            btnItems.forEach((removeClass) => {
+              removeClass.classList.remove("activeBtn");
+            });
+
+            item.classList.add("activeBtn");
+          });
+        }
+      });
+    </script>
   </body>
 </html>

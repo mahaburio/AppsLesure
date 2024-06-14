@@ -22,14 +22,25 @@
 
   <body>
     <div id="headToFoot">
-      <div class="profile-one chat-sec">
+      <div class="profile-one">
         <div class="back-btn-section">
           <div class="left">
             <a href="../index.html">
               <button class="back-btn">
-                <svg width="12" height="18" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7043 0.418419C11.2467 0.976311 11.2467 1.88083 10.7043 2.43872L3.35305 10L10.7043 17.5613C11.2467 18.1192 11.2467 19.0237 10.7043 19.5816C10.1619 20.1395 9.2825 20.1395 8.7401 19.5816L0.406769 11.0102C-0.135625 10.4523 -0.135625 9.54774 0.406769 8.98985L8.7401 0.418419C9.2825 -0.139473 10.1619 -0.139473 10.7043 0.418419Z" fill="#667C97"/>
-                  </svg>
+                <svg
+                  width="12"
+                  height="18"
+                  viewBox="0 0 12 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.7043 0.418419C11.2467 0.976311 11.2467 1.88083 10.7043 2.43872L3.35305 10L10.7043 17.5613C11.2467 18.1192 11.2467 19.0237 10.7043 19.5816C10.1619 20.1395 9.2825 20.1395 8.7401 19.5816L0.406769 11.0102C-0.135625 10.4523 -0.135625 9.54774 0.406769 8.98985L8.7401 0.418419C9.2825 -0.139473 10.1619 -0.139473 10.7043 0.418419Z"
+                    fill="#667C97"
+                  />
+                </svg>
               </button>
             </a>
           </div>
@@ -67,8 +78,7 @@
           </div>
         </div>
         <div class="head-of-section">
-          <div class="follower-html" id="chatMenu">
-
+          <div class="" id="chatMenu">
             <!--todo ***** SEARCH-BAR-SECTION *****  -->
 
             <div class="search-bar">
@@ -95,25 +105,27 @@
 
             <!--todo ***** CREATE-GROUP-BUTTON *****  -->
 
-            <button class="create-group">
-              <div class="group-person-img">
-                <div class="img-box">
-                  <div class="img">
-                    <img src="../assets/group-person1.png" alt="" />
-                  </div>
-                  <div class="img">
-                    <img src="../assets/group-person2.png" alt="" />
-                  </div>
-                  <div class="img">
-                    <img src="../assets/friends.png" alt="" />
-                  </div>
-                  <div class="img">
-                    <img src="../assets/group-person4.png" alt="" />
+            <a href="../html/complete-group.html">
+              <button class="create-group">
+                <div class="group-person-img">
+                  <div class="img-box">
+                    <div class="img">
+                      <img src="../assets/group-person1.png" alt="" />
+                    </div>
+                    <div class="img">
+                      <img src="../assets/group-person2.png" alt="" />
+                    </div>
+                    <div class="img">
+                      <img src="../assets/friends.png" alt="" />
+                    </div>
+                    <div class="img">
+                      <img src="../assets/group-person4.png" alt="" />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="text">+ create a new chat group</div>
-            </button>
+                <div class="text">+ create a new chat group</div>
+              </button>
+            </a>
 
             <!--todo ***** CARD-SECTION (APPROVAL) *****  -->
 
@@ -180,26 +192,83 @@
             <div class="card-section doubleChat">
               <h4>double chat</h4>
               <div class="box">
-                <div class="head">
-                  <div class="left">
-                    <p>golf</p>
-                  </div>
-                  <div class="right">
-                    <p class="count">2</p>
-                  </div>
-                </div>
-                <div class="body">
-                  <div class="left">
-                    <div class="img-part">
-                      <div class="img">
-                        <img src="../assets/paulsmith.png" alt="" />
-                      </div>
-                      <p class="name">paul smith</p>
+                <a href="../html/chatroom-single.html">
+                  <div class="head">
+                    <div class="left">
+                      <p>golf</p>
+                    </div>
+                    <div class="right">
+                      <p class="count">2</p>
                     </div>
                   </div>
+                  <div class="body">
+                    <div class="left">
+                      <div class="img-part">
+                        <div class="img">
+                          <img src="../assets/paulsmith.png" alt="" />
+                        </div>
+                        <p class="name">paul smith</p>
+                      </div>
+                    </div>
+                </a>
                   <div class="right">
-                    <button class="userBtn" id="userBtn" data-bs-toggle="modal" data-bs-target="#playersModal">
-                      <i class="fa-solid fa-user-group"></i>
+                    <button
+                      class="userBtn"
+                      id="userBtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#playersModal"
+                    >
+                      <svg
+                        width="28"
+                        height="28"
+                        viewBox="0 0 27 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.70068 19.7693C7.70068 15.0112 11.5579 11.1539 16.3161 11.1539C21.0742 11.1539 24.9314 15.0112 24.9314 19.7693V20.3847H7.70068V19.7693Z"
+                          fill="#667C97"
+                        />
+                        <ellipse
+                          cx="16.3161"
+                          cy="5.61538"
+                          rx="4.78632"
+                          ry="4.61538"
+                          fill="#667C97"
+                        />
+                        <path
+                          d="M18.2308 21.8077H18.7308V21.3077V20.6923C18.7308 15.658 14.6497 11.5769 9.61538 11.5769C4.58109 11.5769 0.5 15.658 0.5 20.6923V21.3077V21.8077H1H18.2308Z"
+                          fill="#667C97"
+                          stroke="white"
+                        />
+                        <path
+                          d="M9.61542 11.6539C12.5177 11.6539 14.9017 9.38061 14.9017 6.53848C14.9017 3.69635 12.5177 1.4231 9.61542 1.4231C6.71316 1.4231 4.3291 3.69635 4.3291 6.53848C4.3291 9.38061 6.71316 11.6539 9.61542 11.6539Z"
+                          fill="#667C97"
+                          stroke="white"
+                        />
+                        <path
+                          d="M26.346 18.5384C26.346 21.8139 23.5871 24.5 20.1452 24.5C16.7033 24.5 13.9443 21.8139 13.9443 18.5384C13.9443 15.263 16.7033 12.5769 20.1452 12.5769C23.5871 12.5769 26.346 15.263 26.346 18.5384Z"
+                          fill="white"
+                          stroke="#667C97"
+                        />
+                        <rect
+                          x="19.188"
+                          y="14.8461"
+                          width="1.91453"
+                          height="7.38462"
+                          rx="0.957264"
+                          fill="#667C97"
+                        />
+                        <rect
+                          x="23.9741"
+                          y="17.6154"
+                          width="1.84615"
+                          height="7.65811"
+                          rx="0.923077"
+                          transform="rotate(90 23.9741 17.6154)"
+                          fill="#667C97"
+                        />
+                      </svg>
                       <p class="count">2</p>
                     </button>
                   </div>
@@ -214,7 +283,7 @@
               id="playersModal"
               aria-labelledby="exampleModalLabel"
               aria-hidden="true"
-             >
+              >
               <div
                 class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
               >
@@ -567,7 +636,57 @@
                       data-bs-toggle="modal"
                       data-bs-target="#playersModal"
                     >
-                      <i class="fa-solid fa-user-group"></i>
+                      <svg
+                        width="28"
+                        height="28"
+                        viewBox="0 0 27 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.70068 19.7693C7.70068 15.0112 11.5579 11.1539 16.3161 11.1539C21.0742 11.1539 24.9314 15.0112 24.9314 19.7693V20.3847H7.70068V19.7693Z"
+                          fill="#667C97"
+                        />
+                        <ellipse
+                          cx="16.3161"
+                          cy="5.61538"
+                          rx="4.78632"
+                          ry="4.61538"
+                          fill="#667C97"
+                        />
+                        <path
+                          d="M18.2308 21.8077H18.7308V21.3077V20.6923C18.7308 15.658 14.6497 11.5769 9.61538 11.5769C4.58109 11.5769 0.5 15.658 0.5 20.6923V21.3077V21.8077H1H18.2308Z"
+                          fill="#667C97"
+                          stroke="white"
+                        />
+                        <path
+                          d="M9.61542 11.6539C12.5177 11.6539 14.9017 9.38061 14.9017 6.53848C14.9017 3.69635 12.5177 1.4231 9.61542 1.4231C6.71316 1.4231 4.3291 3.69635 4.3291 6.53848C4.3291 9.38061 6.71316 11.6539 9.61542 11.6539Z"
+                          fill="#667C97"
+                          stroke="white"
+                        />
+                        <path
+                          d="M26.346 18.5384C26.346 21.8139 23.5871 24.5 20.1452 24.5C16.7033 24.5 13.9443 21.8139 13.9443 18.5384C13.9443 15.263 16.7033 12.5769 20.1452 12.5769C23.5871 12.5769 26.346 15.263 26.346 18.5384Z"
+                          fill="white"
+                          stroke="#667C97"
+                        />
+                        <rect
+                          x="19.188"
+                          y="14.8461"
+                          width="1.91453"
+                          height="7.38462"
+                          rx="0.957264"
+                          fill="#667C97"
+                        />
+                        <rect
+                          x="23.9741"
+                          y="17.6154"
+                          width="1.84615"
+                          height="7.65811"
+                          rx="0.923077"
+                          transform="rotate(90 23.9741 17.6154)"
+                          fill="#667C97"
+                        />
+                      </svg>
                       <p class="count">2</p>
                     </button>
                   </div>
@@ -604,7 +723,57 @@
                       data-bs-toggle="modal"
                       data-bs-target="#playersModal"
                     >
-                      <i class="fa-solid fa-user-group"></i>
+                      <svg
+                        width="28"
+                        height="28"
+                        viewBox="0 0 27 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.70068 19.7693C7.70068 15.0112 11.5579 11.1539 16.3161 11.1539C21.0742 11.1539 24.9314 15.0112 24.9314 19.7693V20.3847H7.70068V19.7693Z"
+                          fill="#667C97"
+                        />
+                        <ellipse
+                          cx="16.3161"
+                          cy="5.61538"
+                          rx="4.78632"
+                          ry="4.61538"
+                          fill="#667C97"
+                        />
+                        <path
+                          d="M18.2308 21.8077H18.7308V21.3077V20.6923C18.7308 15.658 14.6497 11.5769 9.61538 11.5769C4.58109 11.5769 0.5 15.658 0.5 20.6923V21.3077V21.8077H1H18.2308Z"
+                          fill="#667C97"
+                          stroke="white"
+                        />
+                        <path
+                          d="M9.61542 11.6539C12.5177 11.6539 14.9017 9.38061 14.9017 6.53848C14.9017 3.69635 12.5177 1.4231 9.61542 1.4231C6.71316 1.4231 4.3291 3.69635 4.3291 6.53848C4.3291 9.38061 6.71316 11.6539 9.61542 11.6539Z"
+                          fill="#667C97"
+                          stroke="white"
+                        />
+                        <path
+                          d="M26.346 18.5384C26.346 21.8139 23.5871 24.5 20.1452 24.5C16.7033 24.5 13.9443 21.8139 13.9443 18.5384C13.9443 15.263 16.7033 12.5769 20.1452 12.5769C23.5871 12.5769 26.346 15.263 26.346 18.5384Z"
+                          fill="white"
+                          stroke="#667C97"
+                        />
+                        <rect
+                          x="19.188"
+                          y="14.8461"
+                          width="1.91453"
+                          height="7.38462"
+                          rx="0.957264"
+                          fill="#667C97"
+                        />
+                        <rect
+                          x="23.9741"
+                          y="17.6154"
+                          width="1.84615"
+                          height="7.65811"
+                          rx="0.923077"
+                          transform="rotate(90 23.9741 17.6154)"
+                          fill="#667C97"
+                        />
+                      </svg>
                       <p class="count">11</p>
                     </button>
                   </div>
@@ -635,7 +804,57 @@
                         data-bs-toggle="modal"
                         data-bs-target="#playersModal"
                       >
-                        <i class="fa-solid fa-user-group"></i>
+                        <svg
+                          width="28"
+                          height="28"
+                          viewBox="0 0 27 25"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.70068 19.7693C7.70068 15.0112 11.5579 11.1539 16.3161 11.1539C21.0742 11.1539 24.9314 15.0112 24.9314 19.7693V20.3847H7.70068V19.7693Z"
+                            fill="#667C97"
+                          />
+                          <ellipse
+                            cx="16.3161"
+                            cy="5.61538"
+                            rx="4.78632"
+                            ry="4.61538"
+                            fill="#667C97"
+                          />
+                          <path
+                            d="M18.2308 21.8077H18.7308V21.3077V20.6923C18.7308 15.658 14.6497 11.5769 9.61538 11.5769C4.58109 11.5769 0.5 15.658 0.5 20.6923V21.3077V21.8077H1H18.2308Z"
+                            fill="#667C97"
+                            stroke="white"
+                          />
+                          <path
+                            d="M9.61542 11.6539C12.5177 11.6539 14.9017 9.38061 14.9017 6.53848C14.9017 3.69635 12.5177 1.4231 9.61542 1.4231C6.71316 1.4231 4.3291 3.69635 4.3291 6.53848C4.3291 9.38061 6.71316 11.6539 9.61542 11.6539Z"
+                            fill="#667C97"
+                            stroke="white"
+                          />
+                          <path
+                            d="M26.346 18.5384C26.346 21.8139 23.5871 24.5 20.1452 24.5C16.7033 24.5 13.9443 21.8139 13.9443 18.5384C13.9443 15.263 16.7033 12.5769 20.1452 12.5769C23.5871 12.5769 26.346 15.263 26.346 18.5384Z"
+                            fill="white"
+                            stroke="#667C97"
+                          />
+                          <rect
+                            x="19.188"
+                            y="14.8461"
+                            width="1.91453"
+                            height="7.38462"
+                            rx="0.957264"
+                            fill="#667C97"
+                          />
+                          <rect
+                            x="23.9741"
+                            y="17.6154"
+                            width="1.84615"
+                            height="7.65811"
+                            rx="0.923077"
+                            transform="rotate(90 23.9741 17.6154)"
+                            fill="#667C97"
+                          />
+                        </svg>
                         <p class="count">12</p>
                       </button>
                     </div>
@@ -779,9 +998,10 @@
                       <div class="img">
                         <img src="../assets/taylor.png" alt="" />
                       </div>
-                      <p class="name">robby taylar <br>
-                        <span class="title">personal trainer</span></p>
-                      
+                      <p class="name">
+                        robby taylar <br />
+                        <span class="title">personal trainer</span>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -792,7 +1012,8 @@
                       <div class="img">
                         <img src="../assets/taylor.png" alt="" />
                       </div>
-                      <p class="name">robby taylar <br>
+                      <p class="name">
+                        robby taylar <br />
                         <span class="title">personal trainer</span>
                       </p>
                     </div>

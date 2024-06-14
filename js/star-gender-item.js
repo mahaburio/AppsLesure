@@ -8,10 +8,10 @@ gender.forEach((item) => {
   if (item) {
     item.addEventListener("click", () => {
       gender.forEach((removeClass) => {
-        removeClass.classList.remove("selectGender");
+        removeClass.classList.remove("radioSelect");
       });
 
-      item.classList.add("selectGender");
+      item.classList.add("radioSelect");
     });
   }
 });
