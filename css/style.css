@@ -11,7 +11,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-
 }
 
 :root {
@@ -44,7 +43,7 @@ body {
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
-.myBtn{
+.myBtn {
   margin-top: 20px;
   width: 100%;
   height: 40px;
@@ -65,6 +64,21 @@ body {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
   cursor: pointer;
+}
+
+.grayBtn {
+  background-color: var(--border-color) !important;
+  color: var(--white-color) !important;
+}
+
+.blueBtn {
+  background-color: var(--primary-color) !important;
+  color: var(--white-color) !important;
+}
+
+.redBtn {
+  background-color: var(--secondary-color) !important;
+  color: var(--white-color) !important;
 }
 
 /* todo ======= PROFILE-SECTION ======= --> */
@@ -404,11 +418,12 @@ body {
 }
 
 .btn-section .edit-pro-btn svg,
-.share-pro-btn svg{
+.share-pro-btn svg {
   margin-right: 3px;
 }
 
-.btn-section .edit-pro-btn svg path, .share-pro-btn svg path{
+.btn-section .edit-pro-btn svg path,
+.share-pro-btn svg path {
   fill: var(--text-color);
   transition: 0.3s;
   -webkit-transition: 0.3s;
@@ -416,8 +431,6 @@ body {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
-
-
 
 .btn-section .share-pro-btn {
   border: transparent;
@@ -440,13 +453,12 @@ body {
   transition: 0.3s;
 }
 
-
 .active {
   background-color: var(--primary-color) !important;
   color: var(--white-color) !important;
 }
 
-.active svg path{
+.active svg path {
   fill: var(--white-color) !important;
 }
 
@@ -612,10 +624,7 @@ body {
 .myStyle {
   background-color: var(--primary-color) !important;
   color: var(--white-color) !important;
-  
 }
-
-
 
 /* todo --> GALLERY-SECTION (PHOTOS)  --> */
 
@@ -1005,6 +1014,7 @@ body {
 
 .head-of-section {
   margin: 0px 12px !important;
+  overflow: hidden;
 }
 
 .back-btn-section {
@@ -1551,7 +1561,6 @@ body {
   background-color: var(--white-color);
   z-index: 999;
   left: 0;
-
 }
 
 .menu-section .all-menu {
@@ -1871,7 +1880,6 @@ body {
   align-items: center;
   margin-top: 15px;
   background-color: var(--white-color);
-
 }
 
 .input-section .input-name .logo,
@@ -1883,7 +1891,6 @@ body {
   margin: 0 !important;
   padding-top: 3px;
   padding-left: 10px;
-
 }
 
 /* todo *** SIGN IN, SIGN UP PAGE LOGO   *** */
@@ -2053,12 +2060,11 @@ body {
   transition: 0.3s;
 }
 
-
-#editProfile{
+#editProfile {
   padding-bottom: 20px;
 }
 
-#editProfile .relationship{
+#editProfile .relationship {
   width: 100%;
   height: 100%;
   padding: 5px;
@@ -2082,11 +2088,11 @@ body {
   cursor: pointer;
 }
 
-#editProfile .relationship option{
+#editProfile .relationship option {
   color: var(--text-color);
 }
 
-#editProfile textarea{
+#editProfile textarea {
   margin-top: 15px;
   min-width: 100%;
   min-height: 150px;
@@ -2105,14 +2111,11 @@ body {
   -o-border-radius: 4px;
 }
 
-#editProfile textarea::placeholder{
+#editProfile textarea::placeholder {
   text-transform: capitalize;
   color: var(--alt-color);
   font-weight: 500;
 }
-
-
-
 
 /* ! =========== FOR FORGET PASSWORD PAGE =========  ===== */
 
@@ -2209,7 +2212,6 @@ body {
   text-align: center;
   line-height: 45px;
 }
-
 
 .otp-verify .resend-otp {
   text-align: center;
@@ -2353,10 +2355,9 @@ body {
   margin: 0;
 }
 
-#profileMenu .grid-section .item a{
+#profileMenu .grid-section .item a {
   text-decoration: none;
 }
-
 
 #profileMenu .grid-section .item {
   padding: 8px;
@@ -2945,13 +2946,12 @@ body {
   display: flex;
   position: relative;
   cursor: pointer;
-
 }
 
-#chatMenu .doubleChat .body .userBtn:hover,.userBtn:focus path{
+#chatMenu .doubleChat .body .userBtn:hover,
+.userBtn:focus path {
   background-color: transparent !important;
 }
-
 
 #chatMenu .doubleChat .body .userBtn .count {
   height: 18px;
@@ -3370,7 +3370,9 @@ body {
   display: flex;
   align-items: center;
   margin-top: 10px;
-  box-shadow: 0px 0px 6px var(--shadow-color);
+  /* box-shadow: 0px 0px 6px var(--shadow-color);
+   */
+  border: 1px solid var(--border-color);
 }
 
 #players .box .left {
@@ -3986,8 +3988,6 @@ body {
 #createPost .message-box textarea::placeholder {
   text-transform: capitalize;
 }
-
-
 
 /* ! ********** FOR GAME WANTED SECTION ******** */
 
@@ -5264,12 +5264,12 @@ body {
   cursor: pointer;
 }
 
-#commentsPage .comment-box .reply-section .total{
+#commentsPage .comment-box .reply-section .total {
   text-transform: capitalize;
   font-size: 12px;
   color: var(--text-color);
   cursor: pointer;
-} 
+}
 
 #commentsPage .comment-box .reply-section .reply {
   padding: 5px;
@@ -5688,7 +5688,7 @@ body {
   position: relative;
 }
 
-#coachProfile  .card-section .select-trainer {
+#coachProfile .card-section .select-trainer {
   width: 50%;
   padding: 5px;
   text-transform: capitalize;
@@ -5878,13 +5878,10 @@ body {
   max-width: 100%;
 }
 
-
 /* ! COMPLETE GROUP */
 
-#completeGroup{
-
+#completeGroup {
 }
-
 
 .group-head {
   margin-top: 20px;
@@ -5947,8 +5944,6 @@ body {
   border-top: 16px solid var(--primary-color);
 }
 
-
-
 #completeGroup .search-bar {
   margin-top: 30px;
 }
@@ -5974,9 +5969,6 @@ body {
   color: var(--alt-color);
   text-transform: capitalize;
 }
-
-
-
 
 #completeGroup .choose-sport {
   display: flex;
@@ -6016,8 +6008,6 @@ body {
   cursor: pointer;
 }
 
-
-
 #completeGroup .group-image {
   display: flex;
   align-items: center;
@@ -6036,7 +6026,7 @@ body {
   width: 60%;
 }
 
-#completeGroup .group-image .right .upload{
+#completeGroup .group-image .right .upload {
   padding: 5px 20px;
   background-color: var(--primary-color);
   color: var(--white-color);
@@ -6050,23 +6040,22 @@ body {
   -o-border-radius: 4px;
 }
 
-#completeGroup .add-players{
+#completeGroup .add-players {
   margin-top: 15px;
 }
 
-#completeGroup .add-players .add{
+#completeGroup .add-players .add {
   font-size: 18px;
   font-weight: 500;
   color: var(--text-color);
   text-transform: capitalize;
 }
 
-#completeGroup .add-players .search-box{
+#completeGroup .add-players .search-box {
   display: flex;
   justify-content: flex-end;
   margin-top: 10px;
 }
-
 
 #completeGroup .add-players .input {
   display: flex;
@@ -6085,13 +6074,12 @@ body {
   position: relative;
 }
 
-#completeGroup .search .input input::placeholder{
+#completeGroup .search .input input::placeholder {
   text-transform: capitalize;
   color: var(--alt-color);
 }
 
-
-#completeGroup .add-players .search .input{
+#completeGroup .add-players .search .input {
   width: 100%;
   position: relative;
 }
@@ -6108,7 +6096,7 @@ body {
   fill: var(--primary-color);
 }
 
-#completeGroup .players-box{
+#completeGroup .players-box {
   margin-top: 15px;
   border: 1px solid var(--border-color);
   border-radius: 4px;
@@ -6118,20 +6106,20 @@ body {
   -o-border-radius: 4px;
 }
 
-#completeGroup .players-box .left{
+#completeGroup .players-box .left {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
-#completeGroup .players-box .left .name{
+#completeGroup .players-box .left .name {
   font-size: 16px;
   font-weight: 500;
   color: var(--text-color);
   text-transform: capitalize;
 }
 
-#completeGroup .players-box .player{
+#completeGroup .players-box .player {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -6140,8 +6128,7 @@ body {
   padding: 10px;
 }
 
-
-#completeGroup .players-box  .player .img{
+#completeGroup .players-box .player .img {
   height: 40px;
   width: 40px;
   overflow: hidden;
@@ -6152,19 +6139,17 @@ body {
   -o-border-radius: 50%;
 }
 
-#completeGroup .players-box  .player .img img{
+#completeGroup .players-box .player .img img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-
-
-#completeGroup .players-box  .player:last-child{
+#completeGroup .players-box .player:last-child {
   border-bottom: none;
 }
 
-#completeGroup .players-box  .player .right{
+#completeGroup .players-box .player .right {
   align-items: center;
   display: flex;
 }
@@ -6186,7 +6171,6 @@ body {
   -o-border-radius: 4px;
 }
 
-
 #completeGroup input[type="checkbox"]:checked::before {
   content: "✔";
   display: block;
@@ -6197,22 +6181,18 @@ body {
   color: var(--primary-color);
 }
 
-
 /* ! PROFILE IMAGE  */
 
-#profileImage{
-
+#profileImage {
 }
 
-#profileImage .image-select{
+#profileImage .image-select {
   width: 100%;
   height: 70vh;
   position: relative;
-
 }
 
-
-#profileImage .img img{
+#profileImage .img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -6226,7 +6206,7 @@ body {
 }
 #profileImage .img:after {
   position: absolute;
-  content: '';
+  content: "";
   width: 300px;
   height: 300px;
   box-shadow: 0 0 0 300px var(--text-color);
@@ -6242,8 +6222,7 @@ body {
   -o-transform: translate(-50%, -50%);
 }
 
-
-#profileImage .foot-box{
+#profileImage .foot-box {
   z-index: 25;
   bottom: 55px;
   position: relative;
@@ -6255,7 +6234,7 @@ body {
   align-items: flex-end;
 }
 
-#profileImage .foot-box .rotate{
+#profileImage .foot-box .rotate {
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -6263,27 +6242,27 @@ body {
   text-align: center;
 }
 
-#profileImage .foot-box .rotate svg{
+#profileImage .foot-box .rotate svg {
   position: relative;
   left: 15px;
 }
 
-#profileImage .foot-box .rotate svg path{
+#profileImage .foot-box .rotate svg path {
   fill: var(--white-color);
 }
 
-#profileImage .foot-box .reset{
+#profileImage .foot-box .reset {
   cursor: pointer;
 }
 
-#profileImage .btn-section{
+#profileImage .btn-section {
   display: flex;
   justify-content: space-between;
   gap: 20px;
   margin-top: 20px;
 }
 
-#profileImage .btn-section button{
+#profileImage .btn-section button {
   width: 100%;
   border: none;
   padding: 10px;
@@ -6296,32 +6275,27 @@ body {
   -o-border-radius: 4px;
 }
 
-#profileImage .btn-section .cancel{
+#profileImage .btn-section .cancel {
   background-color: var(--white-color);
   color: var(--text-color);
   border: 1px solid var(--border-color);
 }
 
-
-#profileImage .btn-section .save{
+#profileImage .btn-section .save {
   background-color: var(--primary-color);
   color: var(--white-color);
 }
 
-
-
-
 /* todo ==== CHATROOM-HEAD ==== --> */
 
-.chatroomHead .back-btn-section .center{
+.chatroomHead .back-btn-section .center {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
 
-
-.chatroomHead .back-btn-section .center .img{
+.chatroomHead .back-btn-section .center .img {
   height: 35px;
   overflow: hidden;
   width: 35px;
@@ -6332,53 +6306,51 @@ body {
   -o-border-radius: 50%;
 }
 
-.chatroomHead .back-btn-section .center .img img{
+.chatroomHead .back-btn-section .center .img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.chatroomHead .back-btn-section .right{
+.chatroomHead .back-btn-section .right {
   display: flex;
   gap: 10px;
   width: 30%;
 }
 
-.chatroomHead .back-btn-section svg{
+.chatroomHead .back-btn-section svg {
   cursor: pointer;
 }
 
-.chatroomHead .back-btn-section .right .send-icon path{
+.chatroomHead .back-btn-section .right .send-icon path {
   fill: var(--primary-color);
 }
 
-.chatroomHead .back-btn-section .right .line-up path{
+.chatroomHead .back-btn-section .right .line-up path {
   fill: var(--alt-color);
 }
 
-
 /* todo ==== CHATROOM-SINGLE ==== --> */
 
-#chatroomSingle{
-  min-height: 95vh;
-  padding-bottom: 10px;
+#chatroomSingle {
+
+
 }
 
-#chatroomSingle .day-line{
+.chatroom .day-line {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 10px;
 }
 
-#chatroomSingle .day-line .left{
+.chatroom .day-line .left {
   width: 37%;
   height: 1px;
   background-color: var(--border-color);
-
 }
 
-#chatroomSingle .day-line .day{
+.chatroom .day-line .day {
   font-size: 14px;
   text-transform: capitalize;
   color: var(--alt-color);
@@ -6386,28 +6358,22 @@ body {
   text-align: center;
 }
 
-#chatroomSingle .day-line .right{
+.chatroom .day-line .right {
   width: 37%;
   height: 1px;
   background-color: var(--border-color);
-
 }
 
-.chatroom{
-  
-}
-
-.chat-box-left{
+.chat-box-left {
   display: flex;
   gap: 10px;
   margin-top: 5px;
   padding: 0px 12px;
   width: 90%;
+  align-items: flex-start;
 }
 
-
-
-.chat-box-left .left .img{
+.chat-box-left .left .img {
   height: 40px;
   width: 40px;
   overflow: hidden;
@@ -6418,13 +6384,13 @@ body {
   -o-border-radius: 50%;
 }
 
-.chat-box-left .left .img img{
+.chat-box-left .left .img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.chat-box-left .right .head{
+.chat-box-left .right .head {
   display: flex;
   gap: 5px;
   font-size: 14px;
@@ -6432,16 +6398,16 @@ body {
   text-transform: lowercase;
 }
 
-.chat-box-left .right .main-content{
+.chat-box-left .right .main-content {
   display: flex;
   gap: 10px;
   align-items: flex-start;
 }
 
-.chat-box-left .right .main-content .text-box{
+.chat-box-left .right .main-content .text-box {
   padding: 5px 8px;
   text-transform: capitalize;
-  font-size: 14px;
+  font-size: 16px;
   border: 1px solid var(--border-color);
   background-color: #f8f8f8;
   border-radius: 4px;
@@ -6451,35 +6417,30 @@ body {
   -o-border-radius: 4px;
 }
 
-
-.chat-box-right{
+.chat-box-right {
   display: flex;
   margin-top: 5px;
   padding: 0px 12px;
   width: 100%;
   justify-content: space-between;
-
 }
 
-.chat-box-right .left{
+.chat-box-right .left {
   width: 50%;
 }
 
-.chat-box-right .time{
-
+.chat-box-right .time {
   font-size: 14px;
   color: var(--alt-color);
   text-transform: lowercase;
   text-align: right;
 }
 
-
-.chat-box-right .main-content .text-box{
-
+.chat-box-right .main-content .text-box {
   padding: 5px 8px;
   text-transform: capitalize;
-  font-size: 14px;
-  background-color:#CCF7FE;
+  font-size: 16px;
+  background-color: #ccf7fe;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -6487,53 +6448,89 @@ body {
   -o-border-radius: 4px;
 }
 
-.chat-box-right .main-content .text-box .files{
+.chat-box-right .main-content .text-box .files {
   display: flex;
   gap: 10px;
-  background-color: #E1FAFF;
+  background-color: #e1faff;
   padding: 5px;
   text-transform: uppercase;
-
 }
 
-.chat-box-right .main-content .text-box .file-details{
+.chat-box-right .main-content .text-box .file-details {
   display: flex;
   gap: 10px;
   margin-top: 5px;
-
 }
 
-.chat-box-right .main-content .text-box .file-size{
+.chat-box-right .main-content .text-box .file-size {
   text-transform: uppercase;
 }
 
-.chat-box-right .main-content .text-box .file-type{
+.chat-box-right .main-content .text-box .file-type {
   text-transform: lowercase;
 }
 
+.status-bar {
+  width: 94%;
+  position: sticky;
+  bottom: 75px;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 17px;
+  text-align: center;
+  align-items: center;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
 
+.status-bar .view-btn {
+  padding: 5px 15px;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: var(--white-color);
+  color: var(--text-color);
+  text-transform: capitalize;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
 
-.message-input{
+.message-input {
   padding: 8px 12px;
   display: flex;
   gap: 8px;
   position: sticky;
-  bottom: 0;
-  margin-top: 20px;
+  bottom: 0px;
+  padding-bottom: 20px;
+  margin-top: 10px;
   border-top: 1px solid var(--border-color);
   background-color: var(--white-color);
 }
 
-.message-input .left{
+.message-input .left {
   width: 100%;
 }
 
-.message-input .left .input-box{
+.message-input .left .input-box {
   display: flex;
   align-items: center;
   height: 40px;
   width: 100%;
-  padding: 0px 15px ;
+  padding: 0px 15px;
   overflow: hidden;
   border-radius: 50px;
   border: 1px solid var(--border-color);
@@ -6544,25 +6541,24 @@ body {
   -o-border-radius: 50px;
 }
 
-.message-input .left .input-box svg{
+.message-input .left .input-box svg {
   cursor: pointer;
 }
 
-
-.message-input .left .input-box .left{
+.message-input .left .input-box .left {
   width: 10%;
   display: flex;
   align-items: center;
 }
 
-.message-input .left .input-box .center{
+.message-input .left .input-box .center {
   width: 100%;
   height: 100%;
   display: block;
   align-items: center;
 }
 
-.message-input .left .input-box .center textarea{
+.message-input .left .input-box .center textarea {
   background-color: transparent;
   height: 40px;
   width: 100%;
@@ -6574,16 +6570,13 @@ body {
   padding: 0px 7px;
 }
 
-
-
-.message-input .left .input-box .right{
+.message-input .left .input-box .right {
   display: flex;
   gap: 15px;
   align-items: center;
 }
 
-
-.message-input .right button{
+.message-input .right button {
   height: 40px;
   width: 40px;
   border: none;
@@ -6597,10 +6590,9 @@ body {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-
 }
 
-.message-input #voiceSearch{
+.message-input #voiceSearch {
   transition: 0.2s;
   animation: anime 0.3s linear;
   -webkit-animation: anime 0.3s linear;
@@ -6610,7 +6602,7 @@ body {
   -o-transition: 0.2s;
 }
 
-.message-input #sendIcon{
+.message-input #sendIcon {
   display: none;
   transition: 0.2s;
   animation: anime 0.3s linear;
@@ -6618,53 +6610,38 @@ body {
 }
 
 @keyframes anime {
-  0%{
+  0% {
     opacity: 1;
     transform: scale(0.5);
     -webkit-transform: scale(0.5);
     -moz-transform: scale(0.5);
     -ms-transform: scale(0.5);
     -o-transform: scale(0.5);
+  }
 }
-}
-
-
-
-
-
-
-
-
 
 /* todo ==== GAME-INVITE-PAGE ==== --> */
 
-
-
-
-
-
-#gameInvite .team{
+#gameInvite .team {
   padding: 15px 0px;
 
   border-bottom: 1px solid var(--border-color);
-
 }
 
-#gameInvite .team .box{
+#gameInvite .team .box {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
-#gameInvite .team  .box .left,
-#gameInvite .team  .box .right {
+#gameInvite .team .box .left,
+#gameInvite .team .box .right {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-#gameInvite .team  .box .left  .name {
+#gameInvite .team .box .left .name {
   font-size: 18px;
   font-weight: 500;
   text-align: right;
@@ -6672,7 +6649,7 @@ body {
   color: var(--text-color);
 }
 
-#gameInvite .team  .box .right .name{
+#gameInvite .team .box .right .name {
   font-size: 18px;
   font-weight: 500;
   text-align: left;
@@ -6680,8 +6657,7 @@ body {
   color: var(--text-color);
 }
 
-
-#gameInvite .team  .box .img-box {
+#gameInvite .team .box .img-box {
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -6694,14 +6670,14 @@ body {
   object-fit: cover;
 }
 
-#gameInvite .team .box .center svg{
+#gameInvite .team .box .center svg {
   height: 50px;
   width: 50px;
 }
 
 /* add line up */
 
-#gameInvite .add-line-up{
+#gameInvite .add-line-up {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -6709,21 +6685,19 @@ body {
   margin-top: 20px;
 }
 
-#gameInvite .add-line-up .left{
+#gameInvite .add-line-up .left {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-
-#gameInvite .add-line-up .name{
+#gameInvite .add-line-up .name {
   font-size: 18px;
   font-weight: 500;
   text-align: right;
   line-height: 20px;
   color: var(--text-color);
 }
-
 
 #gameInvite .add-line-up .img-box {
   height: 40px;
@@ -6738,16 +6712,16 @@ body {
   object-fit: cover;
 }
 
-#gameInvite .add-line-up .right{
+#gameInvite .add-line-up .right {
   display: flex;
   gap: 20px;
 }
 /* for south-side invite page */
-#gameInvite .add-line-up .name-two{
+#gameInvite .add-line-up .name-two {
   text-align: left;
 }
 
-.line-up-btn{
+.line-up-btn {
   border: none;
   background-color: var(--primary-color);
   padding: 6px 22px;
@@ -6761,19 +6735,41 @@ body {
   -o-border-radius: 4px;
 }
 
-#gameInvite .add-line-up .success-icon{
+#gameInvite .add-line-up .success-icon {
   font-size: 22px;
   color: green;
   font-weight: 800;
-  
+}
+
+#gameInvite .send-invite {
+  margin-top: 20px;
+  width: 100%;
+  height: 40px;
+  background-color: var(--border-color);
+  color: var(--white-color);
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  cursor: pointer;
 }
 
 /* details box */
 
-#gameInvite .details-box{
+#gameInvite .details-box {
   margin-top: 20px;
   padding: 10px;
-  border: 1px solid var(--border-color);
+  /* border: 1px solid var(--border-color); */
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -6781,12 +6777,12 @@ body {
   -o-border-radius: 4px;
 }
 
-.details-box .text{
+.details-box .text {
   color: var(--secondary-color);
   text-transform: capitalize;
 }
 
-.details-box .game-name{
+.details-box .game-name {
   font-size: 18px;
   margin-top: 10px;
   font-weight: 500;
@@ -6794,7 +6790,7 @@ body {
   text-transform: capitalize;
 }
 
-.details-box .specific-input .title{
+.details-box .specific-input .title {
   font-weight: 500;
   color: var(--text-color);
   font-size: 16px;
@@ -6802,7 +6798,7 @@ body {
   text-transform: capitalize;
 }
 
-.details-box .specific-input input{
+.details-box .specific-input input {
   border: 1px solid var(--border-color);
   outline: none;
   margin-top: 10px;
@@ -6815,21 +6811,24 @@ body {
   -o-border-radius: 4px;
 }
 
-.details-box .date-input, 
-.time-input{
+.details-box .date-input,
+.time-input {
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .details-box .date-input .date,
-.details-box .time-input .time{
+.details-box .time-input .time {
   text-transform: capitalize;
   color: var(--text-color);
+  width: 35%;
 }
 
 .details-box .date-input input,
-.details-box .time-input input{
+.details-box .time-input input {
+  width: 65%;
   padding: 5px 10px;
   border: 1px solid var(--border-color);
   background-color: var(--white-color);
@@ -6843,8 +6842,10 @@ body {
 
 /* Venue ==== */
 
-
-.details-box .venue .title{
+.details-box .venue {
+  border-top: 1px solid var(--border-color);
+}
+.details-box .venue .title {
   font-size: 18px;
   margin-top: 10px;
   font-weight: 500;
@@ -6852,26 +6853,20 @@ body {
   text-transform: capitalize;
 }
 
-
-.details-box .venue .venue-item{
+.details-box .venue .venue-item {
   margin-top: 10px;
   display: flex;
   gap: 8px;
-
 }
 
-.details-box .venue .venue-item .right{
+.details-box .venue .venue-item .right {
   text-transform: capitalize;
   color: var(--text-color);
 }
 
-
-
 /* radio styling */
 
-
-
-.details-box .venue-item  svg .second {
+.details-box .venue-item svg .second {
   display: none;
 }
 
@@ -6884,15 +6879,13 @@ body {
   display: block !important;
 }
 
-
 /* MODAL styling */
 
-#lineUpPlayers .modal-body{
+#lineUpPlayers .modal-body {
   height: 370px;
 }
 
-
- #lineUpPlayers .modal-body .box{
+#lineUpPlayers .modal-body .box {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6906,22 +6899,34 @@ body {
   -o-border-radius: 4px;
 }
 
-#lineUpPlayers .modal-body .box .left{
+#lineUpPlayers .modal-body .box .left .border-part {
+  height: 56px;
+  width: 56px;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 55px;
+}
+
+#lineUpPlayers .modal-body .box .left {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
-#lineUpPlayers .modal-body .box .left .name{
+#lineUpPlayers .modal-body .box .left .name {
   font-size: 18px;
   font-weight: 600;
   color: var(--text-color);
   text-transform: capitalize;
 }
 
- #lineUpPlayers .modal-body .box .left .img{
-  height: 55px;
-  width: 55px;
+#lineUpPlayers .modal-body .box .left .img {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  top: 2px;
+  left: 2px;
   overflow: hidden;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -6930,13 +6935,17 @@ body {
   -o-border-radius: 50%;
 }
 
- #lineUpPlayers .modal-body .box .left .img img{
+#lineUpPlayers .modal-body .box .left .img img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  line-height: 55px;
+  position: relative;
+  top: -4px;
+  left: 0px;
 }
 
-#lineUpPlayers .add-btn{
+#lineUpPlayers .add-btn {
   text-transform: capitalize;
   font-weight: 500;
   border-radius: 4px;
@@ -6950,14 +6959,14 @@ body {
   -o-border-radius: 4px;
 }
 
-#lineUpPlayers .modal-footer{
+#lineUpPlayers .modal-footer {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px;
 }
 
-#lineUpPlayers .modal-footer .confirm-btn{
+#lineUpPlayers .modal-footer .confirm-btn {
   padding: 8px 30px;
   border: none;
   border-radius: 4px;
@@ -6971,32 +6980,29 @@ body {
   -o-border-radius: 4px;
 }
 
-
 /* !for invite page */
 
-#gameInvite .details-box .box-header{
+#gameInvite .details-box .box-header {
   display: flex;
   align-items: center;
   padding: 5px 0px;
   border-bottom: 1px solid var(--border-color);
 }
 
-#gameInvite .details-box .box-header .left{
+#gameInvite .details-box .box-header .left {
   display: flex;
   gap: 10px;
   align-items: center;
-
 }
 
-.details-box .box-header .name{
+.details-box .box-header .name {
   text-transform: capitalize;
   font-weight: 500;
   font-size: 16px;
   color: var(--primary-color);
 }
 
-
-.details-box .box-header .img{
+.details-box .box-header .img {
   height: 40px;
   width: 40px;
   overflow: hidden;
@@ -7007,22 +7013,22 @@ body {
   -o-border-radius: 50%;
 }
 
-.details-box .box-header .img img{
+.details-box .box-header .img img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.details-box .box-body{
+.details-box .box-body {
   padding: 5px 0px;
 }
 
-.details-box .box-body .text{
+.details-box .box-body .text {
   color: var(--text-color);
   font-weight: 500;
   text-transform: capitalize;
 }
-.details-box .game-details .title{
+.details-box .game-details .title {
   color: var(--primary-color);
   text-transform: capitalize;
   font-size: 500 !important;
@@ -7030,23 +7036,28 @@ body {
   text-decoration: underline;
 }
 
-.details-box .game-details .game-name{
+.details-box .game-details .game-name {
   font-size: 16px;
   color: var(--alt-color);
   font-weight: normal;
   margin-top: 8px;
 }
 
-.details-box .game-details .sub-name{
+.details-box .game-details .sub-name {
   color: var(--secondary-color);
 }
 
-.details-box .game-details .date, .time, .location{
+.details-box .game-details .date .time {
+  text-transform: capitalize;
+  color: var(--alt-color);
+}
+
+.details-box .game-details .date .location {
   margin-top: 8px;
   text-transform: capitalize;
   color: var(--alt-color);
 }
-.details-box .box-footer{
+.details-box .box-footer {
   border-top: 1px solid var(--border-color);
   padding: 10px 0px;
   margin-top: 8px;
@@ -7054,7 +7065,7 @@ body {
   gap: 10px;
 }
 
-.details-box .box-footer button{
+.details-box .box-footer button {
   padding: 5px 20px;
   text-transform: capitalize;
   border: none;
@@ -7066,121 +7077,235 @@ body {
   -o-border-radius: 4px;
 }
 
-.details-box .box-footer .accept-btn{
+.details-box .box-footer .accept-btn {
   background-color: var(--primary-color);
   color: var(--white-color);
 }
 
-.details-box .box-footer .decline-btn{
+.details-box .box-footer .decline-btn {
   background-color: var(--secondary-color);
   color: var(--white-color);
 }
 
-
-
 /* !for LINE-UP doubles and teams page */
 
-
-#lineUpTeams .team{
-  padding: 15px 0px;
-
-  border-bottom: 1px solid var(--border-color);
-
+.lineUp .team {
+  padding: 10px 0px;
 }
 
-#lineUpTeams .team .box{
+.lineUp .team .box {
   display: flex;
-  justify-content: space-between;
+  border: 1px solid var(--border-color);
   align-items: center;
   width: 100%;
-  
-}
-
-#lineUpTeams .team  .box .left,
-#lineUpTeams .team  .box .right {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 5px;
-  background-color: #f8f8f8;
   border-radius: 4px;
-  border: 1px solid var(--border-color);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+  position: relative;
+}
+
+
+.lineUp .team .box .left,
+.lineUp .team .box .right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px;
+  width: 100%;
   cursor: pointer;
 }
 
-#lineUpTeams .team  .box .left  .name {
-  font-size: 16px;
+
+/* ! lineUpSingle page only one changes */
+
+#lineUpSingle .team .box .left
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+}
+
+
+.lineUp .team .box .right .icon {
+  position: absolute;
+  right: 8px;
+}
+
+.lineUp .team .box .right {
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+.lineUp .team .box .left {
+  justify-content: flex-end;
+  padding-right: 10px;
+
+  border-right: 1px solid var(--border-color);
+}
+
+.lineUp .team .box .left .icon {
+  position: absolute;
+  left: 8px;
+}
+
+.lineUp .team .box .left .name {
+  font-size: 15px;
   font-weight: 500;
   text-align: right;
   line-height: 20px;
   color: var(--text-color);
 }
 
-#lineUpTeams .team  .box .right .name{
-  font-size: 16px;
+.lineUp .team .box .right .name {
+  font-size: 15px;
   font-weight: 500;
   text-align: left;
   line-height: 20px;
   color: var(--text-color);
 }
 
-
-#lineUpTeams .team  .box .img-box {
-  height: 40px;
-  width: 40px;
+.lineUp .team .box .img-box {
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
   overflow: hidden;
 }
 
-#lineUpTeams .team .box .img-box img {
+.lineUp .team .box .img-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-#lineUpTeams .team .box .center svg{
+.lineUp .team .box .center svg {
+  height: 40px;
+  width: 40px;
+}
+
+.lineUp .activeBtn {
+  background-color: var(--primary-color) !important;
+  color: var(--white-color) !important;
+  position: relative;
+}
+
+.lineUp .activeBtn::after {
+  content: "";
+  width: 20px;
+  height: 15px;
+  position: absolute;
+  bottom: -15px;
+  left: 42%;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 16px solid var(--primary-color);
+}
+
+.lineUp .activeBtn .name {
+  color: var(--white-color) !important;
+}
+
+.lineUp .activeBtn svg path {
+  fill: var(--white-color);
+}
+
+.lineUp #teamOnePlayers {
+  animation: slideAnimationOne 0.3s linear;
+  -webkit-animation: slideAnimationOne 0.3s linear;
+}
+
+@keyframes slideAnimationOne {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+    -webkit-transform: translateX(-30px);
+    -moz-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    -o-transform: translateX(-30px);
+  }
+}
+
+.lineUp #teamTwoPlayers {
+  display: none;
+  animation: slideAnimation 0.3s linear;
+  -webkit-animation: slideAnimation 0.3s linear;
+}
+
+@keyframes slideAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+    -moz-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    -o-transform: translateX(30px);
+  }
+}
+
+.all-players .box {
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  /* box-shadow: 0px 0px 6px var(--shadow-color);
+   */
+  border: 1px solid var(--border-color);
+}
+
+.all-players .box .left {
+  border-right: 1px solid var(--border-color);
+  padding-right: 10px;
+}
+
+.all-players .border-part {
+  height: 55px;
+  width: 55px;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+}
+
+.all-players .border-part .img-part {
   height: 50px;
   width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  left: 1.5px;
+  top: 1px;
 }
 
-
-
-#lineUpTeams .team  .box .icon{
-  background-color: var(--white-color);
-  height: 30px;
-  width: 30px;
+.all-players .border-part .img-part img {
   text-align: center;
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  left: 0px;
 }
 
-.col{
-  padding: 0 !important;
-  margin: 0 !important;
+.all-players .box .right {
+  padding-left: 10px;
+  display: flex;
+  gap: 0px;
+  text-align: left;
+  flex-direction: column;
 }
 
-.row{
-  padding: 0 !important;
-  margin: 0 !important;
-  padding: 10px;
+.all-players .box .right .name {
+  font-size: 16px;
+  color: var(--text-color);
+  text-transform: capitalize;
+  font-weight: 600;
+  text-align: left;
+  margin: 0;
 }
-
-.card{
-  padding: 0;
-}
-
-
-
-
-
 
 
 
