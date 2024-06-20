@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
+
     <!--! ======= CDN-> Bootstrap CSS, Fant Icon, Swiper CSS, Raw CSS ======= -->
 
     <link
@@ -23,9 +24,9 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-  <body>
-    <div class="head-to-footer" id="headToFoot">
-      <!--todo ======= PROFILE-SECTION ======= -->
+  <body onload="mytheme()">
+    <div id="headToFoot">
+      <!--todo =****= PROFILE-SECTION =****= -->
 
       <section class="profile-one" id="forBackground">
         <div class="myPage">
@@ -37,7 +38,7 @@
             <input type="file" id="coverPhotoInput" style="display: none" />
           </div>
 
-          <div class="profile-section">
+          <div class="head-of-section">
             <div class="name-section">
               <div class="left">
                 <div class="name">april conroy</div>
@@ -64,6 +65,9 @@
                 </div>
               </div>
             </div>
+
+            <!--todo =****= GAME-HISTORY-SECTION =****= -->
+
             <div class="game-history">
               <a href="./html/history.html" class="left">
                 <img src="./assets/game-history.png" alt="" />
@@ -89,6 +93,9 @@
                 </div>
               </div>
             </div>
+
+            <!--todo =****= UPCOMING-GAME-SECTION =****= -->
+
             <div class="upcoming-game">
               <div class="head">
                 <div class="left mt-1">
@@ -297,33 +304,55 @@
               </div>
             </div>
 
-            <!--todo  PROFILE-BUTTON  -->
+            <!--todo =****= EDIT & SHARE BUTTON =****= -->
 
             <div class="btn-section">
               <button class="edit-pro-btn" id="editProBtn">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.878 0.213013C12.594 -0.0710044 12.1335 -0.0710044 11.8495 0.213013L4.57675 7.48574C4.44036 7.62213 4.36374 7.80711 4.36374 8V10.9091C4.36374 11.3107 4.68935 11.6364 5.09101 11.6364H8.0001C8.19299 11.6364 8.37797 11.5597 8.51436 11.4233L15.7871 4.15062C16.0711 3.8666 16.0711 3.40612 15.7871 3.1221L12.878 0.213013ZM5.81829 10.1818V8.30124L12.3637 1.75579L14.2443 3.63636L7.69886 10.1818H5.81829ZM1.66756 3.12209C1.80395 2.9857 1.98893 2.90908 2.18182 2.90908H6.06545C6.46711 2.90908 6.79272 2.58347 6.79272 2.1818C6.79272 1.78014 6.46711 1.45453 6.06545 1.45453H2.18182C1.60316 1.45453 1.04821 1.6844 0.639039 2.09357C0.229869 2.50274 0 3.0577 0 3.63635V13.8182C0 14.3968 0.229869 14.9518 0.639039 15.3609C1.04821 15.7701 1.60316 16 2.18182 16H12.3636C12.9423 16 13.4972 15.7701 13.9064 15.3609C14.3156 14.9518 14.5454 14.3968 14.5454 13.8182V9.93453C14.5454 9.53287 14.2198 9.20726 13.8182 9.20726C13.4165 9.20726 13.0909 9.53287 13.0909 9.93453V13.8182C13.0909 14.011 13.0143 14.196 12.8779 14.3324C12.7415 14.4688 12.5565 14.5454 12.3636 14.5454H2.18182C1.98893 14.5454 1.80395 14.4688 1.66756 14.3324C1.53117 14.196 1.45454 14.011 1.45454 13.8182V3.63635C1.45454 3.44346 1.53117 3.25848 1.66756 3.12209Z" fill="#00ACEE"/>
-                  </svg> 
-                  edit profile
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.878 0.213013C12.594 -0.0710044 12.1335 -0.0710044 11.8495 0.213013L4.57675 7.48574C4.44036 7.62213 4.36374 7.80711 4.36374 8V10.9091C4.36374 11.3107 4.68935 11.6364 5.09101 11.6364H8.0001C8.19299 11.6364 8.37797 11.5597 8.51436 11.4233L15.7871 4.15062C16.0711 3.8666 16.0711 3.40612 15.7871 3.1221L12.878 0.213013ZM5.81829 10.1818V8.30124L12.3637 1.75579L14.2443 3.63636L7.69886 10.1818H5.81829ZM1.66756 3.12209C1.80395 2.9857 1.98893 2.90908 2.18182 2.90908H6.06545C6.46711 2.90908 6.79272 2.58347 6.79272 2.1818C6.79272 1.78014 6.46711 1.45453 6.06545 1.45453H2.18182C1.60316 1.45453 1.04821 1.6844 0.639039 2.09357C0.229869 2.50274 0 3.0577 0 3.63635V13.8182C0 14.3968 0.229869 14.9518 0.639039 15.3609C1.04821 15.7701 1.60316 16 2.18182 16H12.3636C12.9423 16 13.4972 15.7701 13.9064 15.3609C14.3156 14.9518 14.5454 14.3968 14.5454 13.8182V9.93453C14.5454 9.53287 14.2198 9.20726 13.8182 9.20726C13.4165 9.20726 13.0909 9.53287 13.0909 9.93453V13.8182C13.0909 14.011 13.0143 14.196 12.8779 14.3324C12.7415 14.4688 12.5565 14.5454 12.3636 14.5454H2.18182C1.98893 14.5454 1.80395 14.4688 1.66756 14.3324C1.53117 14.196 1.45454 14.011 1.45454 13.8182V3.63635C1.45454 3.44346 1.53117 3.25848 1.66756 3.12209Z"
+                    fill="#00ACEE"
+                  />
+                </svg>
+                edit profile
               </button>
               <a href="./profileTwo.html"
                 ><button class="share-pro-btn active" id="shareProBtn">
-                  <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.425 2.61988C14.425 4.06681 13.252 5.23977 11.8051 5.23977C11.0406 5.23977 10.3526 4.91232 9.87365 4.39004L5.09197 7.13034C5.1877 7.40246 5.23977 7.69516 5.23977 8.00001C5.23977 8.34401 5.17347 8.67252 5.05296 8.97346L9.79992 11.6939C10.2805 11.123 11.0004 10.7602 11.8051 10.7602C13.252 10.7602 14.425 11.9332 14.425 13.3801C14.425 14.827 13.252 16 11.8051 16C10.3582 16 9.1852 14.827 9.1852 13.3801C9.1852 13.1181 9.22367 12.8651 9.29525 12.6263L4.46611 9.85884C3.99251 10.3292 3.34014 10.6199 2.61988 10.6199C1.17296 10.6199 0 9.44693 0 8.00001C0 6.55309 1.17296 5.38013 2.61988 5.38013C3.38073 5.38013 4.06583 5.70446 4.54446 6.22241L9.32969 3.48008C9.23607 3.21064 9.1852 2.9212 9.1852 2.61988C9.1852 1.17296 10.3582 0 11.8051 0C13.252 0 14.425 1.17296 14.425 2.61988Z" fill="white"/>
-                    </svg>
-                    share profile
+                  <svg
+                    width="15"
+                    height="16"
+                    viewBox="0 0 15 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.425 2.61988C14.425 4.06681 13.252 5.23977 11.8051 5.23977C11.0406 5.23977 10.3526 4.91232 9.87365 4.39004L5.09197 7.13034C5.1877 7.40246 5.23977 7.69516 5.23977 8.00001C5.23977 8.34401 5.17347 8.67252 5.05296 8.97346L9.79992 11.6939C10.2805 11.123 11.0004 10.7602 11.8051 10.7602C13.252 10.7602 14.425 11.9332 14.425 13.3801C14.425 14.827 13.252 16 11.8051 16C10.3582 16 9.1852 14.827 9.1852 13.3801C9.1852 13.1181 9.22367 12.8651 9.29525 12.6263L4.46611 9.85884C3.99251 10.3292 3.34014 10.6199 2.61988 10.6199C1.17296 10.6199 0 9.44693 0 8.00001C0 6.55309 1.17296 5.38013 2.61988 5.38013C3.38073 5.38013 4.06583 5.70446 4.54446 6.22241L9.32969 3.48008C9.23607 3.21064 9.1852 2.9212 9.1852 2.61988C9.1852 1.17296 10.3582 0 11.8051 0C13.252 0 14.425 1.17296 14.425 2.61988Z"
+                      fill="white"
+                    />
+                  </svg>
+                  share profile
                 </button></a
               >
             </div>
 
-            <!--todo   PROFILE-DASHBOARD  -->
+            <!--todo =****= PROFILE DASHBOARD =****= -->
 
             <div class="dashboard-section">
               <h4>Professional dashboard</h4>
               <p>Tools and resource just for your business</p>
             </div>
 
-            <!--todo  BIO-SECTION  -->
+            <!--todo =****= BIO-SECTION =****= -->
 
             <div class="bio-section">
               <h4>Bio</h4>
@@ -334,7 +363,7 @@
               </p>
             </div>
 
-            <!--todo   FOLLOWER-SECTION  -->
+            <!--todo =****= FOLLOWERS SLIDE SECTION =****= -->
 
             <div class="follower-section">
               <h4>followers</h4>
@@ -444,7 +473,7 @@
               </div>
             </div>
 
-            <!--todo   MEDIA-SECTION  -->
+            <!--todo =****= PHOTOS VIDEIOS & FRIENDS BUTTON =****= -->
 
             <div class="media-section">
               <div class="btn-section">
@@ -457,7 +486,7 @@
             </div>
 
             <div class="all-media-section">
-              <!--todo   GALLERY-SECTION  -->
+              <!--todo =****= PHOTOS-SECTION =****= -->
 
               <div class="photos-section" id="photosSec">
                 <h4>229 Photos</h4>
@@ -502,7 +531,7 @@
                 </div>
               </div>
 
-              <!--todo   FRIENDS-SECTION  -->
+              <!--todo =****= FRIENDS-SECTION =****= -->
 
               <div class="friends-section" id="friendSec">
                 <h4>229 Friends</h4>
@@ -731,7 +760,7 @@
               </div>
             </div>
 
-            <!--todo   REVIEWS-SECTION  -->
+            <!--todo =****= REVIEWS PROGRESS BAR SECTION =****= -->
 
             <div class="reviews-section">
               <h4>Reviews</h4>
@@ -784,7 +813,7 @@
               </div>
             </div>
 
-            <!--todo   TOTAL-REVIEWS-SECTION  -->
+            <!--todo =****= TOTAL REVIEWS SECTION (POST COMMENT) =****= -->
 
             <div class="total-reviews-section">
               <div class="head">
@@ -910,7 +939,8 @@
               </div>
             </div>
           </div>
-          <!--todo   MENU-BAR-SECTION  -->
+          <!--todo =****= MENU BAR SECTION (FOOTER) =****= -->
+
           <div class="menu-section">
             <div class="all-menu">
               <div class="home bars activeBar" id="homeBar">
@@ -1011,5 +1041,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/menubar.js"></script>
+    <script src="./js/darkmode.js"></script>
   </body>
 </html>
