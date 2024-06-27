@@ -41,26 +41,49 @@
           <!--todo   SPORTS-SECTION  -->
 
           <div id="sports">
-            <div class="sports-head">
-              <button class="single activeBtn">single</button>
-              <button class="buddies">buddies</button>
-              <button class="doubles">doubles</button>
-              <button class="teams">teams</button>
-            </div>
+            
 
             <div class="sports-content">
-              <button class="snooker">snooker</button>
-              <button class="snooker">snooker</button>
-              <button class="snooker">snooker</button>
-              <button class="snooker">snooker</button>
-              <button class="snooker">snooker</button>
-              <button class="snooker">snooker</button>
-              <button class="snooker">snooker</button>
-              <button class="snooker">snooker</button>
-              <button class="snooker">snooker</button>
-              <button class="snooker">snooker</button>
-              <button class="snooker">snooker</button>
-              <button class="snooker">snooker</button>
+              <div class="box">
+                <div class="game-name">snooker</div>
+              </div>
+              <div class="box">
+                <div class="game-name">snooker</div>
+              </div>
+              <div class="box">
+                <div class="game-name">snooker</div>
+              </div>
+              <div class="box">
+                <div class="game-name">snooker</div>
+              </div>
+              <div class="box">
+                <div class="game-name">snooker</div>
+              </div>
+
+              <div class="box">
+                <div class="game-name">snooker</div>
+              </div>
+
+
+              <div class="box">
+                <div class="game-name">snooker</div>
+              </div>
+              <div class="box">
+                <div class="game-name">snooker</div>
+              </div>
+              <div class="box">
+                <div class="game-name">snooker</div>
+              </div>
+              <div class="box">
+                <div class="game-name">snooker</div>
+              </div>
+              <div class="box">
+                <div class="game-name">snooker</div>
+              </div>
+
+              <div class="box">
+                <div class="game-name">snooker</div>
+              </div>
             </div>
           </div>
         </div>
@@ -72,25 +95,5 @@
 
     <script src="../js/menubar.js"></script>
 
-    <script>
-      let single = document.querySelectorAll(".single");
-      let buddies = document.querySelectorAll(".buddies");
-      let doubles = document.querySelectorAll(".doubles");
-      let teams = document.querySelectorAll(".teams");
-
-      let btnItems = [...single, ...buddies, ...doubles, ...teams];
-
-      btnItems.forEach((item) => {
-        if (item) {
-          item.addEventListener("click", () => {
-            btnItems.forEach((removeClass) => {
-              removeClass.classList.remove("activeBtn");
-            });
-
-            item.classList.add("activeBtn");
-          });
-        }
-      });
-    </script>
   </body>
 </html>

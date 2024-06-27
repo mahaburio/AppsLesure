@@ -81,7 +81,6 @@
 
         <div class="head-of-section">
           <div id="invitation">
-            
             <div class="box">
               <div class="box-head">
                 <div class="game-name">football 11-a-side</div>
@@ -93,20 +92,23 @@
                 </div>
                 <div class="right">
                   <div class="one">
-                    <input checked name="checkBox" id="yesBox" type="checkbox" />
+                    <input
+                      checked
+                      name="checkBox"
+                      id="yesBox"
+                      type="checkbox"
+                    />
                     <label for="yesBox">yes</label>
                   </div>
                   <div class="two">
-                    <input  name="checkBox" id="noBox" type="checkbox" />
+                    <input name="checkBox" id="noBox" type="checkbox" />
                     <label for="noBox">no</label>
                   </div>
                 </div>
               </div>
 
-
-              <div class="toggle-invitation">
+              <div class="toggle-invitation" id="hideResult">
                 <div class="box-body">
-                
                   <div class="result">
                     <div class="left">
                       <div class="name">result type</div>
@@ -125,7 +127,6 @@
                           <option value="">won</option>
                           <option value="">lose</option>
                           <option value="">draw</option>
-
                         </select>
                       </div>
                       <div class="two">
@@ -180,14 +181,11 @@
                       </div>
                     </div>
                   </div>
-                  
-                  
-                  <button class="
-                  myBtn">submit</button>
                 </div>
               </div>
-
-             
+              <div class="btn-part">
+                <button class="
+                  myBtn submit-btn">submit</button>
               </div>
             </div>
           </div>
@@ -198,9 +196,9 @@
     <!--  ! ======= CDN-> Jquery, Swiper JS, Bootstrap JS, Raw JS ======= -->
 
     <script>
-
-      let yesBox = document.getElementById('yesBox')
-      let noBox = document.getElementById('noBox')
+      let yesBox = document.getElementById("yesBox");
+      let noBox = document.getElementById("noBox");
+      let hideResult = document.getElementById("hideResult");
 
       yesBox.addEventListener("click", function () {
         if (this.checked) {
@@ -212,6 +210,13 @@
         if (this.checked) {
           yesBox.checked = false;
         }
+      });
+
+      yesBox.addEventListener("click", function () {
+        hideResult.style.display = "block";
+      });
+      noBox.addEventListener("click", function () {
+        hideResult.style.display = "none";
       });
     </script>
   </body>

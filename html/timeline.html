@@ -16,7 +16,7 @@
     />
 
     <script src="https://kit.fontawesome.com/206993456b.js"></script>
-
+    <link rel="stylesheet" href="../html/modal.html" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
 
@@ -26,9 +26,7 @@
         <div class="back-btn-section">
           <div class="left">
             <a href="../index.html">
-              <button class="back-btn">
-                
-              </button>
+              <button class="back-btn"></button>
             </a>
           </div>
           <div class="center">Timeline</div>
@@ -77,11 +75,12 @@
               </div>
             </div>
             <div class="center">
-              <input type="text" placeholder="what’s on your mind?" />
+              <input type="text" placeholder="what’s on your mind?"></input>
             </div>
             <div class="right">
               <div class="gallery">
-                <svg id="galleryButton"
+                <svg
+                  id="galleryButton"
                   width="20"
                   height="20"
                   viewBox="0 0 24 24"
@@ -123,17 +122,16 @@
             </div>
           </div>
 
-          
-
           <div class="all-timeline-post">
-            
             <!-- todo *** FIRST-POST SECTION  **** -->
 
             <div class="timeline-post">
               <div class="post-header">
                 <div class="left">
                   <div class="img">
-                    <img src="../assets/person.svg" alt="" />
+                    <a href="">
+                      <img src="../assets/person.svg" alt="" />
+                    </a>
                   </div>
                   <div class="user">
                     <div class="name">self defense tip</div>
@@ -345,7 +343,9 @@
               <div class="post-header">
                 <div class="left">
                   <div class="img">
-                    <img src="../assets/person.svg" alt="" />
+                    <a href="">
+                      <img src="../assets/person.svg" alt="" />
+                    </a>
                   </div>
                   <div class="user">
                     <div class="name">self defense tip</div>
@@ -401,7 +401,7 @@
                         <div
                           class="left"
                           data-bs-toggle="modal"
-                          data-bs-target="#playersModal"
+                          data-bs-target="#lineUpPlayers"
                         >
                           <svg
                             width="24"
@@ -461,7 +461,7 @@
                         <div
                           class="right"
                           data-bs-toggle="modal"
-                          data-bs-target="#playersModal"
+                          data-bs-target="#lineUpPlayers"
                         >
                           <svg
                             width="24"
@@ -529,20 +529,6 @@
                         <div class="center">
                           <div class="score">2-1</div>
                           <div class="time">Full-time</div>
-                          <div class="circle">
-                            <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            id="Layer_1"
-                            data-name="Layer 1"
-                            viewBox="0 0 24 24"
-                            width="22"
-                            height="22"
-                          >
-                            <path
-                              d="m16,10c1.654,0,3-1.346,3-3s-1.346-3-3-3-3,1.346-3,3c0,.35.061.687.172.999l-3.831,2.128c-.55-.686-1.395-1.127-2.341-1.127-1.654,0-3,1.346-3,3s1.346,3,3,3c.946,0,1.791-.441,2.341-1.127l3.83,2.128c-.111.313-.172.649-.172.999,0,1.654,1.346,3,3,3s3-1.346,3-3-1.346-3-3-3c-.946,0-1.791.441-2.341,1.127l-3.83-2.128c.111-.313.172-.649.172-.999s-.061-.686-.172-.999l3.831-2.128c.55.686,1.395,1.127,2.341,1.127Zm0,5c1.103,0,2,.897,2,2s-.897,2-2,2-2-.897-2-2c0-1.359,1.259-2,2-2Zm-9-1c-1.103,0-2-.897-2-2s.897-2,2-2,2,.897,2,2-.897,2-2,2Zm9-9c1.103,0,2,.897,2,2s-.897,2-2,2c-1.128,0-2-1-2-2,0-1.103.897-2,2-2Zm3.5-5H4.5C2.019,0,0,2.019,0,4.5v15c0,2.481,2.019,4.5,4.5,4.5h15c2.481,0,4.5-2.019,4.5-4.5V4.5c0-2.481-2.019-4.5-4.5-4.5Zm3.5,19.5c0,1.93-1.57,3.5-3.5,3.5H4.5c-1.93,0-3.5-1.57-3.5-3.5V4.5c0-1.93,1.57-3.5,3.5-3.5h15c1.93,0,3.5,1.57,3.5,3.5v15Z"
-                            />
-                          </svg>
-                          </div>
                         </div>
                         <div class="right">
                           <div class="lose-box">
@@ -714,7 +700,9 @@
               <div class="post-header">
                 <div class="left">
                   <div class="img">
-                    <img src="../assets/person.svg" alt="" />
+                    <a href="">
+                      <img src="../assets/person.svg" alt="" />
+                    </a>
                   </div>
                   <div class="user">
                     <div class="name">self defense tip</div>
@@ -926,7 +914,9 @@
               <div class="post-header">
                 <div class="left">
                   <div class="img">
-                    <img src="../assets/person.svg" alt="" />
+                    <a href="">
+                      <img src="../assets/person.svg" alt="" />
+                    </a>
                   </div>
                   <div class="user">
                     <div class="name">self defense tip</div>
@@ -980,11 +970,17 @@
               </div>
 
               <div class="post-video">
-                <video id="myVideo" width="100%" height="100%" controls="controls" muted autoplay="autoplay" playsinline>
+                <video
+                  id="myVideo"
+                  width="100%"
+                  height="100%"
+                  controls="controls"
+                  muted
+                  autoplay="autoplay"
+                  playsinline
+                >
                   <source src="../assets/video.mp4" type="video/mp4" />
-                  
-              </video>
-              
+                </video>
               </div>
 
               <div class="post-reaction">
@@ -1229,7 +1225,11 @@
                 </div>
               </div>
               <div class="modal-body">
-                <div class="box">
+                <div
+                  class="box"
+                  data-bs-toggle="modal"
+                  data-bs-target="#savePostModal"
+                >
                   <div class="left">
                     <svg
                       width="16"
@@ -1345,7 +1345,11 @@
                   </div>
                 </div>
 
-                <div class="box">
+                <div
+                  class="box"
+                  data-bs-toggle="modal"
+                  data-bs-target="#reportPostModal"
+                >
                   <div class="left">
                     <svg
                       width="23"
@@ -1443,11 +1447,11 @@
           </div>
         </div>
 
-        <!--todo   PLAYERS-MODAL-SECTION  -->
+        <!-- ! LineUpplayer modal -->
 
         <div
           class="modal fade"
-          id="playersModal"
+          id="lineUpPlayers"
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
         >
@@ -1488,171 +1492,232 @@
                 <div class="box">
                   <div class="left">
                     <div class="border-part">
-                      <div class="img-part">
-                        <img src="../assets/friends.png" alt="" />
+                      <div class="img">
+                        <a href="">
+                          <img src="../assets/taylor.png" alt="" />
+                        </a>
                       </div>
                     </div>
+                    <div class="name">
+                      louis payne <span class="captain">Ⓒ</span>
+                    </div>
                   </div>
-
-                  <div class="right">
-                    <h4>louis payne</h4>
-                    <span class="captain">Ⓒ</span>
-                  </div>
+                  <div class="right"></div>
                 </div>
+
                 <div class="box">
                   <div class="left">
                     <div class="border-part">
-                      <div class="img-part">
-                        <img src="../assets/johan.png" alt="" />
+                      <div class="img">
+                        <a href=""
+                          ><img src="../assets/mattyJohnson.png" alt=""
+                        /></a>
                       </div>
                     </div>
+                    <div class="name">Armand John</div>
                   </div>
-
                   <div class="right">
-                    <h4>johan smith</h4>
-                    <span></span>
+                    <button class="add-btn">add</button>
                   </div>
                 </div>
+
                 <div class="box">
                   <div class="left">
                     <div class="border-part">
-                      <div class="img-part">
-                        <img src="../assets/taylor.png" alt="" />
+                      <div class="img">
+                        <a href="">
+                          <img src="../assets/sallyGreen.png" alt="" />
+                        </a>
                       </div>
                     </div>
+                    <div class="name">louis payne</div>
                   </div>
-
                   <div class="right">
-                    <h4>ore french</h4>
-                    <span></span>
+                    <button class="remove-btn">remove</button>
                   </div>
                 </div>
+
                 <div class="box">
                   <div class="left">
                     <div class="border-part">
-                      <div class="img-part">
-                        <img src="../assets/mattyJohnson.png" alt="" />
+                      <div class="img">
+                        <a href="">
+                          <img src="../assets/person.svg" alt="" />
+                        </a>
                       </div>
                     </div>
+                    <div class="name">louis payne</div>
                   </div>
-
                   <div class="right">
-                    <h4>rob page</h4>
-                    <span></span>
+                    <button class="add-btn">add</button>
                   </div>
                 </div>
+
                 <div class="box">
                   <div class="left">
                     <div class="border-part">
-                      <div class="img-part">
-                        <img src="../assets/paulsmith.png" alt="" />
+                      <div class="img">
+                        <a href="">
+                          <img src="../assets/jessica.png" alt="" />
+                        </a>
                       </div>
                     </div>
+                    <div class="name">louis payne</div>
                   </div>
-
                   <div class="right">
-                    <h4>pistol edges</h4>
-                    <span></span>
+                    <button class="add-btn">add</button>
                   </div>
                 </div>
+
                 <div class="box">
                   <div class="left">
                     <div class="border-part">
-                      <div class="img-part">
-                        <img src="../assets/friends.png" alt="" />
+                      <div class="img">
+                        <a href="">
+                          <img src="../assets/johan.png" alt="" />
+                        </a>
                       </div>
                     </div>
+                    <div class="name">louis payne</div>
                   </div>
-
                   <div class="right">
-                    <h4>louis payne</h4>
-                    <span></span>
+                    <button class="add-btn">add</button>
                   </div>
                 </div>
+
                 <div class="box">
                   <div class="left">
                     <div class="border-part">
-                      <div class="img-part">
-                        <img src="../assets/friends.png" alt="" />
+                      <div class="img">
+                        <a href="">
+                          <img src="../assets/johan.png" alt="" />
+                        </a>
                       </div>
                     </div>
+                    <div class="name">louis payne</div>
                   </div>
-
                   <div class="right">
-                    <h4>Anderson</h4>
-                    <span></span>
+                    <button class="add-btn">add</button>
                   </div>
                 </div>
+
                 <div class="box">
                   <div class="left">
                     <div class="border-part">
-                      <div class="img-part">
-                        <img src="../assets/sallyGreen.png" alt="" />
+                      <div class="img">
+                        <a href="">
+                          <img src="../assets/johan.png" alt="" />
+                        </a>
                       </div>
                     </div>
+                    <div class="name">louis payne</div>
                   </div>
-
                   <div class="right">
-                    <h4>Smith Jack</h4>
-                    <span></span>
+                    <button class="add-btn">add</button>
                   </div>
                 </div>
+
                 <div class="box">
                   <div class="left">
                     <div class="border-part">
-                      <div class="img-part">
-                        <img src="../assets/person.svg" alt="" />
+                      <div class="img">
+                        <a href="">
+                          <img src="../assets/johan.png" alt="" />
+                        </a>
                       </div>
                     </div>
+                    <div class="name">louis payne</div>
                   </div>
-
                   <div class="right">
-                    <h4>Rock Domin</h4>
-                    <span></span>
+                    <button class="add-btn">add</button>
                   </div>
                 </div>
-                <div class="box">
-                  <div class="left">
-                    <div class="border-part">
-                      <div class="img-part">
-                        <img src="../assets/friends.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
 
-                  <div class="right">
-                    <h4>louis payne</h4>
-                    <span></span>
+        <!--todo   SAVE POST-MODAL-  -->
+
+        <div
+          class="modal fade"
+          id="savePostModal"
+          tabindex="-1"
+          aria-labelledby="savePostModal"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="left"></div>
+                <div class="center">
+                  <h4 class="header-title">Alert</h4>
+                </div>
+                <div class="right"></div>
+              </div>
+              <div class="modal-body">
+                <p class="imp-text">are you sure you want to save post?</p>
+              </div>
+              <div class="modal-footer">
+                <button class="cancel-btn" data-bs-dismiss="modal">
+                  cancel
+                </button>
+                <button class="ok-btn">ok</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--todo   REPORT POST-MODAL-  -->
+
+        <div
+          class="modal fade"
+          id="reportPostModal"
+          tabindex="-1"
+          aria-labelledby="reportPostModal"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="left"></div>
+                <div class="center">
+                  <h4 class="header-title">Why Report</h4>
+                </div>
+                <div class="right">
+                  <div
+                    class="cancelBtn"
+                    type="button"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M19.5816 2.43872C20.1395 1.88083 20.1395 0.976311 19.5816 0.418419C19.0237 -0.139473 18.1192 -0.139473 17.5613 0.418419L10 7.9797L2.43872 0.418419C1.88083 -0.139473 0.976311 -0.139473 0.418419 0.418419C-0.139473 0.976311 -0.139473 1.88083 0.418419 2.43872L7.9797 10L0.418419 17.5613C-0.139473 18.1192 -0.139473 19.0237 0.418419 19.5816C0.976311 20.1395 1.88083 20.1395 2.43872 19.5816L10 12.0203L17.5613 19.5816C18.1192 20.1395 19.0237 20.1395 19.5816 19.5816C20.1395 19.0237 20.1395 18.1192 19.5816 17.5613L12.0203 10L19.5816 2.43872Z"
+                        fill="#667C97"
+                      />
+                    </svg>
                   </div>
                 </div>
-                <div class="box">
-                  <div class="left">
-                    <div class="border-part">
-                      <div class="img-part">
-                        <img src="../assets/friends.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="right">
-                    <h4>louis payne</h4>
-                    <span></span>
-                  </div>
-                </div>
-                <div class="box">
-                  <div class="left">
-                    <div class="border-part">
-                      <div class="img-part">
-                        <img src="../assets/friends.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="right">
-                    <h4>louis payne</h4>
-                    <span></span>
-                  </div>
-                </div>
+              </div>
+              <div class="modal-body">
+                <textarea
+                  name=""
+                  id=""
+                  placeholder="Enter something"
+                ></textarea>
+              </div>
+              <div class="modal-footer">
+                <button class="myBtn">report</button>
               </div>
             </div>
           </div>

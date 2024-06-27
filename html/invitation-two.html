@@ -108,7 +108,7 @@
               </div>
 
 
-              <div class="toggle-invitation">
+              <div class="toggle-invitation" id="hideResult">
                 <div class="box-body">
                 
                   <div class="result">
@@ -215,6 +215,30 @@
           document.getElementById("yesBox").checked = false;
         }
       });
+
+      let yesBox = document.getElementById("yesBox");
+      let noBox = document.getElementById("noBox");
+      let hideResult = document.getElementById("hideResult");
+
+      yesBox.addEventListener("click", function () {
+        if (this.checked) {
+          noBox.checked = false;
+        }
+      });
+
+      noBox.addEventListener("click", function () {
+        if (this.checked) {
+          yesBox.checked = false;
+        }
+      });
+
+      yesBox.addEventListener("click", function () {
+        hideResult.style.display = "block";
+      });
+      noBox.addEventListener("click", function () {
+        hideResult.style.display = "none";
+      });
+
     </script>
   </body>
 </html>

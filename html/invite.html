@@ -120,7 +120,7 @@
               <div class="box-header">
                 <div class="left">
                   <div class="img">
-                    <img src="../assets/lucasPetter.png" alt="">
+                    <img src="../assets/lucasPetter.png" alt="" />
                   </div>
                   <div class="name">ajay singh</div>
                 </div>
@@ -129,21 +129,28 @@
                 <div class="text">ajay singh - has sent a game invitation.</div>
                 <div class="game-details">
                   <div class="title">game details:</div>
-                  <div class="game-name">snooker - <span class="sub-name">best of five frames</span></div>
+                  <div class="game-name">
+                    snooker - <span class="sub-name">best of five frames</span>
+                  </div>
                   <div class="date">23 november 2024</div>
                   <div class="time">10:51am</div>
                   <div class="title">sports centre</div>
-                  <div class="location">12 alsaints house, orchard road, southamton</div>
+                  <div class="location">
+                    12 alsaints house, orchard road, southamton
+                  </div>
                 </div>
               </div>
               <div class="box-footer">
-                <button class="accept-btn grayBtn">accept</button>
-                <button class="decline-btn">decline</button>
+                <button class="accept-btn grayBtn" data-bs-toggle="modal" data-bs-target="#acceptModal">accept</button>
+                <button
+                  class="decline-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#deleteModal"
+                >
+                  decline
+                </button>
               </div>
             </div>
-
-
-            
           </div>
         </div>
 
@@ -154,7 +161,7 @@
           id="lineUpPlayers"
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
-         >
+        >
           <div
             class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
           >
@@ -196,11 +203,11 @@
                         <img src="../assets/taylor.png" alt="" />
                       </div>
                     </div>
-                    <div class="name">louis payne <span class="captain">Ⓒ</span></div>
+                    <div class="name">
+                      louis payne <span class="captain">Ⓒ</span>
+                    </div>
                   </div>
-                  <div class="right">
-                    
-                  </div>
+                  <div class="right"></div>
                 </div>
 
                 <div class="box">
@@ -227,7 +234,7 @@
                     <div class="name">louis payne</div>
                   </div>
                   <div class="right">
-                    <button class="add-btn">added</button>
+                    <button class="remove-btn">remove</button>
                   </div>
                 </div>
 
@@ -247,23 +254,9 @@
 
                 <div class="box">
                   <div class="left">
-                   <div class="border-part">
-                    <div class="img">
-                      <img src="../assets/jessica.png" alt="" />
-                    </div>
-                   </div>
-                    <div class="name">louis payne</div>
-                  </div>
-                  <div class="right">
-                    <button class="add-btn">add</button>
-                  </div>
-                </div>
-
-                <div class="box">
-                  <div class="left">
                     <div class="border-part">
                       <div class="img">
-                        <img src="../assets/johan.png" alt="" />
+                        <img src="../assets/jessica.png" alt="" />
                       </div>
                     </div>
                     <div class="name">louis payne</div>
@@ -308,7 +301,21 @@
                         <img src="../assets/johan.png" alt="" />
                       </div>
                     </div>
-                    <div class="name">louis payne </div>
+                    <div class="name">louis payne</div>
+                  </div>
+                  <div class="right">
+                    <button class="add-btn">add</button>
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div class="left">
+                    <div class="border-part">
+                      <div class="img">
+                        <img src="../assets/johan.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="name">louis payne</div>
                   </div>
                   <div class="right">
                     <button class="add-btn">add</button>
@@ -317,6 +324,64 @@
               </div>
               <div class="modal-footer">
                 <button class="confirm-btn">confirm</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="deleteModal"
+          tabindex="-1"
+          aria-labelledby=""
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="left"></div>
+                <div class="center">
+                  <h4 class="header-title">alert</h4>
+                </div>
+                <div class="right"></div>
+              </div>
+              <div class="modal-body">
+                <p class="imp-text">are you sure you want to decline?</p>
+              </div>
+              <div class="modal-footer">
+                <button class="cancel-btn" data-bs-dismiss="modal">
+                  cancel
+                </button>
+                <button class="ok-btn">ok</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="acceptModal"
+          tabindex="-1"
+          aria-labelledby=""
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="left"></div>
+                <div class="center">
+                  <h4 class="header-title">alert</h4>
+                </div>
+                <div class="right"></div>
+              </div>
+              <div class="modal-body">
+                <p class="imp-text">are you sure you want to accept?</p>
+              </div>
+              <div class="modal-footer">
+                <button class="cancel-btn" data-bs-dismiss="modal">
+                  cancel
+                </button>
+                <button class="ok-btn">ok</button>
               </div>
             </div>
           </div>

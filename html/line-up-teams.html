@@ -25,7 +25,7 @@
       <div class="profile-one" id="forBackground">
         <div class="back-btn-section">
           <div class="left">
-            <a href="../html/game-invite.html">
+            <a href="../html/chatroom-doubles.html">
               <button class="back-btn">
                 <svg
                   width="12"
@@ -52,38 +52,11 @@
             <div class="team">
               <div class="box">
                 <div class="left activeBtn" id="teamOne">
-          
-                    <a href="../html/game-invite.html" class="icon">
-                      <svg
-                        width="18"
-                        height="18"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M12.878 0.213013C12.594 -0.0710044 12.1335 -0.0710044 11.8495 0.213013L4.57675 7.48574C4.44036 7.62213 4.36374 7.80711 4.36374 8V10.9091C4.36374 11.3107 4.68935 11.6364 5.09101 11.6364H8.0001C8.19299 11.6364 8.37797 11.5597 8.51436 11.4233L15.7871 4.15062C16.0711 3.8666 16.0711 3.40612 15.7871 3.1221L12.878 0.213013ZM5.81829 10.1818V8.30124L12.3637 1.75579L14.2443 3.63636L7.69886 10.1818H5.81829ZM1.66756 3.12209C1.80395 2.9857 1.98893 2.90908 2.18182 2.90908H6.06545C6.46711 2.90908 6.79272 2.58347 6.79272 2.1818C6.79272 1.78014 6.46711 1.45453 6.06545 1.45453H2.18182C1.60316 1.45453 1.04821 1.6844 0.639039 2.09357C0.229869 2.50274 0 3.0577 0 3.63635V13.8182C0 14.3968 0.229869 14.9518 0.639039 15.3609C1.04821 15.7701 1.60316 16 2.18182 16H12.3636C12.9423 16 13.4972 15.7701 13.9064 15.3609C14.3156 14.9518 14.5454 14.3968 14.5454 13.8182V9.93453C14.5454 9.53287 14.2198 9.20726 13.8182 9.20726C13.4165 9.20726 13.0909 9.53287 13.0909 9.93453V13.8182C13.0909 14.011 13.0143 14.196 12.8779 14.3324C12.7415 14.4688 12.5565 14.5454 12.3636 14.5454H2.18182C1.98893 14.5454 1.80395 14.4688 1.66756 14.3324C1.53117 14.196 1.45454 14.011 1.45454 13.8182V3.63635C1.45454 3.44346 1.53117 3.25848 1.66756 3.12209Z"
-                          fill="#667c97"
-                        />
-                      </svg>
-                    </a>
-  
-                    <div class="name">The Warrior</div>
-                    <div class="img-box">
-                      <img src="../assets/team1.png" alt="" />
-                    </div>
-                  
-                  
-                </div>
-                
-                <div class="right" id="teamTwo">
-                  <div class="img-box">
-                    <img src="../assets/team2.png" alt="" />
-                  </div>
-                  <div class="name">South Side</div>
-                  <a href="../html/game-invite.html" class="icon">
+                  <div
+                    class="icon"
+                    data-bs-toggle="modal"
+                    data-bs-target="#lineUpPlayers"
+                  >
                     <svg
                       width="18"
                       height="18"
@@ -98,11 +71,42 @@
                         fill="#667c97"
                       />
                     </svg>
-                  </a>
+                  </div>
+
+                  <div class="name">The Warrior</div>
+                  <div class="img-box">
+                    <img src="../assets/team1.png" alt="" />
+                  </div>
+                </div>
+
+                <div class="right" id="teamTwo">
+                  <div class="img-box">
+                    <img src="../assets/team2.png" alt="" />
+                  </div>
+                  <div class="name">South Side</div>
+                  <div
+                    class="icon"
+                    data-bs-toggle="modal"
+                    data-bs-target="#lineUpPlayers"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.878 0.213013C12.594 -0.0710044 12.1335 -0.0710044 11.8495 0.213013L4.57675 7.48574C4.44036 7.62213 4.36374 7.80711 4.36374 8V10.9091C4.36374 11.3107 4.68935 11.6364 5.09101 11.6364H8.0001C8.19299 11.6364 8.37797 11.5597 8.51436 11.4233L15.7871 4.15062C16.0711 3.8666 16.0711 3.40612 15.7871 3.1221L12.878 0.213013ZM5.81829 10.1818V8.30124L12.3637 1.75579L14.2443 3.63636L7.69886 10.1818H5.81829ZM1.66756 3.12209C1.80395 2.9857 1.98893 2.90908 2.18182 2.90908H6.06545C6.46711 2.90908 6.79272 2.58347 6.79272 2.1818C6.79272 1.78014 6.46711 1.45453 6.06545 1.45453H2.18182C1.60316 1.45453 1.04821 1.6844 0.639039 2.09357C0.229869 2.50274 0 3.0577 0 3.63635V13.8182C0 14.3968 0.229869 14.9518 0.639039 15.3609C1.04821 15.7701 1.60316 16 2.18182 16H12.3636C12.9423 16 13.4972 15.7701 13.9064 15.3609C14.3156 14.9518 14.5454 14.3968 14.5454 13.8182V9.93453C14.5454 9.53287 14.2198 9.20726 13.8182 9.20726C13.4165 9.20726 13.0909 9.53287 13.0909 9.93453V13.8182C13.0909 14.011 13.0143 14.196 12.8779 14.3324C12.7415 14.4688 12.5565 14.5454 12.3636 14.5454H2.18182C1.98893 14.5454 1.80395 14.4688 1.66756 14.3324C1.53117 14.196 1.45454 14.011 1.45454 13.8182V3.63635C1.45454 3.44346 1.53117 3.25848 1.66756 3.12209Z"
+                        fill="#667c97"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
-
 
             <div class="" id="teamOnePlayers">
               <div class="all-players">
@@ -114,13 +118,12 @@
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="right">
                     <h4 class="name">
                       johan smith <span class="captain">Ⓒ</span>
                     </h4>
                     <span></span>
-                    
                   </div>
                 </div>
                 <div class="box">
@@ -131,11 +134,10 @@
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="right">
                     <h4 class="name">johan smith</h4>
                     <span></span>
-                    
                   </div>
                 </div>
                 <div class="box">
@@ -146,11 +148,10 @@
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="right">
                     <h4 class="name">johan smith</h4>
                     <span></span>
-                    
                   </div>
                 </div>
                 <div class="box">
@@ -161,11 +162,10 @@
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="right">
                     <h4 class="name">johan smith</h4>
                     <span></span>
-                    
                   </div>
                 </div>
                 <div class="box">
@@ -176,11 +176,10 @@
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="right">
                     <h4 class="name">johan smith</h4>
                     <span></span>
-                    
                   </div>
                 </div>
                 <div class="box">
@@ -191,11 +190,10 @@
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="right">
                     <h4 class="name">johan smith</h4>
                     <span></span>
-                    
                   </div>
                 </div>
                 <div class="box">
@@ -206,18 +204,14 @@
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="right">
                     <h4 class="name">johan smith</h4>
                     <span></span>
-                    
                   </div>
                 </div>
               </div>
             </div>
-
-
-
 
             <div class="" id="teamTwoPlayers">
               <div class="all-players">
@@ -229,13 +223,12 @@
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="right">
                     <h4 class="name">
                       Paul smith <span class="captain">Ⓒ</span>
                     </h4>
                     <span></span>
-                    
                   </div>
                 </div>
                 <div class="box">
@@ -246,11 +239,10 @@
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="right">
                     <h4 class="name">jerry sharma</h4>
                     <span></span>
-                    
                   </div>
                 </div>
                 <div class="box">
@@ -261,11 +253,10 @@
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="right">
                     <h4 class="name">mattey john</h4>
                     <span></span>
-                    
                   </div>
                 </div>
                 <div class="box">
@@ -276,11 +267,10 @@
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="right">
                     <h4 class="name">salley green</h4>
                     <span></span>
-                    
                   </div>
                 </div>
                 <div class="box">
@@ -291,11 +281,10 @@
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="right">
                     <h4 class="name">ore french</h4>
                     <span></span>
-                    
                   </div>
                 </div>
                 <div class="box">
@@ -306,11 +295,10 @@
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="right">
                     <h4 class="name">johan smith</h4>
                     <span></span>
-                    
                   </div>
                 </div>
                 <div class="box">
@@ -321,17 +309,189 @@
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="right">
                     <h4 class="name">johan smith</h4>
                     <span></span>
-                    
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
 
+        <!-- ! LineUpplayer modal -->
 
+        <div
+          class="modal fade"
+          id="lineUpPlayers"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="left"></div>
+                <div class="center">
+                  <h4 class="header-title">Players</h4>
+                </div>
+                <div class="right">
+                  <div
+                    class="cancelBtn"
+                    type="button"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M19.5816 2.43872C20.1395 1.88083 20.1395 0.976311 19.5816 0.418419C19.0237 -0.139473 18.1192 -0.139473 17.5613 0.418419L10 7.9797L2.43872 0.418419C1.88083 -0.139473 0.976311 -0.139473 0.418419 0.418419C-0.139473 0.976311 -0.139473 1.88083 0.418419 2.43872L7.9797 10L0.418419 17.5613C-0.139473 18.1192 -0.139473 19.0237 0.418419 19.5816C0.976311 20.1395 1.88083 20.1395 2.43872 19.5816L10 12.0203L17.5613 19.5816C18.1192 20.1395 19.0237 20.1395 19.5816 19.5816C20.1395 19.0237 20.1395 18.1192 19.5816 17.5613L12.0203 10L19.5816 2.43872Z"
+                        fill="#667C97"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-body">
+                <div class="box">
+                  <div class="left">
+                    <div class="border-part">
+                      <div class="img">
+                        <a href=""><img src="../assets/taylor.png" alt="" /></a>
+                      </div>
+                    </div>
+                    <div class="name">
+                      louis payne <span class="captain">Ⓒ</span>
+                    </div>
+                  </div>
+                  <div class="right"></div>
+                </div>
+
+                <div class="box">
+                  <div class="left">
+                    <div class="border-part">
+                      <div class="img">
+                        <a href="">
+                          <img src="../assets/mattyJohnson.png" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="name">Armand John</div>
+                  </div>
+                  <div class="right">
+                    <button class="add-btn">add</button>
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div class="left">
+                    <div class="border-part">
+                      <div class="img">
+                        <a href="">
+                          <img src="../assets/sallyGreen.png" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="name">louis payne</div>
+                  </div>
+                  <div class="right">
+                    <button class="remove-btn">remove</button>
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div class="left">
+                    <div class="border-part">
+                      <div class="img">
+                        <a href="">
+                          <img src="../assets/person.svg" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="name">louis payne</div>
+                  </div>
+                  <div class="right">
+                    <button class="add-btn">add</button>
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div class="left">
+                    <div class="border-part">
+                      <div class="img">
+                        <a href="">
+                          <img src="../assets/jessica.png" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="name">louis payne</div>
+                  </div>
+                  <div class="right">
+                    <button class="add-btn">add</button>
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div class="left">
+                    <div class="border-part">
+                      <div class="img">
+                        <a href="">
+                          <img src="../assets/johan.png" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="name">louis payne</div>
+                  </div>
+                  <div class="right">
+                    <button class="add-btn">add</button>
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div class="left">
+                    <div class="border-part">
+                      <div class="img">
+                        <a href="">
+                          <img src="../assets/johan.png" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="name">louis payne</div>
+                  </div>
+                  <div class="right">
+                    <button class="add-btn">add</button>
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div class="left">
+                    <div class="border-part">
+                      <div class="img">
+                        <a href="">
+                          <img src="../assets/johan.png" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="name">louis payne</div>
+                  </div>
+                  <div class="right">
+                    <button class="add-btn">add</button>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="confirm-btn">confirm</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -340,43 +500,35 @@
     <!--! ======= CDN-> Jquery, Swiper JS, Bootstrap JS, Raw JS ======= -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
     <script>
-
-
       let teamOne = document.getElementById("teamOne");
-let teamTwo = document.getElementById("teamTwo");
-let teamOnePlayers = document.getElementById("teamOnePlayers");
-let teamTwoPlayers = document.getElementById("teamTwoPlayers");
+      let teamTwo = document.getElementById("teamTwo");
+      let teamOnePlayers = document.getElementById("teamOnePlayers");
+      let teamTwoPlayers = document.getElementById("teamTwoPlayers");
 
+      let btnItems = [teamOne, teamTwo];
 
-let btnItems = [teamOne, teamTwo];
+      btnItems.forEach((item) => {
+        if (item) {
+          item.addEventListener("click", () => {
+            btnItems.forEach((removeClass) => {
+              removeClass.classList.remove("activeBtn");
+            });
 
-btnItems.forEach((item) => {
-  if (item) {
-    item.addEventListener("click", () => {
-      btnItems.forEach((removeClass) => {
-        removeClass.classList.remove("activeBtn");
+            item.classList.add("activeBtn");
+          });
+        }
       });
 
-      item.classList.add("activeBtn");
-    });
-  }
-});
+      teamOne.addEventListener("click", () => {
+        teamOnePlayers.style.display = "block";
+        teamTwoPlayers.style.display = "none";
+      });
 
-teamOne.addEventListener('click', ()=>{
-  teamOnePlayers.style.display = "block"
-  teamTwoPlayers.style.display = "none"
-})
-
-teamTwo.addEventListener('click', ()=>{
-  teamOnePlayers.style.display = "none"
-  teamTwoPlayers.style.display = "block"
-})
-
-
-
-
+      teamTwo.addEventListener("click", () => {
+        teamOnePlayers.style.display = "none";
+        teamTwoPlayers.style.display = "block";
+      });
     </script>
   </body>
 </html>
