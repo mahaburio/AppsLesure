@@ -1531,6 +1531,12 @@ input[type="number"] {
   font-weight: normal;
 }
 
+#removeModal .modal-dialog{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #removeModal .modal-body {
   display: flex;
   justify-content: center;
@@ -1976,6 +1982,7 @@ input[type="number"] {
   background-color: var(--white-color);
   z-index: 999;
   left: 0;
+  padding-bottom: 10px;
 }
 
 .menu-section .all-menu {
@@ -2736,6 +2743,7 @@ input[type="number"] {
   transition: 0.3s;
 }
 
+
 #profileMenu .box .btn button:hover {
   background-color: var(--primary-color);
   color: var(--white-color);
@@ -2760,6 +2768,12 @@ input[type="number"] {
   text-transform: capitalize;
   font-size: 15px;
   color: var(--text-color);
+}
+
+#profileMenu .venue-details .wb-link{
+  font-size: 14px;
+  color: var(--text-color);
+  text-transform: lowercase;
 }
 
 /* todo ==== GRID-SECTION ==== --> */
@@ -2832,7 +2846,7 @@ input[type="number"] {
   height: 25px;
   width: 25px;
   border-radius: 50%;
-  background-color: #f0f0f0;
+  background-color: #f8f8f8;
   text-align: center;
   line-height: 22px;
 }
@@ -2853,7 +2867,13 @@ input[type="number"] {
   border: 1px solid var(--border-color);
   width: 100%;
   text-align: left;
+  color: var(--text-color);
   background-color: var(--white-color);
+}
+
+#profileMenu .collapses .collapse-item a{
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 #profileMenu .collapses .collapse-item:hover {
@@ -2905,14 +2925,17 @@ input[type="number"] {
 /* ! **********  SETTING PAGE ******** */
 
 #setting button {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: capitalize;
   color: var(--text-color);
   font-weight: 500;
   padding: 10px;
   background-color: #f8f8f8;
-
+  display: block;
   border: 1px solid var(--border-color);
+  text-align: center;
+  cursor: default;
+
 }
 
 #setting .one,
@@ -2921,8 +2944,13 @@ input[type="number"] {
   margin-top: 5px;
 }
 
+#setting .accordion-header{
+  border: none;
+}
+
 .accordion-item {
   border: none;
+
 }
 
 .accordion-button:focus {
@@ -2972,6 +3000,20 @@ input[type="number"] {
   display: none;
 }
 
+.accordion-button{
+  border: none;
+}
+
+
+.accordion-button::after{
+  display: none;
+}
+
+.accordion-button:not(.collapsed){
+  box-shadow: none;
+}
+
+
 /* ! ********** FOR NOTIFICATION PAGE ******** */
 
 #notificationMenu {
@@ -3005,7 +3047,7 @@ input[type="number"] {
 #notificationMenu .box {
   padding: 8px;
   border-radius: 4px;
-  margin-top: 15px;
+  margin-top: 10px;
   background-color: var(--white-color);
   /* box-shadow: var(--shadow-one) 0px 1px 2px 0px,
     var(--shadow-two) 0px 1px 3px 1px; */
@@ -6438,8 +6480,9 @@ input[type="number"] {
 
 #coachProfile .btn .chat {
   border: none;
-  position: relative;
-  left: 90px;
+  position: absolute;
+  right: 10px;
+  top: 40px;
   text-transform: capitalize;
   font-size: 14px;
   font-weight: 600;
@@ -7272,7 +7315,7 @@ input[type="number"] {
 }
 
 .status-bar {
-  width: 100%;
+  width: 94%;
   position: sticky;
   bottom: 70px;
   padding: 5px 20px;
