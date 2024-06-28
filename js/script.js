@@ -63,7 +63,11 @@ profileImageInput.addEventListener("change", (event) => {
 
 let photosBtn = document.getElementById("photosBtn");
 let videosBtn = document.getElementById("videosBtn");
+let friendsBtn = document.getElementById("friendsBtn");
+
+
 let friendSec = document.getElementById("friendSec");
+let videosSec = document.getElementById("videosSec");
 let photosSec = document.getElementById("photosSec");
 
 let listItem = [photosBtn, videosBtn, friendsBtn];
@@ -82,13 +86,24 @@ listItem.forEach((item) => {
     item.addEventListener("click", () => {
       friendSec.style.display = "block";
       photosSec.style.display = "none";
+      videosSec.style.display = "none";
     });
   }
 
   if (item == photosBtn) {
     item.addEventListener("click", () => {
-      friendSec.style.display = "none";
       photosSec.style.display = "block";
+      friendSec.style.display = "none";
+      videosSec.style.display = "none";
+    });
+  }
+
+  if (item == videosBtn) {
+    item.addEventListener("click", () => {
+      friendSec.style.display = "none";
+      photosSec.style.display = "none";
+      videosSec.style.display = "block";
+
     });
   }
 });

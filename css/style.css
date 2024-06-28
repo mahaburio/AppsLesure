@@ -863,6 +863,10 @@ input[type="number"] {
 
 /* todo =****= GALLERY SECTION (PHOTOS) =****=  */
 
+#galleryPage{
+
+}
+
 .profile-html-page .photos-section {
   display: none;
 }
@@ -940,6 +944,46 @@ input[type="number"] {
   -o-border-radius: 4px;
 }
 
+#galleryPage .item{
+  position: relative;
+}
+
+#galleryPage .cancel-btn{
+  position: absolute;
+  top: 4px;
+  right:4px;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#galleryPage .cancel-btn svg circle{
+  fill: var(--text-color);
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+#galleryPage .cancel-btn:hover svg path{
+  transition: 0.2s;
+  fill: var(--secondary-color);
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
 /* todo =****= LIGHTBOX =****=  */
 
 #lightbox .lb-image {
@@ -947,6 +991,23 @@ input[type="number"] {
 }
 
 .lb-data .lb-details {
+}
+
+
+/* todo =****= GALLERY SECTION (VIDEOS) =****=  */
+
+.all-media-section .videos-section{
+  display: none;
+
+}
+
+.videos-section h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-color);
+  position: relative;
+  top: 5px;
+  text-transform: capitalize;
 }
 
 /* todo =****= GALLERY SECTION (FRIENDS) =****=  */
@@ -961,6 +1022,8 @@ input[type="number"] {
   color: var(--text-color);
   position: relative;
   top: 5px;
+  text-transform: capitalize;
+
 }
 
 .friends-section .box-all {
@@ -1100,6 +1163,7 @@ input[type="number"] {
   border: none;
   transition: 0.3s;
   font-weight: 600;
+
   color: var(--text-color);
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -2236,7 +2300,7 @@ input[type="number"] {
   background-color: var(--primary-color);
   color: var(--white-color);
   transition: 0.3s;
-  border: transparent;
+ 
 }
 
 .sign-page .body .social button span svg {
@@ -2377,13 +2441,13 @@ input[type="number"] {
   background-color: var(--primary-color);
   cursor: pointer;
   transition: 0.3s;
+  border: 1px solid var(--primary-color);
 }
 
 .sign-in-page .input-section .sign-in:hover {
   background-color: var(--white-color);
   color: var(--text-color);
   transition: 0.3s;
-  /* box-shadow: 0px 0px 4px 0px var(--shadow-color); */
   border: 1px solid var(--border-color);
 }
 
@@ -2453,14 +2517,15 @@ input[type="number"] {
   background-color: var(--primary-color);
   cursor: pointer;
   transition: 0.3s;
+  border: 1px solid var(--primary-color);
 }
 
 .sign-up-page .input-section .sign-up:hover {
   background-color: var(--white-color);
   color: var(--text-color);
   transition: 0.3s;
-  /* box-shadow: 0px 0px 4px 0px var(--shadow-color); */
   border: 1px solid var(--border-color);
+
 }
 
 .sign-up-page .input-section .sign-in {
@@ -2918,8 +2983,60 @@ input[type="number"] {
 #profileMenu .accordion-button::after {
   position: relative;
   right: 20px;
-  background-image: url("../assets/downIcon.svg");
+  /* background-image: url("../assets/downIcon.svg"); */
   rotate: 180deg;
+}
+
+
+#experienceModal .modal-body{
+  padding: 10px 0px;
+}
+
+#experienceModal .feedback .general,
+#experienceModal .feedback .something{
+  padding: 10px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  align-items: center;
+}
+
+#experienceModal .feedback .something{
+  border: none;
+}
+
+#experienceModal .feedback .name{
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+#experienceModal .feedback .title{
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--alt-color);
+
+} 
+
+#experienceModal .feedback  .img{
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #f0f0f0;
+}
+
+#experienceModal .feedback .img .icon svg path{
+ fill: var(--alt-color);
 }
 
 /* ! **********  SETTING PAGE ******** */
@@ -3005,7 +3122,7 @@ input[type="number"] {
 }
 
 
-.accordion-button::after{
+#setting .accordion-button::after{
   display: none;
 }
 
@@ -3538,7 +3655,7 @@ input[type="number"] {
 .modal-content .modal-header .header-title {
   color: var(--text-color);
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   margin: 0;
   text-transform: capitalize;
   font-weight: 600;
@@ -3692,7 +3809,9 @@ input[type="number"] {
 #showInterestModal .modal-dialog,
 #menuModal .modal-dialog,
 #defenseModal .modal-dialog,
-#reportPostModal .modal-dialog {
+#reportPostModal .modal-dialog,
+#editNameModal .modal-dialog,
+#experienceModal .modal-dialog {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3708,7 +3827,9 @@ input[type="number"] {
 #savePostModal .modal-content,
 #showInterestModal .modal-content,
 #savePostModal .modal-content,
-#reportPostModal .modal-content {
+#reportPostModal .modal-content,
+#editNameModal .modal-content,
+#experienceModal .modal-content {
   border-radius: 6px;
   border: none;
   overflow: hidden;
@@ -7466,6 +7587,11 @@ input[type="number"] {
 
 /* todo ==== GAME-INVITE-PAGE ==== --> */
 
+#gameInvite{
+ padding-bottom: 15px;
+
+}
+
 #gameInvite .team {
   padding: 15px 15px;
 }
@@ -8248,8 +8374,8 @@ input[type="number"] {
 }
 
 .diagonal-split .top .img {
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   overflow: hidden;
   border: 1px solid var(--white-color);
   border-radius: 50%;
@@ -8270,9 +8396,9 @@ input[type="number"] {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 70px;
-  width: 70px;
-  line-height: 70px;
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
   text-align: center;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -8300,8 +8426,8 @@ input[type="number"] {
 }
 
 .diagonal-split .bottom .img {
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   overflow: hidden;
   border: 1px solid var(--white-color);
   border-radius: 50%;
@@ -8312,8 +8438,8 @@ input[type="number"] {
 }
 
 .diagonal-split-single .bottom .img {
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   overflow: hidden;
   border: 1px solid var(--white-color);
   border-radius: 50%;
@@ -9077,6 +9203,115 @@ input[type="number"] {
   margin: 0;
 }
 
+#editNameModal .modal-body{
+  padding: 0;
+}
+
+#editNameModal .modal-body .name-sec{
+  text-align: right;
+  padding: 10px;
+}
+
+#editNameModal .modal-body .name-sec .edit-name{
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--text-color);
+  text-align: left;
+}
+
+#editNameModal .modal-body .name-sec textarea{
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  min-width: 100%;
+  padding: 5px 10px;
+  margin-top: 10px;
+  max-height: 80px;
+  min-height: 80px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+#editNameModal .modal-body .name-sec textarea::placeholder{
+  text-transform: capitalize;
+  color: var(--alt-color);
+  font-size: 14px;
+}
+
+#editNameModal .modal-body .name-sec .save-btn{
+  padding: 4px 25px;
+  text-transform: capitalize;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  font-size: 15px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+#editNameModal .modal-body .image-sec .edit-photo{
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--text-color);
+  text-align: left;
+}
+
+#editNameModal .modal-body .image-sec{
+ border-top: 1px solid var(--border-color);
+ padding: 10px;
+ 
+}
+
+#editNameModal .modal-body .edit-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  gap: 10px;
+}
+
+#editNameModal .modal-body .image-sec .img{
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#editNameModal .modal-body .image-sec .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#editNameModal .modal-body .image-sec .upload-img{
+  padding: 4px 5px;
+  text-transform: capitalize;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  font-size: 15px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+
 /* todo ==== RESPONSIVE-SECTION ==== --> */
 
 @media screen and (min-width: 576px) {
@@ -9146,7 +9381,9 @@ input[type="number"] {
   #showImageModal .modal-content,
   #removeModal .modal-content,
   #savePostModal .modal-content,
-  #reportPostModal .modal-content {
+  #reportPostModal .modal-content,
+  #editNameModal .modal-content,
+  #experienceModal .modal-content {
     width: 80%;
     left: -8px;
   }
