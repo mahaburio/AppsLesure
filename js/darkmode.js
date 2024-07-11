@@ -1,44 +1,31 @@
-const darkMode = document.getElementById('darkMode');
-
-darkMode.addEventListener('click', ()=>{
-  document.body.classList.toggle('dark-theme')
-})
-
-
-
-
-
-
-// // Function to apply the theme based on the stored preference
-// function applyTheme(theme) {
-//   document.body.classList.toggle('dark-mode', theme === 'dark');
-// }
-
-// // Function to toggle the theme and store the preference
-// function toggleTheme() {
-//   const currentTheme = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
-//   localStorage.setItem('theme', currentTheme);
-//   applyTheme(currentTheme);
-// }
-
-// // Apply the stored theme on page load
-// document.addEventListener('DOMContentLoaded', () => {
-//   const savedTheme = localStorage.getItem('theme') || 'light';
-//   applyTheme(savedTheme);
-
-//   document.getElementById('darkMode').addEventListener('click', toggleTheme);
-// });
-
-
-
-
 function darkmode() {
-  const wasDarkmode = localStorage.getItem('darkmode') === 'true';
-  localStorage.setItem('darkmode', !wasDarkmode);
+  const wasDarkmode = localStorage.getItem("darkmode") === "true";
+  localStorage.setItem("darkmode", !wasDarkmode);
   const element = document.body;
-  element.classList.toggle('dark-mode', !wasDarkmode);
+  element.classList.toggle("dark-mode", !wasDarkmode);
+
+  const sunIcon = document.getElementById("sunIcon");
+  const moonIcon = document.getElementById("moonIcon");
+  if (wasDarkmode) {
+    sunIcon.style.display = "none";
+    moonIcon.style.display = "block";
+  } else {
+    sunIcon.style.display = "block";
+    moonIcon.style.display = "none";
+  }
 }
 
 function mytheme() {
-  document.body.classList.toggle('dark-mode', localStorage.getItem('darkmode') === 'true');
+  const isDarkmode = localStorage.getItem("darkmode") === "true";
+  document.body.classList.toggle("dark-mode", isDarkmode);
+
+  const sunIcon = document.getElementById("sunIcon");
+  const moonIcon = document.getElementById("moonIcon");
+  if (isDarkmode) {
+    sunIcon.style.display = "block";
+    moonIcon.style.display = "none";
+  } else {
+    sunIcon.style.display = "none";
+    moonIcon.style.display = "block";
+  }
 }

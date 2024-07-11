@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu</title>
+    <title>Coach Profile</title>
     <!--! ======= CDN-> Bootstrap CSS, Fant Icon, Swiper CSS, Raw CSS ======= -->
 
     <link
@@ -16,16 +16,20 @@
     />
 
     <script src="https://kit.fontawesome.com/206993456b.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="../css/style.css" />
   </head>
 
-  <body>
+  <body onload="mytheme()">
     <div id="headToFoot">
       <div class="profile-one" id="forBackground">
         <div class="back-btn-section">
           <div class="left">
-            <a href="../html/timeline.html">
+            <a href="../html/pt-coach.html">
               <button class="back-btn">
                 <svg
                   width="12"
@@ -109,45 +113,419 @@
             </div>
 
             <div class="photos-section mt-3 coach-photos" id="photosSec">
-              <div class="head d-flex justify-content-between align-items-center mt-2">
+              <div
+                class="head d-flex justify-content-between align-items-center mt-2"
+              >
                 <h4 class="total">229 Photos</h4>
                 <button class="add-btn">add photo</button>
               </div>
-              <div class="box">
-                <div class="image-box">
-                  <div class="first">
-                    <img src="../assets/1.png" alt="" class="image-clickable" data-bs-toggle="modal" data-bs-target="#showImageModal" />
-                  </div>
-                  <div class="two">
-                    <img src="../assets/2.png" alt="" class="image-clickable" data-bs-toggle="modal" data-bs-target="#showImageModal" />
-                  </div>
-                  <div class="three">
-                    <img src="../assets/3.png" alt="" class="image-clickable" data-bs-toggle="modal" data-bs-target="#showImageModal" />
-                  </div>
-                  <div class="four">
-                    <img src="../assets/4.png" alt="" class="image-clickable" data-bs-toggle="modal" data-bs-target="#showImageModal"  />
-                  </div>
-                  <div class="five">
-                    <img src="../assets/5.png" alt="" class="image-clickable" data-bs-toggle="modal" data-bs-target="#showImageModal"  />
-                  </div>
-                  <div class="six">
-                    <img src="../assets/6.png" alt="" class="image-clickable" data-bs-toggle="modal" data-bs-target="#showImageModal"  />
-                  </div>
-                  <div class="seven">
-                    <img src="../assets/7.png" alt="" class="image-clickable" data-bs-toggle="modal" data-bs-target="#showImageModal"  />
-                  </div>
-                  <div class="eight">
-                    <img src="../assets/8.png" alt="" class="image-clickable" data-bs-toggle="modal" data-bs-target="#showImageModal"  />
-                  </div>
-                  <div class="nine">
-                    <img src="../assets/9.png" alt="" class="image-clickable" data-bs-toggle="modal" data-bs-target="#showImageModal"  />
+              <div id="galleryPage">
+                <div class="box">
+                  <div class="image-box">
+                    <div class="first item">
+                      <a
+                        href="../assets/1.png"
+                        data-lightbox="image-set"
+                        data-title="Image 1"
+                        ><img src="../assets/1.png" alt="Image 1" />
+                        <div
+                          class="cancel-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#galleryImageModal"
+                        >
+                          <svg
+                            width="6"
+                            height="13"
+                            viewBox="0 0 6 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle
+                              cx="3"
+                              cy="3"
+                              r="3"
+                              transform="rotate(90 3 3)"
+                              fill="#667C97"
+                            />
+                            <circle
+                              cx="3"
+                              cy="12"
+                              r="3"
+                              transform="rotate(90 3 12)"
+                              fill="#667C97"
+                            />
+                            <circle
+                              cx="3"
+                              cy="21"
+                              r="3"
+                              transform="rotate(90 3 21)"
+                              fill="#667C97"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="two item">
+                      <a
+                        href="../assets/2.png"
+                        data-lightbox="image-set"
+                        data-title="Image 2"
+                        ><img src="../assets/2.png" alt="" />
+    
+                        <div
+                          class="cancel-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#galleryImageModal"
+                        >
+                          <svg
+                            width="6"
+                            height="13"
+                            viewBox="0 0 6 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle
+                              cx="3"
+                              cy="3"
+                              r="3"
+                              transform="rotate(90 3 3)"
+                              fill="#667C97"
+                            />
+                            <circle
+                              cx="3"
+                              cy="12"
+                              r="3"
+                              transform="rotate(90 3 12)"
+                              fill="#667C97"
+                            />
+                            <circle
+                              cx="3"
+                              cy="21"
+                              r="3"
+                              transform="rotate(90 3 21)"
+                              fill="#667C97"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="three item">
+                      <a
+                        href="../assets/3.png"
+                        data-lightbox="image-set"
+                        data-title="Image 3"
+                        ><img src="../assets/3.png" alt="" />
+    
+                        <div
+                          class="cancel-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#galleryImageModal"
+                        >
+                          <svg
+                            width="6"
+                            height="13"
+                            viewBox="0 0 6 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle
+                              cx="3"
+                              cy="3"
+                              r="3"
+                              transform="rotate(90 3 3)"
+                              fill="#667C97"
+                            />
+                            <circle
+                              cx="3"
+                              cy="12"
+                              r="3"
+                              transform="rotate(90 3 12)"
+                              fill="#667C97"
+                            />
+                            <circle
+                              cx="3"
+                              cy="21"
+                              r="3"
+                              transform="rotate(90 3 21)"
+                              fill="#667C97"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="four item">
+                      <a
+                        href="../assets/4.png"
+                        data-lightbox="image-set"
+                        data-title="Image 4"
+                        ><img src="../assets/4.png" alt="" />
+    
+                        <div
+                          class="cancel-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#galleryImageModal"
+                        >
+                          <svg
+                            width="6"
+                            height="13"
+                            viewBox="0 0 6 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle
+                              cx="3"
+                              cy="3"
+                              r="3"
+                              transform="rotate(90 3 3)"
+                              fill="#667C97"
+                            />
+                            <circle
+                              cx="3"
+                              cy="12"
+                              r="3"
+                              transform="rotate(90 3 12)"
+                              fill="#667C97"
+                            />
+                            <circle
+                              cx="3"
+                              cy="21"
+                              r="3"
+                              transform="rotate(90 3 21)"
+                              fill="#667C97"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="five item">
+                      <a
+                        href="../assets/5.png"
+                        data-lightbox="image-set"
+                        data-title="Image 5"
+                        ><img src="../assets/5.png" alt="" />
+    
+                        <div
+                          class="cancel-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#galleryImageModal"
+                        >
+                          <svg
+                            width="6"
+                            height="13"
+                            viewBox="0 0 6 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle
+                              cx="3"
+                              cy="3"
+                              r="3"
+                              transform="rotate(90 3 3)"
+                              fill="#667C97"
+                            />
+                            <circle
+                              cx="3"
+                              cy="12"
+                              r="3"
+                              transform="rotate(90 3 12)"
+                              fill="#667C97"
+                            />
+                            <circle
+                              cx="3"
+                              cy="21"
+                              r="3"
+                              transform="rotate(90 3 21)"
+                              fill="#667C97"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="six item">
+                      <a
+                        href="../assets/6.png"
+                        data-lightbox="image-set"
+                        data-title="Image 6"
+                        ><img src="../assets/6.png" alt="" />
+    
+                        <div
+                          class="cancel-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#galleryImageModal"
+                        >
+                          <svg
+                            width="6"
+                            height="13"
+                            viewBox="0 0 6 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle
+                              cx="3"
+                              cy="3"
+                              r="3"
+                              transform="rotate(90 3 3)"
+                              fill="#667C97"
+                            />
+                            <circle
+                              cx="3"
+                              cy="12"
+                              r="3"
+                              transform="rotate(90 3 12)"
+                              fill="#667C97"
+                            />
+                            <circle
+                              cx="3"
+                              cy="21"
+                              r="3"
+                              transform="rotate(90 3 21)"
+                              fill="#667C97"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="seven item">
+                      <a
+                        href="../assets/7.png"
+                        data-lightbox="image-set"
+                        data-title="Image 7"
+                        ><img src="../assets/7.png" alt="" />
+    
+                        <div
+                          class="cancel-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#galleryImageModal"
+                        >
+                          <svg
+                            width="6"
+                            height="13"
+                            viewBox="0 0 6 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle
+                              cx="3"
+                              cy="3"
+                              r="3"
+                              transform="rotate(90 3 3)"
+                              fill="#667C97"
+                            />
+                            <circle
+                              cx="3"
+                              cy="12"
+                              r="3"
+                              transform="rotate(90 3 12)"
+                              fill="#667C97"
+                            />
+                            <circle
+                              cx="3"
+                              cy="21"
+                              r="3"
+                              transform="rotate(90 3 21)"
+                              fill="#667C97"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="eight item">
+                      <a
+                        href="../assets/8.png"
+                        data-lightbox="image-set"
+                        data-title="Image 8"
+                        ><img src="../assets/8.png" alt="" />
+    
+                        <div
+                          class="cancel-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#galleryImageModal"
+                        >
+                          <svg
+                            width="6"
+                            height="13"
+                            viewBox="0 0 6 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle
+                              cx="3"
+                              cy="3"
+                              r="3"
+                              transform="rotate(90 3 3)"
+                              fill="#667C97"
+                            />
+                            <circle
+                              cx="3"
+                              cy="12"
+                              r="3"
+                              transform="rotate(90 3 12)"
+                              fill="#667C97"
+                            />
+                            <circle
+                              cx="3"
+                              cy="21"
+                              r="3"
+                              transform="rotate(90 3 21)"
+                              fill="#667C97"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="nine item">
+                      <a
+                        href="../assets/9.png"
+                        data-lightbox="image-set"
+                        data-title="Image 9"
+                        ><img src="../assets/9.png" alt="" />
+    
+                        <div
+                          class="cancel-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#galleryImageModal"
+                        >
+                          <svg
+                            width="6"
+                            height="13"
+                            viewBox="0 0 6 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle
+                              cx="3"
+                              cy="3"
+                              r="3"
+                              transform="rotate(90 3 3)"
+                              fill="#667C97"
+                            />
+                            <circle
+                              cx="3"
+                              cy="12"
+                              r="3"
+                              transform="rotate(90 3 12)"
+                              fill="#667C97"
+                            />
+                            <circle
+                              cx="3"
+                              cy="21"
+                              r="3"
+                              transform="rotate(90 3 21)"
+                              fill="#667C97"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="videos-section mt-4" id="videosSec">
-              <div class="head d-flex justify-content-between align-items-center mt-3">
+              <div
+                class="head d-flex justify-content-between align-items-center mt-3"
+              >
                 <h4 class="total">229 videos</h4>
                 <button class="add-btn">add video</button>
               </div>
@@ -298,7 +676,6 @@
           </div>
         </div>
 
-
         <!--todo   MODAL- FOR EDIT -->
 
         <div
@@ -307,90 +684,132 @@
           tabindex="-1"
           aria-labelledby="editModal"
           aria-hidden="true"
-         >
+        >
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-              
               <div class="modal-body">
-               <textarea name="" id="" placeholder="Enter something"></textarea>
+                <textarea
+                  name=""
+                  id=""
+                  placeholder="Enter something"
+                ></textarea>
               </div>
               <div class="modal-footer">
-                
                 <button class="myBtn">Submit</button>
               </div>
             </div>
           </div>
         </div>
 
-        
-        <div 
+        <div
           class="modal fade"
-          id="showImageModal"
+          id="galleryImageModal"
           tabindex="-1"
-          aria-labelledby="showImageModal"
+          aria-labelledby=""
           aria-hidden="true"
-         >
-          <div class="modal-dialog modal-dialog-centered" >
-            <div class="modal-content" id="imageModal">
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
               <div class="modal-header">
-                <div class="right dropstart">
-                  <div class="icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="left"></div>
+                <div class="center">
+                  <h4 class="header-title">edit name</h4>
+                </div>
+                <div class="right">
+                  <div
+                    class="cancelBtn"
+                    type="button"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
                     <svg
-                      class="threeDots"
-                      class="threeDots" width="6"
-                      height="20"
-                      viewBox="0 0 6 24"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <circle
-                        cx="3"
-                        cy="3"
-                        r="3"
-                        transform="rotate(90 3 3)"
-                        fill="#667C97"
-                      />
-                      <circle
-                        cx="3"
-                        cy="12"
-                        r="3"
-                        transform="rotate(90 3 12)"
-                        fill="#667C97"
-                      />
-                      <circle
-                        cx="3"
-                        cy="21"
-                        r="3"
-                        transform="rotate(90 3 21)"
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M19.5816 2.43872C20.1395 1.88083 20.1395 0.976311 19.5816 0.418419C19.0237 -0.139473 18.1192 -0.139473 17.5613 0.418419L10 7.9797L2.43872 0.418419C1.88083 -0.139473 0.976311 -0.139473 0.418419 0.418419C-0.139473 0.976311 -0.139473 1.88083 0.418419 2.43872L7.9797 10L0.418419 17.5613C-0.139473 18.1192 -0.139473 19.0237 0.418419 19.5816C0.976311 20.1395 1.88083 20.1395 2.43872 19.5816L10 12.0203L17.5613 19.5816C18.1192 20.1395 19.0237 20.1395 19.5816 19.5816C20.1395 19.0237 20.1395 18.1192 19.5816 17.5613L12.0203 10L19.5816 2.43872Z"
                         fill="#667C97"
                       />
                     </svg>
                   </div>
-                  <ul class="dropdown-menu">
-                    <li>Delete photo</li>
-                  </ul>
                 </div>
               </div>
               <div class="modal-body">
-                <img id="modalImage" src="" alt="Modal Image" />
+                <div class="edit">
+                  <button
+                    class="edit-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#editModal"
+                  >
+                    <span
+                      ><svg
+                        class="me-2"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M12.878 0.213013C12.594 -0.0710044 12.1335 -0.0710044 11.8495 0.213013L4.57675 7.48574C4.44036 7.62213 4.36374 7.80711 4.36374 8V10.9091C4.36374 11.3107 4.68935 11.6364 5.09101 11.6364H8.0001C8.19299 11.6364 8.37797 11.5597 8.51436 11.4233L15.7871 4.15062C16.0711 3.8666 16.0711 3.40612 15.7871 3.1221L12.878 0.213013ZM5.81829 10.1818V8.30124L12.3637 1.75579L14.2443 3.63636L7.69886 10.1818H5.81829ZM1.66756 3.12209C1.80395 2.9857 1.98893 2.90908 2.18182 2.90908H6.06545C6.46711 2.90908 6.79272 2.58347 6.79272 2.1818C6.79272 1.78014 6.46711 1.45453 6.06545 1.45453H2.18182C1.60316 1.45453 1.04821 1.6844 0.639039 2.09357C0.229869 2.50274 0 3.0577 0 3.63635V13.8182C0 14.3968 0.229869 14.9518 0.639039 15.3609C1.04821 15.7701 1.60316 16 2.18182 16H12.3636C12.9423 16 13.4972 15.7701 13.9064 15.3609C14.3156 14.9518 14.5454 14.3968 14.5454 13.8182V9.93453C14.5454 9.53287 14.2198 9.20726 13.8182 9.20726C13.4165 9.20726 13.0909 9.53287 13.0909 9.93453V13.8182C13.0909 14.011 13.0143 14.196 12.8779 14.3324C12.7415 14.4688 12.5565 14.5454 12.3636 14.5454H2.18182C1.98893 14.5454 1.80395 14.4688 1.66756 14.3324C1.53117 14.196 1.45454 14.011 1.45454 13.8182V3.63635C1.45454 3.44346 1.53117 3.25848 1.66756 3.12209Z"
+                          fill="#fff"
+                        />
+                      </svg> </span
+                    >Edit Name
+                  </button>
+                </div>
+                <div class="delete">
+                  <button
+                    class="delete-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#deleteModal"
+                  >
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg
+                      class="me-2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      id="Outline"
+                      viewBox="0 0 24 24"
+                      width="20"
+                      height="20"
+                    >
+                      <path
+                        d="M21,4H17.9A5.009,5.009,0,0,0,13,0H11A5.009,5.009,0,0,0,6.1,4H3A1,1,0,0,0,3,6H4V19a5.006,5.006,0,0,0,5,5h6a5.006,5.006,0,0,0,5-5V6h1a1,1,0,0,0,0-2ZM11,2h2a3.006,3.006,0,0,1,2.829,2H8.171A3.006,3.006,0,0,1,11,2Zm7,17a3,3,0,0,1-3,3H9a3,3,0,0,1-3-3V6H18Z"
+                      />
+                      <path
+                        d="M10,18a1,1,0,0,0,1-1V11a1,1,0,0,0-2,0v6A1,1,0,0,0,10,18Z"
+                      />
+                      <path
+                        d="M14,18a1,1,0,0,0,1-1V11a1,1,0,0,0-2,0v6A1,1,0,0,0,14,18Z"
+                      />
+                    </svg>
+                    Delete
+                  </button>
+                </div>
               </div>
-              
             </div>
           </div>
         </div>
 
 
+
       </div>
     </div>
 
-  
-
- 
-
     <!--! ======= CDN-> Jquery, Swiper JS, Bootstrap JS, Raw JS ======= -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
     <script src="../js/coach-profile.js"></script>
     <script src="../js/menubar.js"></script>
+
+    <script src="../js/darkmode.js"></script>
+
   </body>
 </html>

@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
 
-  <body>
+  <body onload="mytheme()">
     <div id="headToFoot">
       <div class="profile-one" id="">
         <div class="back-btn-section">
@@ -218,14 +218,9 @@
           </div>
         </div>
 
-        <!--todo ***** MODAL *****  -->
+        <!--todo ***** PLAYERS MODAL *****  -->
 
-        <div
-          class="modal fade"
-          id="playersModal"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
+        <div class="modal fade" id="playersModal" aria-hidden="true">
           <div
             class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
           >
@@ -264,7 +259,9 @@
                   <div class="left">
                     <div class="border-part">
                       <div class="img-part">
-                        <img src="../assets/friends.png" alt="" />
+                        <a href="">
+                          <img src="../assets/friends.png" alt="" />
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -278,7 +275,9 @@
                   <div class="left">
                     <div class="border-part">
                       <div class="img-part">
-                        <img src="../assets/johan.png" alt="" />
+                        <a href="">
+                          <img src="../assets/johan.png" alt="" />
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -292,7 +291,9 @@
                   <div class="left">
                     <div class="border-part">
                       <div class="img-part">
-                        <img src="../assets/taylor.png" alt="" />
+                        <a href="">
+                          <img src="../assets/taylor.png" alt="" />
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -306,7 +307,9 @@
                   <div class="left">
                     <div class="border-part">
                       <div class="img-part">
-                        <img src="../assets/mattyJohnson.png" alt="" />
+                        <a href="">
+                          <img src="../assets/mattyJohnson.png" alt="" />
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -320,7 +323,9 @@
                   <div class="left">
                     <div class="border-part">
                       <div class="img-part">
-                        <img src="../assets/paulsmith.png" alt="" />
+                        <a href="">
+                          <img src="../assets/paulsmith.png" alt="" />
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -334,53 +339,12 @@
                   <div class="left">
                     <div class="border-part">
                       <div class="img-part">
-                        <img src="../assets/friends.png" alt="" />
+                        <a href="">
+                          <img src="../assets/friends.png" alt="" />
+                        </a>
                       </div>
                     </div>
                   </div>
-
-                  <div class="right">
-                    <h4>louis payne</h4>
-                    <span></span>
-                  </div>
-                </div>
-                <div class="box">
-                  <div class="left">
-                    <div class="border-part">
-                      <div class="img-part">
-                        <img src="../assets/person.svg" alt="" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="right">
-                    <h4>Anderson</h4>
-                    <span></span>
-                  </div>
-                </div>
-                <div class="box">
-                  <div class="left">
-                    <div class="border-part">
-                      <div class="img-part">
-                        <img src="../assets/paulsmith.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="right">
-                    <h4>louis payne</h4>
-                    <span></span>
-                  </div>
-                </div>
-                <div class="box">
-                  <div class="left">
-                    <div class="border-part">
-                      <div class="img-part">
-                        <img src="../assets/sallyGreen.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-
                   <div class="right">
                     <h4>louis payne</h4>
                     <span></span>
@@ -390,11 +354,14 @@
             </div>
           </div>
         </div>
+
+
       </div>
     </div>
 
     <!--! ======= CDN-> Jquery, Swiper JS, Bootstrap JS, Raw JS ======= -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/darkmode.js"></script>
 
     <script>
       const stars = document.querySelectorAll(".star");

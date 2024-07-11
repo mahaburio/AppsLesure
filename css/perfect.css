@@ -28,17 +28,15 @@ body {
   background-color: var(--white-color);
 }
 
-body:not(.dark-mode) {
-
-
+/* body:not(.dark-mode) {
   --primary-color: #00acee;
   --secondary-color: #dd2e44;
-
-
   --alt-color: #667c97;
   --head-text: #1a3657;
   --text-color: #1a3657;
+  --button-bg: #f0f0f0;
   --white-color: #fff;
+  --white-border: #fff;
   --border-color: #c8c8c8;
   --rating-color: #ffac33;
   --dashboard-bg: #ebebeb;
@@ -48,38 +46,31 @@ body:not(.dark-mode) {
   --input-bg: #f0f0f0;
   --chat-bg: #f1f1f1;
   --chat-bg-sec: #ccf7fe;
-  --gray-bg: #f8f8f8;
 
-  --primary-button-text: #fff;
-  --secondary-button-text: #fff;
 }
 
 .dark-mode {
   --primary-color: #00acee;
   --secondary-color: #dd2e44;
-
-
   --alt-color: #667c97;
   --text-color: #c8c8c8;
   --head-text: #fff;
   --white-color: #060818;
+  --white-border: #ffc300;
+  --button-bg: #ffc300;
   --border-color: #4a4a4a;
   --rating-color: #ffac33;
-  --dashboard-bg: #0e1727;
+  --dashboard-bg: #0E1727;
   --bg-gray: #060818;
-  --card-bg: #0e1727;
+  --card-bg: #0E1727;
   --trans-border: #4a4a4a;
-  --input-bg: #0e1727;
-  --chat-bg: #0e1727;
+  --input-bg: #0E1727;
+  --chat-bg: #0E1727;
   --chat-bg-sec: #1a3657;
-  --gray-bg: #0e1727;
+} */
 
 
-  --primary-button-text: #fff;
-  --secondary-button-text: #fff;
-}
-
-/* body:not(.dark-mode) {
+body:not(.dark-mode) {
   --primary-color: #00acee;
   --secondary-color: #dd2e44;
   --alt-color: #667c97;
@@ -105,7 +96,7 @@ body:not(.dark-mode) {
   --shadow-one: #3c40434d;
   --shadow-two: #3c404326;
   --shadow-color: #1a365756;
-} */
+}
 
 #headToFoot {
   background-color: var(--white-color);
@@ -123,7 +114,7 @@ body:not(.dark-mode) {
   text-align: center;
   line-height: 40px;
   background-color: var(--primary-color);
-  color: var(--primary-button-text);
+  color: var(--white-color);
   text-transform: capitalize;
   font-weight: 500;
   font-size: 16px;
@@ -148,12 +139,12 @@ body:not(.dark-mode) {
 
 .blueBtn {
   background-color: var(--primary-color) !important;
-  color: var(--primary-button-text) !important;
+  color: var(--white-color) !important;
 }
 
 .redBtn {
   background-color: var(--secondary-color) !important;
-  color: var(--secondary-button-text) !important;
+  color: var(--white-color) !important;
 }
 
 .add-btn {
@@ -164,32 +155,29 @@ body:not(.dark-mode) {
   font-size: 14px;
   border-radius: 4px;
   background-color: var(--primary-color);
-  color: var(--primary-button-text);
+  color: var(--white-color);
   transition: 0.3s;
   text-transform: capitalize;
 }
 
 .remove-btn {
-  border: none;
-  width: 75px;
+  border: 1px solid var(--secondary-color);
+  width: 70px;
   height: 25px;
   font-size: 14px;
   border-radius: 4px;
-  background-color: var(--secondary-color);
-  color: var(--secondary-button-text);
+  background-color: var(--white-color);
+  color: var(--secondary-color);
   transition: 0.3s;
   text-transform: capitalize;
 }
 
 .modal-content {
-  background-color: var(--white-color);
-  border: 1px solid var(--trans-border) !important;
+  background-color: var(--card-bg);
 }
 
-
-
 .modal-content:not(.dark-mode) {
-  background-color: var(--white-color);
+  background-color: var(--card-bg);
 }
 
 /* todo =****= INPUT NUMBER TYPE UP & DOWN KEY REMOVE =****=  */
@@ -289,7 +277,7 @@ input[type="number"] {
   background-color: var(--white-color);
   border-radius: 50%;
   text-align: center;
-  border: 3px solid #fff;
+  border: 3px solid var(--white-border);
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -321,13 +309,11 @@ input[type="number"] {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-top: 20px;
-  margin-bottom: 5px;
+  margin-top: 15px;
 }
 
 .game-history .game-title {
   margin-bottom: 15px;
-  margin-top: 5px;
 }
 
 .game-history .left {
@@ -338,9 +324,10 @@ input[type="number"] {
   text-decoration: none;
   cursor: pointer;
   border: 1px solid var(--border-color);
-  height: 110px;
-  width: 125px;
+  height: 115px;
+  width: 135px;
   border-radius: 4px;
+  background-color: var(--card-bg);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -351,7 +338,7 @@ input[type="number"] {
   position: absolute;
   color: #fff;
   top: -20px;
-  left: 10px;
+  left: 15px;
   line-height: 5px;
   text-align: center;
 }
@@ -430,7 +417,7 @@ input[type="number"] {
   line-height: 17px;
   font-size: 14px;
   background-color: var(--primary-color);
-  color: var(--primary-button-text);
+  color: var(--head-text);
   border-radius: 50%;
   margin-top: 2px;
 }
@@ -463,6 +450,8 @@ input[type="number"] {
   flex-direction: column;
   padding-top: 4px;
   border-radius: 5px;
+  /* box-shadow: var(--shadow-one) 0px 1px 2px 0px,
+    var(--shadow-two) 0px 1px 3px 1px; */
   border: 1px solid var(--border-color);
   cursor: pointer;
 }
@@ -605,21 +594,21 @@ input[type="number"] {
 
 .active {
   background-color: var(--primary-color) !important;
-  color: var(--primary-button-text) !important;
+  color: var(--white-color) !important;
   border: 1px solid transparent !important;
 }
 
 .active svg path {
-  fill: var(--primary-button-text) !important;
+  fill: var(--white-color) !important;
 }
 
 /* todo =****= SHARE PROFILE MODAL =****=  */
 
-/* #shareProfileModal .modal {
+#shareProfileModal .modal {
   position: fixed;
   bottom: 0;
   left: 0;
-} */
+}
 
 .myAnimation {
   animation: myAnimation 0.35s linear;
@@ -710,7 +699,7 @@ input[type="number"] {
   resize: none;
   padding: 10px;
   border: 1px solid var(--border-color);
-  background-color: var(--gray-bg);
+  background-color: var(--dashboard-bg);
   outline: none;
   color: var(--text-color);
   border-radius: 4px;
@@ -727,7 +716,7 @@ input[type="number"] {
 
 #shareProfileModal .modal-footer {
   border: none;
-  background-color: var(--gray-bg);
+  background-color: var(--dashboard-bg);
   margin: 10px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -759,7 +748,8 @@ input[type="number"] {
   height: 60px;
   width: 60px;
   background-color: var(--white-color);
-  border: 1px solid transparent;
+  border: 1px solid var(--trans-border);
+
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -775,9 +765,11 @@ input[type="number"] {
   -o-transition: 0.3s;
 }
 
-#shareProfileModal .modal-footer .box:hover {
+#shareProfileModal .modal-footer .box:hover{
   border: 1px solid var(--head-text);
 }
+
+
 
 /* todo =****= PROFILE DASHBOARD =****=  */
 
@@ -945,7 +937,7 @@ input[type="number"] {
 /* This is a custom style for only media button */
 .myStyle {
   background-color: var(--primary-color) !important;
-  color: var(--primary-button-text) !important;
+  color: var(--white-color) !important;
   box-shadow: none;
   border: none !important;
 }
@@ -1311,19 +1303,20 @@ input[type="number"] {
   width: 100%;
   height: 38px;
   text-transform: capitalize;
-  background-color: var(--primary-color);
+  background-color: var(--button-bg);
   border-radius: 4px;
   border: none;
   transition: 0.3s;
   font-weight: 600;
-  color: var(--primary-button-text);
+  border: 1px solid var(--trans-border);
+  color: var(--head-text);
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
 
-/* .see-all-btn:hover {
+.see-all-btn:hover {
   color: var(--white-color) !important;
   transition: 0.3s;
   background-color: var(--primary-color);
@@ -1331,7 +1324,7 @@ input[type="number"] {
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
-} */
+}
 
 /* ! =****= PROFILE TWO PAGE =****=  */
 
@@ -1763,58 +1756,8 @@ input[type="number"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-}
-
-#removeModal .modal-body .img{
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-
-#removeModal .modal-body .img img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-#removeModal .modal-footer{
-  display: flex;
-  flex-direction: column;
-}
-
-#removeModal .modal-footer .removeBtn,
-#removeModal .modal-footer .blockBtn{
-  width: 80%;
-  height: 35px;
-  background-color: var(--secondary-color);
-  color: var(--secondary-button-text);
-  border: none;
-  text-transform: capitalize;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-}
-
-
-#removeModal .modal-footer .cancelBtn{
-  width: 80%;
-  height: 35px;
-  background-color: var(--alt-color);
-  color: var(--white-color);
-  border: none;
-  text-transform: capitalize;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+  padding: 0;
+  padding-bottom: 10px;
 }
 
 #removeModal .modal-body .all-btn {
@@ -1841,7 +1784,6 @@ input[type="number"] {
 #removeModal .modal-body button:nth-child(1) {
   border: none;
 }
-
 
 #removeModal .modal-body button svg {
   margin-right: 5px;
@@ -2355,7 +2297,6 @@ input[type="number"] {
   z-index: 2;
   text-align: left;
   line-height: 10px;
-  color: var(--secondary-button-text);
 }
 
 .menu-section .all-menu .notification .icon .badge span {
@@ -3034,7 +2975,9 @@ input[type="number"] {
   justify-content: space-between;
   border-radius: 6px;
   margin-top: 15px;
-  background-color: var(--card-bg);
+  background-color: var(--white-color);
+  /* box-shadow: var(--shadow-one) 0px 1px 2px 0px,
+    var(--shadow-two) 0px 1px 3px 1px; */
   border: 1px solid var(--border-color);
 }
 
@@ -3229,23 +3172,21 @@ input[type="number"] {
   width: 100%;
   height: 40px;
   font-size: 18px;
-  background-color: var(--primary-color);
+  background-color: var(--button-bg);
   border: none;
-  color: var(--primary-button-text);
   border-radius: 4px;
   text-transform: capitalize;
   margin-top: 15px;
   transition: 0.3s;
   font-weight: 500;
   margin-bottom: 10px;
-  border: none;
 }
 
-/* #profileMenu .log-out:hover {
+#profileMenu .log-out:hover {
   background-color: var(--primary-color);
   color: var(--white-color);
   transition: 0.3s;
-} */
+}
 
 #profileMenu .accordion-button:not(.collapsed) {
   background-color: var(--white-color);
@@ -3324,7 +3265,7 @@ input[type="number"] {
   color: var(--head-text);
   font-weight: 500;
   padding: 10px;
-  background-color: var(--gray-bg);
+  background-color: #f8f8f8;
   display: block;
   border: 1px solid var(--border-color);
   text-align: center;
@@ -3467,7 +3408,7 @@ input[type="number"] {
   border: none;
   font-size: 14px;
   border-radius: 4px;
-  color: var(--primary-button-text);
+  color: var(--white-color);
   background-color: var(--primary-color);
   transition: 0.3s;
   font-weight: 500;
@@ -3485,7 +3426,7 @@ input[type="number"] {
   background-color: var(--primary-color);
   margin: 0;
   border-radius: 50%;
-  color: var(--primary-button-text);
+  color: var(--white-color);
   text-align: center;
   line-height: 20px;
 }
@@ -3521,7 +3462,7 @@ input[type="number"] {
   font-weight: 500;
   text-align: right;
   line-height: 20px;
-  color: var(--text-color);
+  color: var(--head-text);
 }
 
 #upcomingGame .card-section .box .right .name {
@@ -3529,8 +3470,7 @@ input[type="number"] {
   font-weight: 500;
   text-align: left;
   line-height: 20px;
-  color: var(--text-color);
-
+  color: var(--head-text);
 }
 #upcomingGame .card-section .box .img-box {
   height: 40px;
@@ -3653,15 +3593,14 @@ input[type="number"] {
   cursor: pointer;
   color: var(--alt-color);
   background-color: var(--primary-color);
-  color: var(--primary-button-text);
+  color: var(--white-color);
 }
 
-/* #chatMenu .create-group:hover {
+#chatMenu .create-group:hover {
   background-color: var(--primary-color);
   color: var(--white-color);
   transition: 0.3s;
-} */
-
+}
 #chatMenu .create-group .group-person-img {
   width: 30%;
 }
@@ -3818,8 +3757,9 @@ input[type="number"] {
   line-height: 20px;
   border: none;
   text-transform: capitalize;
+
   background-color: var(--primary-color);
-  color: var(--primary-button-text);
+  color: var(--white-color);
   transition: 0.3s;
   font-size: 14px;
 }
@@ -3848,7 +3788,7 @@ input[type="number"] {
   line-height: 18px;
   font-size: 12px;
   background-color: var(--primary-color);
-  color: var(--primary-button-text);
+  color: var(--white-color);
   border-radius: 50%;
 }
 
@@ -3884,7 +3824,7 @@ input[type="number"] {
   width: 18px;
   border-radius: 50%;
   background-color: var(--secondary-color);
-  color: var(--secondary-button-text);
+  color: var(--white-color);
   margin: 0;
   line-height: 18px;
   font-size: 12px;
@@ -3943,7 +3883,6 @@ input[type="number"] {
 
 #playersModal .modal-body .box {
   border: 1px solid var(--border-color);
-  background-color: var(--card-bg);
   border-radius: 4px;
   padding: 10px 5px;
   display: flex;
@@ -3992,7 +3931,7 @@ input[type="number"] {
 
 #playersModal .modal-body .box .right h4 {
   font-size: 18px;
-  color: var(--text-color);
+  color: var(--head-text);
 
   text-transform: capitalize;
   font-weight: 600;
@@ -4049,7 +3988,7 @@ input[type="number"] {
   position: relative;
   left: 3px;
   top: 3px;
-  background-color: #1a3657;
+  background-color: var(--text-color);
   text-align: center;
   line-height: 80px;
 }
@@ -4121,7 +4060,7 @@ input[type="number"] {
   width: 100%;
 }
 
-#teamImageModal .name {
+#teamImageModal .name{
   color: var(--white-color);
 }
 
@@ -4232,7 +4171,6 @@ input[type="number"] {
 #reportPostModal .modal-content .modal-body textarea {
   max-width: 100%;
   border: 1px solid var(--border-color);
-  background-color: var(--card-bg);
   padding: 5px 10px;
   outline: none;
   min-width: 100%;
@@ -4637,7 +4575,7 @@ input[type="number"] {
   padding-top: 0px;
   display: flex;
   justify-content: space-between;
-  background-color: var(--gray-bg);
+  background-color: #f8f8f8;
   padding: 10px 30px;
   border-radius: 8px;
   border-top: 1px solid var(--border-color);
@@ -4803,7 +4741,7 @@ input[type="number"] {
 
 #createPost .activeBtn {
   background-color: var(--primary-color) !important;
-  color: var(--primary-button-text) !important;
+  color: var(--white-color) !important;
   position: relative;
 }
 
@@ -5059,7 +4997,7 @@ input[type="number"] {
   width: 100%;
   padding: 8px 3px;
   background-color: var(--primary-color);
-  color: var(--primary-button-text);
+  color: var(--white-color);
   font-weight: 500;
   cursor: pointer;
   font-size: 14px;
@@ -5142,6 +5080,8 @@ input[type="number"] {
 
 #approvalAwait .card-section .box {
   background-color: var(--card-bg);
+  /* box-shadow: var(--shadow-one) 0px 1px 2px 0px,
+    var(--shadow-two) 0px 1px 3px 1px; */
   border: 1px solid var(--border-color);
   overflow: hidden;
   border-radius: 8px;
@@ -5259,7 +5199,7 @@ input[type="number"] {
   line-height: 20px;
   margin-left: 5px;
   background-color: var(--primary-color);
-  color: var(--primary-button-text);
+  color: var(--white-color);
 }
 
 #approvalAwait .await-card .box .head {
@@ -5322,12 +5262,18 @@ input[type="number"] {
   line-height: 20px;
   border: none;
   text-transform: capitalize;
+  border: 1px solid var(--border-color);
   background-color: var(--secondary-color);
-  color: var(--secondary-button-text);
+  color: var(--white-color);
   transition: 0.3s;
   font-size: 13px;
 }
 
+#approvalAwait .await-card .box .body .right button:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  transition: 0.3s;
+}
 
 #approvalAwait .await-card .box .body .right .accept {
   padding: 2px 10px;
@@ -5335,17 +5281,18 @@ input[type="number"] {
   line-height: 20px;
   border: none;
   text-transform: capitalize;
+  border: 1px solid var(--border-color);
   background-color: var(--primary-color);
-  color: var(--primary-button-text);
+  color: var(--white-color);
   transition: 0.3s;
   font-size: 13px;
 }
 
-/* #approvalAwait .await-card .box .body .right .accept:hover {
+#approvalAwait .await-card .box .body .right .accept:hover {
   background-color: var(--white-color);
   color: var(--primary-color);
   transition: 0.3s;
-} */
+}
 
 #approvalAwait .await-card .box .body .right .decline {
   padding: 1px 10px;
@@ -5353,31 +5300,20 @@ input[type="number"] {
   line-height: 20px;
   border: none;
   text-transform: capitalize;
-  background-color: var(--secondary-color);
-  color: var(--secondary-button-text);
+  border: 1px solid var(--border-color);
+  background-color: var(--white-color);
+  color: var(--secondary-color);
   transition: 0.3s;
   font-size: 13px;
-
+  border: 1px solid var(--secondary-color);
 }
 
-#approvalAwait .await-card .box .body .right .declined{
-  padding: 1px 10px;
-  border-radius: 20px;
-  line-height: 20px;
-  border: none;
-  text-transform: capitalize;
-  background-color: var(--alt-color);
-  color: var(--primary-button-text);
-  transition: 0.3s;
-  font-size: 13px;
-}
-
-/* #approvalAwait .await-card .box .body .right .decline:hover {
+#approvalAwait .await-card .box .body .right .decline:hover {
   border: 1px solid transparent;
   background-color: var(--secondary-color);
   color: var(--white-color);
   transition: 0.3s;
-} */
+}
 
 #approvalAwait .await-card .box .second-part {
   border-top: 1px solid var(--border-color);
@@ -5420,7 +5356,7 @@ input[type="number"] {
   padding: 5px 10px;
   height: 40px;
   line-height: 40px;
-  background-color: var(--gray-bg);
+  background-color: #f8f8f8;
   border-radius: 26px;
   margin: 10px;
   margin-bottom: 0;
@@ -6221,7 +6157,7 @@ input[type="number"] {
   padding: 5px 10px;
   height: 40px;
   line-height: 40px;
-  background-color: var(--gray-bg);
+  background-color: var(--card-bg);
   border-radius: 26px;
   margin: 10px;
   margin-bottom: 0;
@@ -6411,9 +6347,6 @@ input[type="number"] {
   border-bottom: none;
 }
 
-
-
-
 /* todo **** DEFENSE MODAL  **** */
 
 #defenseModal .modal-body {
@@ -6450,17 +6383,6 @@ input[type="number"] {
 
 #defenseModal .box svg path {
   fill: var(--primary-color);
-}
-
-#timeline .timelineShareModal .modal-dialog{
-  display: flex;
-  align-items: center;
-}
-
-#timeline .timelineShareModal {
-  position: relative;
-  bottom: auto;
-  left: 0;
 }
 
 /* todo **** COMMENTS PAGE  **** */
@@ -6605,7 +6527,7 @@ input[type="number"] {
 #commentsPage .comment-box .right .box {
   border: 1px solid var(--border-color);
   border-radius: 4px;
-  background-color: var(--gray-bg);
+  background-color: var(--card-bg);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -6689,7 +6611,7 @@ input[type="number"] {
 #commentsPage .reply-box .right .box {
   border: 1px solid var(--border-color);
   border-radius: 4px;
-  background-color: var(--gray-bg);
+  background-color: var(--card-bg);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -6886,7 +6808,7 @@ input[type="number"] {
 
 #allReaction .all-reactor .reactor .add-friends-btn {
   padding: 2px 8px;
-  background-color: var(--gray-bg);
+  background-color: var(--card-bg);
   color: var(--text-color);
   border: 1px solid var(--border-color);
   font-weight: 500;
@@ -6900,9 +6822,9 @@ input[type="number"] {
   -o-border-radius: 30px;
 }
 
-#allReaction .all-reactor .reactor .add-friends-btn:hover {
+#allReaction .all-reactor .reactor .add-friends-btn:hover{
   background-color: var(--primary-color);
-  color: var(--white-color);
+  color: var(--white-color)
 }
 
 #allReaction .all-reactor .reactor .left {
@@ -7010,7 +6932,7 @@ input[type="number"] {
 
 .sports-head .activeBtn {
   background-color: var(--primary-color) !important;
-  color: var(--primary-button-text) !important;
+  color: var(--white-color) !important;
   position: relative;
 }
 
@@ -7059,7 +6981,7 @@ input[type="number"] {
   width: 100%;
   text-align: center;
   padding: 5px 0px;
-  color: var(--white-color);
+  color: var(--text-color);
 }
 
 /* todo ==== CLASSES-SECTION ==== --> */
@@ -7531,7 +7453,7 @@ input[type="number"] {
 
 .group-head .activeBtn {
   background-color: var(--primary-color) !important;
-  color: var(--primary-button-text) !important;
+  color: var(--white-color) !important;
   position: relative;
 }
 
@@ -7633,7 +7555,7 @@ input[type="number"] {
 #completeGroup .group-image .right .upload {
   padding: 5px 20px;
   background-color: var(--primary-color);
-  color: var(--primary-button-text);
+  color: var(--white-color);
   text-transform: capitalize;
   font-weight: 500;
   border: none;
@@ -7931,7 +7853,7 @@ input[type="number"] {
   cursor: pointer;
 }
 
-.chatroomHead .back-btn-section .center svg path {
+.chatroomHead .back-btn-section .center svg path{
   fill: var(--secondary-color);
 }
 
@@ -8121,7 +8043,7 @@ input[type="number"] {
   -o-border-radius: 4px;
 }
 
-/*.message-input {
+.message-input {
   padding: 8px 12px;
   display: flex;
   gap: 8px;
@@ -8133,7 +8055,7 @@ input[type="number"] {
   background-color: var(--white-color);
 }
 
- .message-input .left {
+.message-input .left {
   width: 100%;
 }
 
@@ -8143,6 +8065,7 @@ input[type="number"] {
   height: 40px;
   width: 100%;
   padding: 0px 15px;
+  overflow: hidden;
   border-radius: 50px;
   border: 1px solid var(--border-color);
   background-color: var(--chat-bg);
@@ -8170,20 +8093,17 @@ input[type="number"] {
 }
 
 .message-input .left .input-box .center textarea {
-  background-color: red;
-  min-height: 40px;
+  background-color: transparent;
+  height: 40px;
   width: 100%;
   line-height: 40px;
   resize: none;
-  overflow: hidden;
   appearance: none;
   border: none;
   outline: none;
   padding: 0px 7px;
   color: var(--text-color);
-} 
-
-
+}
 
 .message-input .left .input-box .right {
   display: flex;
@@ -8218,138 +8138,6 @@ input[type="number"] {
 }
 
 .message-input #sendIcon {
-  display: none;
-  transition: 0.2s;
-  animation: anime 0.3s linear;
-  -webkit-animation: anime 0.3s linear;
-}
-
-@keyframes anime {
-  0% {
-    opacity: 1;
-    transform: scale(0.5);
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    -o-transform: scale(0.5);
-  }
-}
-*/
-
-.text-sec {
-  margin-top: 10px;
-  width: 100%;
-  border-top: 1px solid var(--border-color);
-  padding: 10px;
-  position: sticky;
-  bottom: 0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 10px;
-
-  background-color: var(--white-color);
-}
-
-.text-sec .text-box {
-  display: flex;
-  border: 1px solid var(--border-color);
-  border-radius: 25px;
-  background-color: var(--gray-bg);
-  width: 90%;
-  padding-top: 0;
-  overflow: hidden;
-  min-height: 40px;
-  padding-bottom: 0px;
-  align-items: flex-end;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
-}
-
-.text-sec .text-box .left {
-  width: 10%;
-  position: sticky;
-  bottom: 10px;
-  left: 0;
-  text-align: center;
-  padding-left: 5px;
-  height: 100%;
-}
-
-.text-sec .text-box .center {
-  width: 70%;
-  overflow: hidden;
-  padding-bottom: 0px;
-  margin: 0;
-  position: relative;
-  top: 12px;
-  padding: 0;
-
-
-  
-}
-
-.text-sec .text-box .center textarea {
-  width: 100%;
-  line-height: 18px;
-  border: none;
-  font-size: 16px;
-  min-height: 20px;
-  overflow: hidden;
-  background-color: transparent;
-  resize: none;
-  outline: none;
-  appearance: none;
-  padding: 0px 5px;
-  color: var(--text-color);
-}
-
-.text-sec .text-box .right {
-  width: 20%;
-  position: sticky;
-  right: 0px;
-  bottom: 10px;
-  text-align: center;
-}
-
-.text-sec .text-box .right svg:nth-child(2) {
-  margin-left: 5px;
-}
-
-.text-sec .text-box svg {
-  cursor: pointer;
-}
-
-
-.text-sec .search-box button {
-  height: 40px;
-  width: 40px;
-  border: none;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-
-.text-sec #voiceSearch {
-  transition: 0.2s;
-  animation: anime 0.3s linear;
-  -webkit-animation: anime 0.3s linear;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-}
-
-.text-sec #sendIcon {
   display: none;
   transition: 0.2s;
   animation: anime 0.3s linear;
@@ -8691,7 +8479,6 @@ input[type="number"] {
   align-items: center;
   border: 1px solid var(--border-color);
   margin-top: 10px;
-  background-color: var(--card-bg);
   padding: 10px;
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -8754,10 +8541,10 @@ input[type="number"] {
   text-transform: capitalize;
   font-weight: 500;
   border-radius: 4px;
-  width: 75px;
+  padding: 3px 20px;
   border: none;
   background-color: var(--primary-color);
-  color: var(--primary-button-text);
+  color: var(--white-color);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -8776,7 +8563,7 @@ input[type="number"] {
   border: none;
   border-radius: 4px;
   background-color: var(--primary-color);
-  color: var(--primary-button-text);
+  color: var(--white-color);
   font-weight: 500;
   text-transform: capitalize;
   -webkit-border-radius: 4px;
@@ -8996,7 +8783,7 @@ input[type="number"] {
 
 .lineUp .activeBtn {
   background-color: var(--primary-color) !important;
-  color: var(--primary-button-text) !important;
+  color: var(--white-color) !important;
   position: relative;
 }
 
@@ -9013,11 +8800,11 @@ input[type="number"] {
 }
 
 .lineUp .activeBtn .name {
-  color: var(--primary-button-text) !important;
+  color: var(--white-color) !important;
 }
 
 .lineUp .activeBtn svg path {
-  fill: var(--primary-button-text);
+  fill: var(--white-color);
 }
 
 .lineUp #teamOnePlayers {
@@ -9077,7 +8864,6 @@ input[type="number"] {
   align-items: center;
   margin-top: 10px;
   border: 1px solid var(--border-color);
-  background-color: var(--card-bg);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -10034,7 +9820,6 @@ input[type="number"] {
   outline: none;
   border: 1px solid var(--border-color);
   color: var(--text-color);
-  background-color: var(--card-bg);
   min-width: 100%;
   padding: 5px 10px;
   margin-top: 10px;
@@ -10057,7 +9842,7 @@ input[type="number"] {
   padding: 4px 25px;
   text-transform: capitalize;
   background-color: var(--primary-color);
-  color: var(--primary-button-text);
+  color: var(--white-color);
   border: none;
   font-size: 15px;
   border-radius: 4px;
@@ -10109,7 +9894,7 @@ input[type="number"] {
   padding: 4px 5px;
   text-transform: capitalize;
   background-color: var(--primary-color);
-  color: var(--primary-button-text);
+  color: var(--white-color);
   border: none;
   font-size: 15px;
   border-radius: 4px;
@@ -10151,7 +9936,6 @@ input[type="number"] {
     top: 2px;
     right: 20px;
     z-index: 2;
-    color: var(--secondary-button-text);
   }
 
   .menu-section .all-menu .notification .icon .badge span {
@@ -10217,7 +10001,7 @@ input[type="number"] {
     gap: 10px;
   }
 
-  #singleImageModal .name {
+  #singleImageModal .name{
     color: var(--white-color);
   }
 

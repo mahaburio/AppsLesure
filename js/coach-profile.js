@@ -67,3 +67,34 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+
+
+
+
+
+lightbox.option({
+  resizeDuration: 200,
+  wrapAround: true,
+  alwaysShowNavOnTouchDevices: true,
+});
+
+let lbCaption = document.querySelectorAll(".lb-caption");
+
+let lbItems = [...lbCaption];
+
+lbCaption.forEach((e) => {
+  e.style.display = "none";
+});
+
+let cancelBtn = document.querySelectorAll(".cancel-btn");
+
+cancelBtn.forEach((button) => {
+  button.addEventListener("click", function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+  });
+});
+
+

@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
 
-  <body>
+  <body onload="mytheme()">
     <div id="headToFoot">
       <div class="profile-one">
         <div class="back-btn-section">
@@ -231,7 +231,7 @@
                         </div>
                       </div>
                       <div class="right">
-                        <button class="decline">declined</button>
+                        <button class="declined">declined</button>
                       </div>
                     </div>
                   </div>
@@ -335,14 +335,9 @@
         </div>
 
 
-        <!--todo =****= MODAL-SECTION =****= -->
+        <!--todo **** PLAYERS MODAL ****  -->
 
-        <div
-          class="modal fade"
-          id="playersModal"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-         >
+        <div class="modal fade" id="playersModal" aria-hidden="true">
           <div
             class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
           >
@@ -381,7 +376,9 @@
                   <div class="left">
                     <div class="border-part">
                       <div class="img-part">
-                        <img src="../assets/friends.png" alt="" />
+                        <a href="">
+                          <img src="../assets/friends.png" alt="" />
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -395,7 +392,9 @@
                   <div class="left">
                     <div class="border-part">
                       <div class="img-part">
-                        <img src="../assets/johan.png" alt="" />
+                        <a href="">
+                          <img src="../assets/johan.png" alt="" />
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -409,7 +408,9 @@
                   <div class="left">
                     <div class="border-part">
                       <div class="img-part">
-                        <img src="../assets/taylor.png" alt="" />
+                        <a href="">
+                          <img src="../assets/taylor.png" alt="" />
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -423,7 +424,9 @@
                   <div class="left">
                     <div class="border-part">
                       <div class="img-part">
-                        <img src="../assets/mattyJohnson.png" alt="" />
+                        <a href="">
+                          <img src="../assets/mattyJohnson.png" alt="" />
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -437,7 +440,9 @@
                   <div class="left">
                     <div class="border-part">
                       <div class="img-part">
-                        <img src="../assets/paulsmith.png" alt="" />
+                        <a href="">
+                          <img src="../assets/paulsmith.png" alt="" />
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -451,95 +456,12 @@
                   <div class="left">
                     <div class="border-part">
                       <div class="img-part">
-                        <img src="../assets/friends.png" alt="" />
+                        <a href="">
+                          <img src="../assets/friends.png" alt="" />
+                        </a>
                       </div>
                     </div>
                   </div>
-
-                  <div class="right">
-                    <h4>louis payne</h4>
-                    <span></span>
-                  </div>
-                </div>
-                <div class="box">
-                  <div class="left">
-                    <div class="border-part">
-                      <div class="img-part">
-                        <img src="../assets/friends.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="right">
-                    <h4>Anderson</h4>
-                    <span></span>
-                  </div>
-                </div>
-                <div class="box">
-                  <div class="left">
-                    <div class="border-part">
-                      <div class="img-part">
-                        <img src="../assets/sallyGreen.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="right">
-                    <h4>Smith Jack</h4>
-                    <span></span>
-                  </div>
-                </div>
-                <div class="box">
-                  <div class="left">
-                    <div class="border-part">
-                      <div class="img-part">
-                        <img src="../assets/person.svg" alt="" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="right">
-                    <h4>Rock Domin</h4>
-                    <span></span>
-                  </div>
-                </div>
-                <div class="box">
-                  <div class="left">
-                    <div class="border-part">
-                      <div class="img-part">
-                        <img src="../assets/friends.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="right">
-                    <h4>louis payne</h4>
-                    <span></span>
-                  </div>
-                </div>
-                <div class="box">
-                  <div class="left">
-                    <div class="border-part">
-                      <div class="img-part">
-                        <img src="../assets/friends.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="right">
-                    <h4>louis payne</h4>
-                    <span></span>
-                  </div>
-                </div>
-                <div class="box">
-                  <div class="left">
-                    <div class="border-part">
-                      <div class="img-part">
-                        <img src="../assets/friends.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-
                   <div class="right">
                     <h4>louis payne</h4>
                     <span></span>
@@ -559,6 +481,7 @@
 
     <script src="../js/profileMenu.js"></script>
     <script src="../js/menubar.js"></script>
+    <script src="../js/darkmode.js"></script>
 
     <script>
       // todo== READ-MORE POST/COMMENT SECTION ====?
