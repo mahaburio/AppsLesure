@@ -10,14 +10,13 @@
   </head>
 
   <body onload="mytheme()">
-    <div id="headToFoot" >
+    <div id="headToFoot">
       <section class="profile-one" id="forBackground">
         <div class="sign-page">
           <div class="head">
             <div class="title">
               <img src="../assets/appLesure.png" alt="" />
             </div>
-            <a href="">Connect Now</a>
           </div>
           <div class="body">
             <div class="btn-section">
@@ -132,8 +131,26 @@
 
     <!--! ======= CDN-> Jquery, Swiper JS, Bootstrap JS, Raw JS ======= -->
 
-    <script src="../js/app.js"></script>
     <script src="../js/darkmode.js"></script>
 
+    <script>
+      // ! FOR SIGN PAGE------------------
+
+      // * When Clicked sign in button then will be show sign in html page
+
+      document
+        .getElementById("signInBtn")
+        .addEventListener("click", function () {
+          window.location.href = "sign-in.html";
+        });
+
+      // * When Clicked sign up button then will be show sign up html page
+
+      document
+        .getElementById("signUpBtn")
+        .addEventListener("click", function () {
+          window.location.href = "sign-up.html";
+        });
+    </script>
   </body>
 </html>

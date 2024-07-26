@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu</title>
+    <title>Approval Awit</title>
     <!--! ======= CDN-> Bootstrap CSS, Fant Icon, Swiper CSS, Raw CSS ======= -->
 
     <link
@@ -101,7 +101,9 @@
                     <div class="left">
                       <div class="img-part">
                         <div class="img">
-                          <img src="../assets/person.svg" alt="" />
+                          <a href="./profileTwo.html">
+                            <img src="../assets/person.svg" alt="" />
+                          </a>
                         </div>
                         <p class="name">paul smith</p>
                       </div>
@@ -208,8 +210,6 @@
             </div>
           </div>
         </div>
-
-        
       </div>
     </div>
 
@@ -221,17 +221,21 @@
     <script src="../js/darkmode.js"></script>
 
     <script>
-      // todo== READ-MORE POST/COMMENT SECTION ====?
-
       const readMoreButtons = document.querySelectorAll(".read-more");
 
       readMoreButtons.forEach((button) => {
         const moreText = button.nextElementSibling;
         moreText.style.display = "none";
 
-        button.addEventListener("click", () => {
+        button.addEventListener("click", (event) => {
+          event.stopPropagation();
           moreText.style.display = "inline";
           button.style.display = "none";
+        });
+
+        document.body.addEventListener("click", () => {
+          moreText.style.display = "none";
+          button.style.display = "inline";
         });
       });
     </script>

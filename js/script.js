@@ -65,7 +65,6 @@ let photosBtn = document.getElementById("photosBtn");
 let videosBtn = document.getElementById("videosBtn");
 let friendsBtn = document.getElementById("friendsBtn");
 
-
 let friendSec = document.getElementById("friendSec");
 let videosSec = document.getElementById("videosSec");
 let photosSec = document.getElementById("photosSec");
@@ -103,7 +102,6 @@ listItem.forEach((item) => {
       friendSec.style.display = "none";
       photosSec.style.display = "none";
       videosSec.style.display = "block";
-
     });
   }
 });
@@ -147,6 +145,9 @@ plusBtn.forEach((myBtn) => {
   }
 });
 
+
+
+
 // todo== MORE RECENT/ MORE RELEVENT ====?
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -169,6 +170,28 @@ document.addEventListener("DOMContentLoaded", function () {
     subList.style.display = "none";
   });
 });
+
+
+// todo== BIO-READ-MORE ====?
+
+const bioReadMoreButtons = document.querySelectorAll(".bio-read-more");
+
+bioReadMoreButtons.forEach((button) => {
+  const bioMoreText = button.nextElementSibling;
+  bioMoreText.style.display = "none";
+
+  button.addEventListener("click", (event) => {
+    event.stopPropagation();
+    bioMoreText.style.display = "inline";
+    button.style.display = "none";
+  });
+
+  document.body.addEventListener("click", () => {
+    bioMoreText.style.display = "none";
+    button.style.display = "inline";
+  });
+});
+
 
 // todo== READ-MORE POST/COMMENT SECTION ====?
 
@@ -195,7 +218,6 @@ readMoreButtons.forEach((button) => {
 const postsContainer = document.getElementById("postsContainer");
 const seeMoreBtn = document.getElementById("seeMoreBtn");
 let postCount = 0;
-let val = "mahabur"
 
 function createPost() {
   if (postCount >= 9) {
@@ -280,26 +302,3 @@ seeMoreBtn.addEventListener("click", () => {
     createPost();
   }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

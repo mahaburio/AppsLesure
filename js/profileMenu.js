@@ -1,14 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const buttons = document.querySelectorAll('.view');
 
-  buttons.forEach(button => {
-      button.addEventListener('click', () => {
-          button.disabled = true;
-          button.textContent = 'Viewed';
-          
-      });
-  });
-});
 
 
 let threeDots = document.getElementById('threeDots');

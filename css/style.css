@@ -9,6 +9,12 @@
  * 
  *  */
 
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Ga+Maamli&family=Playwrite+FR+Moderne:wght@100..400&display=swap");
+
+/* @import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Playwrite+FR+Moderne:wght@100..400&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap'); */
+
 /* todo =****= FANT FAMILY IMPORTED =****=  */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
@@ -17,7 +23,6 @@
   margin: 0;
   padding: 0;
   font-family: "Inter";
-  scroll-behavior: smooth;
 }
 
 html,
@@ -28,13 +33,18 @@ body {
   background-color: var(--white-color);
 }
 
+/**
+ * !Important note: 
+ * 
+ * * primary-color, secondary-color
+ * 
+ *  
+ * */
+
 body:not(.dark-mode) {
-
-
   --primary-color: #00acee;
   --secondary-color: #dd2e44;
-
-
+  /* ********* */
   --alt-color: #667c97;
   --head-text: #1a3657;
   --text-color: #1a3657;
@@ -49,7 +59,7 @@ body:not(.dark-mode) {
   --chat-bg: #f1f1f1;
   --chat-bg-sec: #ccf7fe;
   --gray-bg: #f8f8f8;
-
+  /* ********* */
   --primary-button-text: #fff;
   --secondary-button-text: #fff;
 }
@@ -57,58 +67,33 @@ body:not(.dark-mode) {
 .dark-mode {
   --primary-color: #00acee;
   --secondary-color: #dd2e44;
-
-
+  /* ********* */
   --alt-color: #667c97;
   --text-color: #c8c8c8;
   --head-text: #fff;
-  --white-color: #060818;
+  /* --white-color: #060818; */
+  --white-color: #0c0f14;
   --border-color: #4a4a4a;
   --rating-color: #ffac33;
   --dashboard-bg: #0e1727;
-  --bg-gray: #060818;
+  --bg-gray: #0c0f14;
   --card-bg: #0e1727;
   --trans-border: #4a4a4a;
   --input-bg: #0e1727;
   --chat-bg: #0e1727;
   --chat-bg-sec: #1a3657;
   --gray-bg: #0e1727;
-
-
+  /* ********* */
   --primary-button-text: #fff;
   --secondary-button-text: #fff;
 }
 
-/* body:not(.dark-mode) {
-  --primary-color: #00acee;
-  --secondary-color: #dd2e44;
-  --alt-color: #667c97;
-  --text-color: #1a3657;
-  --button-bg: #f0f0f0;
-  --white-color: #fff;
-  --border-color: #c8c8c8;
-  --rating-color: #ffac33;
-  --shadow-one: #3c40434d;
-  --shadow-two: #3c404326;
-  --shadow-color: #1a365756;
-}
-
-.dark-mode {
-  --primary-color: #00acee;
-  --secondary-color: #dd2e44;
-  --alt-color: #667c97;
-  --text-color: #1a3657;
-  --button-bg: #f0f0f0;
-  --white-color: #5a5a5a;
-  --border-color: #c8c8c8;
-  --rating-color: #ffac33;
-  --shadow-one: #3c40434d;
-  --shadow-two: #3c404326;
-  --shadow-color: #1a365756;
-} */
-
 #headToFoot {
   background-color: var(--white-color);
+}
+
+#Layer_1 .cls-1 {
+  fill: var(--secondary-color);
 }
 
 /* todo =****= ALL CUSTOM BUTTON =****=  */
@@ -142,8 +127,8 @@ body:not(.dark-mode) {
 }
 
 .grayBtn {
-  background-color: var(--border-color) !important;
-  color: var(--white-color) !important;
+  background-color: var(--alt-color) !important;
+  color: #fff !important;
 }
 
 .blueBtn {
@@ -186,10 +171,12 @@ body:not(.dark-mode) {
   border: 1px solid var(--trans-border) !important;
 }
 
-
-
 .modal-content:not(.dark-mode) {
   background-color: var(--white-color);
+}
+
+.modal-footer {
+  border-top: 1px solid var(--border-color) !important;
 }
 
 /* todo =****= INPUT NUMBER TYPE UP & DOWN KEY REMOVE =****=  */
@@ -214,6 +201,7 @@ input[type="number"] {
 
 .head-of-section {
   margin: 0px 12px !important;
+  padding-bottom: 10px;
 }
 
 /* ! =****= PROFILE PAGE =****=  */
@@ -337,8 +325,12 @@ input[type="number"] {
   border: none;
   text-decoration: none;
   cursor: pointer;
+  background-image: url("../assets/history-bg-big.svg");
+  background-size: cover;
+  background-position: center;
   border: 1px solid var(--border-color);
   height: 110px;
+  padding: 0;
   width: 125px;
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -352,6 +344,7 @@ input[type="number"] {
   color: #fff;
   top: -20px;
   left: 10px;
+  z-index: 258;
   line-height: 5px;
   text-align: center;
 }
@@ -511,10 +504,6 @@ input[type="number"] {
   border-radius: 0;
 }
 
-.upcoming-game .swiper-slide .body .center svg path {
-  fill: var(--secondary-color);
-}
-
 .upcoming-game .swiper-slide .foot .date p {
   text-transform: capitalize;
   color: var(--text-color);
@@ -614,12 +603,6 @@ input[type="number"] {
 }
 
 /* todo =****= SHARE PROFILE MODAL =****=  */
-
-/* #shareProfileModal .modal {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-} */
 
 .myAnimation {
   animation: myAnimation 0.35s linear;
@@ -727,13 +710,8 @@ input[type="number"] {
 
 #shareProfileModal .modal-footer {
   border: none;
-  background-color: var(--gray-bg);
-  margin: 10px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  margin: 0px;
+  padding-top: 0;
 }
 
 #shareProfileModal .modal-footer .all-icons {
@@ -741,7 +719,15 @@ input[type="number"] {
   overflow: hidden;
   overflow-x: scroll;
   margin: 10px 0px;
+  padding: 10px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
   white-space: nowrap;
+  border: 1px solid var(--trans-border);
+  background-color: var(--gray-bg);
 }
 
 #shareProfileModal .modal-footer .all-icons::-webkit-scrollbar {
@@ -751,7 +737,7 @@ input[type="number"] {
 #shareProfileModal .modal-footer .all-icons .icon-part {
   display: flex;
   white-space: nowrap;
-  gap: 20px;
+  gap: 18px;
   width: 750px;
 }
 
@@ -759,8 +745,8 @@ input[type="number"] {
   height: 60px;
   width: 60px;
   background-color: var(--white-color);
-  border: 1px solid transparent;
   border-radius: 50%;
+  border: 2px solid transparent;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -775,8 +761,23 @@ input[type="number"] {
   -o-transition: 0.3s;
 }
 
-#shareProfileModal .modal-footer .box:hover {
-  border: 1px solid var(--head-text);
+.shareIconSelect {
+  border: 2px solid var(--primary-color) !important;
+}
+
+#shareProfileModal .shareBtn {
+  padding: 8px 40px;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  text-transform: capitalize;
+  font-weight: 500;
+  background-color: var(--primary-color);
+  color: var(--primary-button-text);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
 /* todo =****= PROFILE DASHBOARD =****=  */
@@ -825,6 +826,15 @@ input[type="number"] {
   border-bottom: 1px solid var(--border-color);
 }
 
+.bio-read-more {
+  color: var(--primary-color) !important;
+  cursor: pointer;
+}
+
+.bio-more-text {
+  display: none;
+}
+
 /* todo =****= FOLLOWERS SLIDER SECTION =****=  */
 
 .follower-section h4 {
@@ -853,11 +863,12 @@ input[type="number"] {
 .follower-section .swiper-slide .name {
   color: var(--text-color);
   font-size: 13px;
+  text-transform: capitalize;
 }
 
 .follower-section .border-part {
-  height: 55px;
-  width: 55px;
+  height: 56px;
+  width: 56px;
   border: 1px solid var(--primary-color);
   border-radius: 50%;
 }
@@ -868,17 +879,14 @@ input[type="number"] {
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  left: 1.5px;
-  top: 1px;
+  left: 2px;
+  top: 2px;
 }
 
 .follower-section .border-part .img-part img {
-  text-align: center;
   height: 100%;
+  width: 100%;
   object-fit: cover;
-  position: relative;
-  left: 0px;
-  top: 1px;
 }
 
 /* todo =****= MEDIA( PHOTOS, FRIEDNS, VIDEOS) BUTOTN =****=  */
@@ -934,15 +942,6 @@ input[type="number"] {
   -o-transition: 0.3s;
 }
 
-/* .media-section .btn-section .photos-btn:hover,
-.media-section .btn-section .videos-btn:hover,
-.media-section .btn-section .friends-btn:hover {
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  transition: 0.3s;
-} */
-
-/* This is a custom style for only media button */
 .myStyle {
   background-color: var(--primary-color) !important;
   color: var(--primary-button-text) !important;
@@ -951,6 +950,27 @@ input[type="number"] {
 }
 
 /* todo =****= GALLERY SECTION (PHOTOS) =****=  */
+
+.gallery-head .back-btn-section .right {
+  width: 50%;
+  display: flex;
+}
+
+.gallery-head .back-btn-section .right .add-btn {
+  width: 100px;
+  height: 30px;
+  background-color: var(--primary-color);
+  color: var(--primary-button-text);
+  line-height: 30px;
+  text-transform: capitalize;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
 
 #galleryPage {
 }
@@ -1033,6 +1053,26 @@ input[type="number"] {
   -o-border-radius: 4px;
 }
 
+.videos-box {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+.videos-box .box {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.videos-box .box video {
+  height: 100%;
+  width: 100%;
+}
+
 #galleryPage .item {
   position: relative;
 }
@@ -1056,7 +1096,7 @@ input[type="number"] {
 }
 
 #galleryPage .cancel-btn svg circle {
-  fill: var(--text-color);
+  fill: #0e1727;
   transition: 0.2s;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
@@ -1097,16 +1137,12 @@ input[type="number"] {
   justify-content: center;
 }
 
-#galleryImageModal .modal-body svg path {
-  fill: var(--white-color);
-}
-
 #galleryImageModal .edit-btn {
   width: 150px;
   padding: 0px 10px;
   border: none;
   background-color: var(--primary-color);
-  color: var(--white-color);
+  color: var(--primary-button-text);
   text-transform: capitalize;
   font-weight: 500;
   font-size: 16px;
@@ -1118,13 +1154,16 @@ input[type="number"] {
   -o-border-radius: 4px;
 }
 
+#galleryImageModal .edit-btn svg path {
+  fill: var(--primary-button-text);
+}
+
 #galleryImageModal .delete-btn {
   width: 150px;
-
   padding: 0px 10px;
   border: none;
   background-color: var(--secondary-color);
-  color: var(--white-color);
+  color: var(--secondary-button-text);
   text-transform: capitalize;
   font-weight: 500;
   font-size: 16px;
@@ -1134,6 +1173,10 @@ input[type="number"] {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+}
+
+#galleryImageModal .delete-btn svg path {
+  fill: var(--secondary-button-text);
 }
 
 /* todo =****= LIGHTBOX =****=  */
@@ -1196,8 +1239,6 @@ input[type="number"] {
   margin: 0;
   padding: 0;
   border: none;
-  /* box-shadow: var(--shadow-one) 0px 1px 2px 0px,
-    var(--shadow-two) 0px 1px 3px 1px; */
   border: 1px solid var(--border-color);
   overflow: hidden;
 }
@@ -1355,12 +1396,6 @@ input[type="number"] {
   -o-border-radius: 4px;
 }
 
-.btn-section .plus-following:hover {
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  transition: 0.3s;
-}
-
 .btn-section .invite {
   border: none;
   padding: 7px 24px;
@@ -1380,16 +1415,6 @@ input[type="number"] {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
-}
-
-.btn-section .invite:hover {
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
 }
 
 .btn-section .invite span {
@@ -1415,16 +1440,6 @@ input[type="number"] {
   -o-transition: 0.3s;
 }
 
-.btn-section .contact:hover {
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-}
-
 .btn-section .contact svg {
   border: none;
   width: 20px;
@@ -1435,19 +1450,16 @@ input[type="number"] {
   fill: var(--text-color);
 }
 
-.btn-section .contact:hover svg path {
-  fill: var(--white-color);
-}
-
 /* This is custom class for button active  */
 
 .plusStyle {
   background-color: var(--primary-color) !important;
-  color: var(--white-color) !important;
+  color: var(--primary-button-text) !important;
+  border: 1px solid var(--primary-color) !important;
 }
 
 .plusStyle svg path {
-  fill: var(--white-color) !important;
+  fill: var(--primary-button-text) !important;
 }
 
 /* ! =****= ALL FRIENDS PAGE =****=  */
@@ -1614,7 +1626,7 @@ input[type="number"] {
   font-weight: 500;
   font-size: 14px;
   background-color: var(--primary-color);
-  color: var(--white-color);
+  color: var(--primary-button-text);
   cursor: pointer;
   line-height: 5px;
   -webkit-border-radius: 4px;
@@ -1637,6 +1649,10 @@ input[type="number"] {
 
 .back-btn-section .right svg {
   width: 25px;
+}
+
+.back-btn-section .right svg path {
+  fill: var(--alt-color);
 }
 
 /* ! --> FOR FOLLOWER HTML SECTION  --> */
@@ -1705,9 +1721,9 @@ input[type="number"] {
 }
 
 .each-followers .border-part {
-  height: 55px;
-  width: 55px;
-  border: 1px solid var(--border-color);
+  height: 56px;
+  width: 56px;
+  border: 1px solid var(--primary-color);
   border-radius: 50%;
 }
 
@@ -1717,17 +1733,14 @@ input[type="number"] {
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  left: 1.5px;
-  top: 1px;
+  left: 2px;
+  top: 2px;
 }
 
 .each-followers .border-part .img-part img {
-  text-align: center;
   height: 100%;
+  width: 100%;
   object-fit: cover;
-  position: relative;
-  left: 0px;
-  top: 1px;
 }
 
 .follower-details .each-followers {
@@ -1762,13 +1775,15 @@ input[type="number"] {
 #removeModal .modal-body {
   display: flex;
   justify-content: center;
+  gap: 10px;
   align-items: center;
   padding: 10px;
 }
 
-#removeModal .modal-body .img{
-  width: 80px;
-  height: 80px;
+#removeModal .modal-body .img {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1776,19 +1791,26 @@ input[type="number"] {
   -o-border-radius: 50%;
 }
 
-#removeModal .modal-body .img img{
+#removeModal .modal-body .img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-#removeModal .modal-footer{
+#removeModal .modal-body .name {
+  color: var(--text-color);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+#removeModal .modal-footer {
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 
 #removeModal .modal-footer .removeBtn,
-#removeModal .modal-footer .blockBtn{
+#removeModal .modal-footer .blockBtn {
   width: 80%;
   height: 35px;
   background-color: var(--secondary-color);
@@ -1802,12 +1824,11 @@ input[type="number"] {
   -o-border-radius: 4px;
 }
 
-
-#removeModal .modal-footer .cancelBtn{
+#removeModal .modal-footer .cancelBtn {
   width: 80%;
   height: 35px;
   background-color: var(--alt-color);
-  color: var(--white-color);
+  color: #ffffff;
   border: none;
   text-transform: capitalize;
   border-radius: 4px;
@@ -1817,34 +1838,39 @@ input[type="number"] {
   -o-border-radius: 4px;
 }
 
-#removeModal .modal-body .all-btn {
+#removeModal .modal-footer .all-btn {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
+  justify-content: flex-start;
 }
 
-#removeModal .modal-body button {
-  width: 100%;
-  padding: 10px 20px;
+#removeModal .modal-footer .all-btn button {
+  width: 80%;
+  padding: 10px;
   border: none;
   text-transform: capitalize;
   font-size: 16px;
   font-weight: 600;
   text-align: left;
-  margin-top: 2px;
+  margin-top: 5px;
   background-color: var(--white-color);
-  border-top: 1px solid var(--border-color);
+  border: 1px solid var(--border-color);
   color: var(--text-color);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
-#removeModal .modal-body button:nth-child(1) {
-  border: none;
-}
-
-
-#removeModal .modal-body button svg {
+#removeModal .modal-footer button svg {
   margin-right: 5px;
+}
+
+#removeModal .modal-footer button svg path {
+  fill: var(--alt-color);
 }
 
 #removeModal .modal-body button .name {
@@ -1858,45 +1884,6 @@ input[type="number"] {
   color: var(--primary-color);
   font-size: 15px;
   margin-left: 5px;
-}
-
-.dropstart .dropdown-toggle::before {
-  display: none;
-}
-
-#followers .dropdown-menu,
-#following .dropdown-menu {
-  min-width: 5rem;
-  margin: 0;
-  padding: 0;
-  top: -20px !important;
-  right: -5px !important;
-  border-radius: 4px 4px 0px 4px;
-  -webkit-border-radius: 4px 4px 0px 4px;
-  -moz-border-radius: 4px 4px 0px 4px;
-  -ms-border-radius: 4px 4px 0px 4px;
-  -o-border-radius: 4px 4px 0px 4px;
-}
-
-#followers .dropdown-menu li,
-#following .dropdown-menu li {
-  border-bottom: 1px solid var(--border-color);
-  padding: 3px 12px;
-  color: var(--secondary-color);
-  font-size: 15px;
-  text-align: center;
-  cursor: pointer;
-  background-color: #f1f1f1;
-}
-
-#followers .dropdown-menu li:hover,
-#following .dropdown-menu li:hover {
-  color: var(--secondary-color);
-}
-
-#followers .dropdown-menu li:last-child,
-#following .dropdown-menu li:last-child {
-  border: none;
 }
 
 .follower-details .each-followers .left {
@@ -1919,7 +1906,7 @@ input[type="number"] {
   font-size: 16px;
   font-weight: 600;
   padding-left: 5px;
-  color: var(--head-text);
+  color: var(--text-color);
 }
 
 .follower-details .each-followers .right {
@@ -1948,22 +1935,22 @@ input[type="number"] {
 }
 
 .each-followers .following-btn {
-  border: 1px solid var(--alt-color);
   width: 80px;
+  border: none;
   height: 25px;
   font-size: 14px;
   border-radius: 4px;
-  background-color: var(--white-color);
-  color: var(--alt-color);
+  background-color: var(--primary-color);
+  color: var(--primary-button-text);
   transition: 0.3s;
 }
 
-.each-followers .following-btn:hover {
+/* .each-followers .following-btn:hover {
   background-color: var(--primary-color);
   color: var(--white-color);
   transition: 0.3s;
   border: 1px solid transparent;
-}
+} */
 
 /* todo --> REVIEWS-SECTION   --> */
 
@@ -2281,7 +2268,7 @@ input[type="number"] {
   background-color: var(--white-color);
   z-index: 999;
   left: 0;
-  padding-bottom: 13px;
+  padding-bottom: 16px;
 }
 
 .menu-section .all-menu {
@@ -2488,24 +2475,16 @@ input[type="number"] {
 
 .sign-page .body .btn-section button {
   width: 50%;
-  background-color: var(--white-color);
+  background-color: var(--primary-color);
   border: none;
   border-radius: 4px;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  color: var(--text-color);
+  color: var(--primary-button-text);
   line-height: 40px;
   transition: 0.3s;
   cursor: pointer;
-  border: 1px solid var(--border-color);
-}
-
-.sign-page .body .btn-section button:hover {
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  transition: 0.3s;
-  border: transparent;
 }
 
 .sign-page .body .social {
@@ -2531,12 +2510,6 @@ input[type="number"] {
   font-weight: 500;
 }
 
-.sign-page .body .social button:hover {
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  transition: 0.3s;
-}
-
 .sign-page .body .social button span svg {
   position: relative;
   top: 7px;
@@ -2551,7 +2524,7 @@ input[type="number"] {
 
 .sign-page .body .foot p a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .sign-page .body .foot p a:hover {
@@ -2672,19 +2645,11 @@ input[type="number"] {
   font-size: 18px;
   margin-top: 15px;
   border: none;
-  color: var(--white-color);
+  color: var(--primary-button-text);
   font-weight: 600;
   background-color: var(--primary-color);
   cursor: pointer;
   transition: 0.3s;
-  border: 1px solid var(--primary-color);
-}
-
-.sign-in-page .input-section .sign-in:hover {
-  background-color: var(--white-color);
-  color: var(--text-color);
-  transition: 0.3s;
-  border: 1px solid var(--border-color);
 }
 
 .sign-in-page .input-section .sign-up {
@@ -2695,17 +2660,10 @@ input[type="number"] {
   font-size: 18px;
   margin-top: 15px;
   border: none;
-  color: var(--text-color);
+  color: var(--primary-button-text);
   font-weight: 600;
-  background-color: var(--white-color);
-  border: 1px solid var(--border-color);
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.sign-in-page .input-section .sign-up:hover {
   background-color: var(--primary-color);
-  color: var(--white-color);
+  cursor: pointer;
   transition: 0.3s;
 }
 
@@ -2725,7 +2683,7 @@ input[type="number"] {
 
 .input-section .forget-password a {
   font-weight: 500;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
@@ -2749,19 +2707,11 @@ input[type="number"] {
   font-size: 18px;
   margin-top: 15px;
   border: none;
-  color: var(--white-color);
+  color: var(--primary-button-text);
   font-weight: 600;
   background-color: var(--primary-color);
   cursor: pointer;
   transition: 0.3s;
-  border: 1px solid var(--primary-color);
-}
-
-.sign-up-page .input-section .sign-up:hover {
-  background-color: var(--white-color);
-  color: var(--text-color);
-  transition: 0.3s;
-  border: 1px solid var(--border-color);
 }
 
 .sign-up-page .input-section .sign-in {
@@ -2772,22 +2722,23 @@ input[type="number"] {
   font-size: 18px;
   margin-top: 15px;
   border: none;
-  color: var(--text-color);
+  color: var(--primary-button-text);
   font-weight: 600;
-  background-color: var(--white-color);
-  border: 1px solid var(--border-color);
+  background-color: var(--primary-color);
   cursor: pointer;
   transition: 0.3s;
 }
 
-.sign-up-page .input-section .sign-in:hover {
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  transition: 0.3s;
+#editProfile {
 }
 
-#editProfile {
-  padding-bottom: 10px;
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.6);
+  -webkit-filter: invert(0.6);
+}
+
+input[type="date"] {
+  color: var(--alt-color) !important;
 }
 
 #editProfile .relationship {
@@ -2871,20 +2822,19 @@ input[type="number"] {
   font-size: 16px;
   margin-top: 15px;
   border: none;
-  color: var(--primary-color);
+  color: var(--primary-button-text);
+  background-color: var(--primary-color);
   font-weight: 600;
-  background-color: var(--white-color);
   cursor: pointer;
   transition: 0.3s;
-  border: 1px solid var(--primary-color);
 }
 
-.forget-page .input-section .reset-link:hover {
+/* .forget-page .input-section .reset-link:hover {
   background-color: var(--primary-color);
   color: var(--white-color);
   transition: 0.3s;
   border: 1px solid var(--border-color);
-}
+} */
 
 /* ! =========== FOR OTP VERIFY PAGE =========  ===== */
 
@@ -2931,6 +2881,8 @@ input[type="number"] {
   padding: 3px 18px;
   border-radius: 4px;
   border: 1px solid var(--border-color);
+  color: var(--text-color);
+
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -3067,12 +3019,21 @@ input[type="number"] {
   border-radius: 4px;
   border: 1px solid var(--border-color);
   transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 
 #profileMenu .box .btn button:hover {
   background-color: var(--primary-color);
-  color: var(--white-color);
+  color: var(--primary-button-text);
   transition: 0.3s;
+  border: 1px solid var(--primary-color);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 
 /* todo ==== VENUE-DETAILS ==== --> */
@@ -3125,8 +3086,6 @@ input[type="number"] {
   border-radius: 4px;
   background-color: var(--card-bg);
   cursor: pointer;
-  /* box-shadow: var(--shadow-one) 0px 1px 2px 0px,
-    var(--shadow-two) 0px 1px 3px 1px; */
   border: 1px solid var(--border-color);
 }
 
@@ -3218,7 +3177,7 @@ input[type="number"] {
 }
 
 #profileMenu .collapses .collapse-item:hover svg path {
-  fill: var(--white-color);
+  fill: #fff;
 }
 
 #profileMenu .collapses .collapse-item span {
@@ -3304,7 +3263,7 @@ input[type="number"] {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  background-color: #f0f0f0;
+  background-color: var(--input-bg);
 }
 
 #experienceModal .feedback .img .icon svg path {
@@ -3314,7 +3273,6 @@ input[type="number"] {
 /* ! **********  SETTING PAGE ******** */
 
 #setting {
-  padding-bottom: 10px;
   background-color: var(--white-color);
 }
 
@@ -3439,8 +3397,6 @@ input[type="number"] {
   border-radius: 4px;
   margin-top: 10px;
   background-color: var(--card-bg);
-  /* box-shadow: var(--shadow-one) 0px 1px 2px 0px,
-    var(--shadow-two) 0px 1px 3px 1px; */
   border: 1px solid var(--border-color);
 }
 
@@ -3530,7 +3486,6 @@ input[type="number"] {
   text-align: left;
   line-height: 20px;
   color: var(--text-color);
-
 }
 #upcomingGame .card-section .box .img-box {
   height: 40px;
@@ -3651,16 +3606,9 @@ input[type="number"] {
   align-items: center;
   transition: 0.3s;
   cursor: pointer;
-  color: var(--alt-color);
   background-color: var(--primary-color);
   color: var(--primary-button-text);
 }
-
-/* #chatMenu .create-group:hover {
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  transition: 0.3s;
-} */
 
 #chatMenu .create-group .group-person-img {
   width: 30%;
@@ -3674,8 +3622,8 @@ input[type="number"] {
 }
 
 #chatMenu .create-group .img-box .img {
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   border-radius: 50%;
   overflow: hidden;
   margin: 0;
@@ -3687,48 +3635,32 @@ input[type="number"] {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  position: relative;
-  top: -9px;
-}
-
-#chatMenu .create-group .img-box .img:nth-child(1) {
-  transition: 0.3s;
-}
-
-#chatMenu .create-group .img-box .img:nth-child(1):hover {
-  transform: translateX(5px);
-  transition: 0.3s;
+  vertical-align: top;
 }
 
 #chatMenu .create-group .img-box .img:nth-child(2) {
-  transform: translateX(-10px);
-
-  transition: 0.3s;
-}
-
-#chatMenu .create-group .img-box .img:nth-child(2):hover {
   transform: translateX(-5px);
-  transition: 0.3s;
+
+  -webkit-transform: translateX(-5px);
+  -moz-transform: translateX(-5px);
+  -ms-transform: translateX(-5px);
+  -o-transform: translateX(-5px);
 }
 
 #chatMenu .create-group .img-box .img:nth-child(3) {
-  transform: translateX(-20px);
-  transition: 0.3s;
-}
-
-#chatMenu .create-group .img-box .img:nth-child(3):hover {
   transform: translateX(-15px);
-  transition: 0.3s;
+  -webkit-transform: translateX(-15px);
+  -moz-transform: translateX(-15px);
+  -ms-transform: translateX(-15px);
+  -o-transform: translateX(-15px);
 }
 
 #chatMenu .create-group .img-box .img:nth-child(4) {
-  transform: translateX(-30px);
-  transition: 0.3s;
-}
-
-#chatMenu .create-group .img-box .img:nth-child(4):hover {
-  transform: translateX(-25px);
-  transition: 0.3s;
+  transform: translateX(-20px);
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  -o-transform: translateX(-20px);
 }
 
 #chatMenu .create-group .text {
@@ -3752,9 +3684,11 @@ input[type="number"] {
   background-color: var(--card-bg);
   border-radius: 6px;
   cursor: pointer;
-  /* box-shadow: var(--shadow-one) 0px 1px 2px 0px,
-    var(--shadow-two) 0px 1px 3px 1px; */
   border: 1px solid var(--border-color);
+}
+
+#chatMenu .approval-card .left {
+  width: 60% !important;
 }
 
 #chatMenu .card-section .box .head {
@@ -3784,6 +3718,21 @@ input[type="number"] {
   align-items: center;
 }
 
+#chatMenu .card-section .box .body .left {
+  width: 40%;
+}
+
+#chatMenu .card-section .box .body .right {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#chatMenu .card-section .box .body .center {
+  width: 15%;
+  text-align: left;
+}
+
 #chatMenu .card-section .box .body .img-part {
   display: flex;
   align-items: center;
@@ -3801,6 +3750,10 @@ input[type="number"] {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+#chatMenu .card-section .box .body .right .img-part {
+  text-align: right;
 }
 
 #chatMenu .card-section .box .body .img-part .name {
@@ -3823,12 +3776,6 @@ input[type="number"] {
   transition: 0.3s;
   font-size: 14px;
 }
-
-/* #chatMenu .card-section .box .body .right button:hover {
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  transition: 0.3s;
-} */
 
 /* todo ==== DOUBLE CHAT-SECTION ==== --> */
 /* *-- doubleChat is a common class for more another card Section */
@@ -3862,10 +3809,6 @@ input[type="number"] {
   width: 50px;
 }
 
-#chatMenu .doubleChat .box .center svg path {
-  fill: var(--secondary-color);
-}
-
 #chatMenu .doubleChat .body .userBtn {
   border: none;
   background-color: transparent;
@@ -3892,6 +3835,21 @@ input[type="number"] {
   top: 12px;
   left: 13px;
   z-index: 50;
+}
+
+#chatMenu .doubleChat .body .userBtn svg path {
+  fill: var(--alt-color);
+  stroke: var(--white-color);
+}
+
+#chatMenu .doubleChat .body .style-text {
+  font-size: 22px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: "Black Ops One", system-ui;
+  color: var(--alt-color);
+  position: relative;
+  top: -10px;
 }
 
 /* todo ==== PLAYERS MODAL SECTION ==== --> */
@@ -4080,7 +4038,8 @@ input[type="number"] {
 #defenseModal .modal-dialog,
 #reportPostModal .modal-dialog,
 #editNameModal .modal-dialog,
-#experienceModal .modal-dialog {
+#experienceModal .modal-dialog,
+#shareExperienceModal .modal-dialog {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4098,7 +4057,8 @@ input[type="number"] {
 #savePostModal .modal-content,
 #reportPostModal .modal-content,
 #editNameModal .modal-content,
-#experienceModal .modal-content {
+#experienceModal .modal-content,
+#shareExperienceModal .modal-content {
   border-radius: 6px;
   border: none;
   overflow: hidden;
@@ -4122,7 +4082,11 @@ input[type="number"] {
 }
 
 #teamImageModal .name {
-  color: var(--white-color);
+  color: #fff;
+}
+
+#singleImageModal .name {
+  color: #fff;
 }
 
 #deleteModal .modal-content .modal-header,
@@ -4171,7 +4135,8 @@ input[type="number"] {
 #sentModal .modal-footer,
 #editModal .modal-footer,
 #savePostModal .modal-footer,
-#reportPostModal .modal-footer {
+#reportPostModal .modal-footer,
+#shareExperienceModal .modal-footer {
   display: flex;
   justify-content: space-between;
   padding: 0;
@@ -4210,7 +4175,7 @@ input[type="number"] {
 #interestAlertModalTwo .modal-footer .cancel-btn:hover,
 #savePostModal .modal-footer .cancel-btn:hover {
   background-color: var(--secondary-color);
-  color: var(--white-color);
+  color: var(--secondary-button-text);
   transition: 0.3s;
   border-color: transparent;
 }
@@ -4223,16 +4188,18 @@ input[type="number"] {
 #sentModal .modal-footer .ok-btn:hover,
 #savePostModal .modal-footer .ok-btn:hover {
   background-color: var(--primary-color);
-  color: var(--white-color);
+  color: var(--primary-button-text);
   transition: 0.3s;
   border-color: transparent;
 }
 
 #editModal .modal-content .modal-body textarea,
-#reportPostModal .modal-content .modal-body textarea {
+#reportPostModal .modal-content .modal-body textarea,
+#shareExperienceModal .modal-content .modal-body textarea {
   max-width: 100%;
   border: 1px solid var(--border-color);
   background-color: var(--card-bg);
+  color: var(--text-color);
   padding: 5px 10px;
   outline: none;
   min-width: 100%;
@@ -4246,12 +4213,14 @@ input[type="number"] {
 }
 
 #editModal .modal-body,
-#reportPostModal .modal-body {
+#reportPostModal .modal-body,
+#shareExperienceModal .modal-body {
   padding-bottom: 0;
 }
 
 #editModal .modal-footer,
-#reportPostModal .modal-footer {
+#reportPostModal .modal-footer,
+#shareExperienceModal .modal-footer {
   padding: 10px 10px;
   padding-top: 0;
 }
@@ -4284,8 +4253,6 @@ input[type="number"] {
   height: auto;
   display: flex;
   justify-content: space-around;
-  /* box-shadow: var(--shadow-one) 0px 1px 2px 0px,
-    var(--shadow-two) 0px 1px 3px 1px; */
   border: 1px solid var(--border-color);
   margin-top: 15px;
   background-color: var(--white-color);
@@ -4377,6 +4344,10 @@ input[type="number"] {
   color: var(--primary-color);
 }
 
+#chatMenu .personal-trainer .left {
+  width: 100% !important;
+}
+
 #chatMenu .personal-trainer .second {
   border-top: 1px solid var(--border-color);
   padding: 10px 00px;
@@ -4395,8 +4366,6 @@ input[type="number"] {
   display: flex;
   align-items: center;
   margin-top: 10px;
-  /* box-shadow: 0px 0px 6px var(--shadow-color);
-   */
   border: 1px solid var(--border-color);
 }
 
@@ -4529,8 +4498,6 @@ input[type="number"] {
 
 #messageBoard .card-section .box {
   background-color: var(--white-color);
-  /* box-shadow: var(--shadow-one) 0px 1px 2px 0px,
-    var(--shadow-two) 0px 1px 3px 1px; */
   border: 1px solid var(--border-color);
   border-radius: 8px;
   margin-top: 15px;
@@ -4725,7 +4692,7 @@ input[type="number"] {
 #createPost {
   min-height: 85vh;
   padding-top: 0;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 
 #createPost .post-item {
@@ -4993,22 +4960,26 @@ input[type="number"] {
 
 #createPost .message-box {
   margin-top: 15px;
-}
-
-#createPost .message-box textarea {
-  height: 130px;
   width: 100%;
-  border: none;
-  outline: none;
-  border-radius: 4px;
+  height: 130px;
   border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--card-bg);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
-  padding: 10px;
-  font-size: 15px;
+  overflow: hidden;
+}
+
+#createPost .message-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
   background-color: var(--card-bg);
+  padding: 10px;
   color: var(--text-color);
 }
 
@@ -5328,7 +5299,6 @@ input[type="number"] {
   font-size: 13px;
 }
 
-
 #approvalAwait .await-card .box .body .right .accept {
   padding: 2px 10px;
   border-radius: 20px;
@@ -5357,10 +5327,9 @@ input[type="number"] {
   color: var(--secondary-button-text);
   transition: 0.3s;
   font-size: 13px;
-
 }
 
-#approvalAwait .await-card .box .body .right .declined{
+#approvalAwait .await-card .box .body .right .declined {
   padding: 1px 10px;
   border-radius: 20px;
   line-height: 20px;
@@ -5470,7 +5439,7 @@ input[type="number"] {
 #historySec .card-section .box .body .center .score {
   font-weight: bold;
   font-size: 32px;
-  color: var(--text-color);
+  color: var(--head-text);
   margin: 0;
 }
 
@@ -5608,6 +5577,17 @@ input[type="number"] {
 }
 
 .upcoming-game .swiper-slide .body .center .team-one,
+.upcoming-game .swiper-slide .body .center .team-two,
+.upcoming-game .swiper-slide .body .center .vs {
+  color: var(--head-text) !important;
+  font-size: 22px !important;
+}
+
+.upcoming-game .swiper-slide .body .center .time {
+  color: var(--text-color);
+}
+
+.upcoming-game .swiper-slide .body .center .team-one,
 .upcoming-game .swiper-slide .body .center .vs,
 .upcoming-game .swiper-slide .body .center .team-two {
   font-size: 18px;
@@ -5625,10 +5605,11 @@ input[type="number"] {
 #timeline .timeline-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 12px 12px;
   padding-bottom: 15px;
   border-bottom: 2px solid var(--border-color);
+  gap: 10px;
 }
 
 #timeline .timeline-header .left .img {
@@ -5650,29 +5631,42 @@ input[type="number"] {
 }
 
 #timeline .timeline-header .center {
-  width: 85%;
-  padding: 0px 12px;
-}
-
-#timeline .timeline-header .center input {
+  width: 80%;
+  overflow: hidden;
+  padding-bottom: 0px;
+  margin: 0;
+  position: relative;
+  padding: 0;
+  line-height: 10px;
   border: 1px solid var(--border-color);
-  padding: 5px 15px;
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
-  outline: none;
-  width: 100%;
-  font-size: 15px;
   background-color: var(--card-bg);
+}
+
+#timeline .timeline-header .center textarea {
+  width: 100%;
+  line-height: 18px;
+  border: none;
+  font-size: 16px;
+  overflow: hidden;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  appearance: none;
+  padding-top: 7px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
   color: var(--text-color);
 }
 
-#timeline .timeline-header .center input::placeholder {
+#timeline .timeline-header .center textarea::placeholder {
   color: var(--alt-color);
   text-transform: capitalize;
-  font-weight: 500;
 }
 
 #timeline .timeline-header .right {
@@ -5814,6 +5808,20 @@ input[type="number"] {
 #timeline .timeline-post .reaction-count .left .total-like {
   font-size: 14px;
   color: var(--alt-color);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+#timeline .timeline-post .reaction-count .left .total-like:hover {
+  color: var(--primary-color);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 
 #timeline .timeline-post .reaction-count .right {
@@ -5983,7 +5991,8 @@ input[type="number"] {
   top: -45px;
   left: 0;
   width: 280px;
-  background-color: var(--white-color);
+  border: 1px solid var(--trans-border);
+  background-color: var(--card-bg);
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 4px 6px;
   z-index: 2585;
   height: 45px;
@@ -6111,6 +6120,9 @@ input[type="number"] {
   -o-transition: 0.3s;
 }
 
+#timeline .timeline-post .react-emoji .react-box .box svg path {
+}
+
 #timeline .timeline-post .react-emoji .react-box .box svg:hover {
   transform: scale(1.2);
   transition: 0.3s;
@@ -6133,7 +6145,7 @@ input[type="number"] {
   -o-transition: 0.3s;
 }
 
-#timeline .timeline-post .reaction-btn .left:hover svg path {
+#timeline .timeline-post .reaction-btn .left:hover .likeButton path {
   stroke: var(--primary-color);
   transition: 0.3s;
   -webkit-transition: 0.3s;
@@ -6411,9 +6423,6 @@ input[type="number"] {
   border-bottom: none;
 }
 
-
-
-
 /* todo **** DEFENSE MODAL  **** */
 
 #defenseModal .modal-body {
@@ -6452,7 +6461,7 @@ input[type="number"] {
   fill: var(--primary-color);
 }
 
-#timeline .timelineShareModal .modal-dialog{
+#timeline .timelineShareModal .modal-dialog {
   display: flex;
   align-items: center;
 }
@@ -6513,6 +6522,20 @@ input[type="number"] {
 #commentsPage .reaction-count .left .total-like {
   font-size: 16px;
   color: var(--alt-color);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+#commentsPage .reaction-count .left .total-like:hover {
+  color: var(--text-color);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 
 #commentsPage .head .right svg:hover path {
@@ -6611,6 +6634,7 @@ input[type="number"] {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   padding: 5px;
+  overflow: hidden;
 }
 
 #commentsPage .comment-box .right .box .name {
@@ -6823,6 +6847,82 @@ input[type="number"] {
   -o-transition: 0.2s;
 }
 
+.text-sec {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  position: sticky;
+  bottom: 0;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: var(--white-color);
+}
+
+.text-sec .text-box {
+  display: flex;
+  border: 1px solid var(--border-color);
+  border-radius: 25px;
+  background-color: var(--gray-bg);
+  width: 100%;
+  overflow: hidden;
+  min-height: 40px;
+  justify-content: space-between;
+  padding: 0px 10px;
+
+  align-items: flex-end;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.text-sec .text-box .left {
+  width: 10%;
+  position: sticky;
+  bottom: 8px;
+}
+
+.text-sec .text-box .right {
+  display: flex;
+  gap: 8px;
+  position: sticky;
+  bottom: 8px;
+  width: 20%;
+  justify-content: flex-end;
+}
+
+.text-sec .text-box .center {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.text-sec .text-box .center textarea {
+  width: 100%;
+  height: 30px;
+  outline: none;
+  border: none;
+  resize: none;
+  appearance: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
+  line-height: 15px;
+  background-color: transparent;
+  color: var(--text-color);
+  position: relative;
+  top: 3px;
+}
+
+.text-sec .text-box #sendButton path {
+  stroke: var(--primary-color);
+  fill: transparent;
+}
+
 /* todo **** REACTION TOTAL Page  **** */
 
 #allReaction {
@@ -6898,11 +6998,22 @@ input[type="number"] {
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 
 #allReaction .all-reactor .reactor .add-friends-btn:hover {
   background-color: var(--primary-color);
-  color: var(--white-color);
+  color: var(--primary-button-text);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  border: 1px solid var(--primary-color);
 }
 
 #allReaction .all-reactor .reactor .left {
@@ -6963,7 +7074,7 @@ input[type="number"] {
 
 #sports {
   min-height: 100vh;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 
 .sports-head {
@@ -7059,13 +7170,13 @@ input[type="number"] {
   width: 100%;
   text-align: center;
   padding: 5px 0px;
-  color: var(--white-color);
+  color: #fff;
 }
 
 /* todo ==== CLASSES-SECTION ==== --> */
 
 #classes {
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 
 #classes a {
@@ -7090,7 +7201,6 @@ input[type="number"] {
 /* todo ==== SPINNING-SECTION ==== --> */
 
 #spinning {
-  padding-bottom: 10px;
 }
 
 #spinning .card-section .box {
@@ -7140,7 +7250,6 @@ input[type="number"] {
 /* todo ==== PT/COACH-SECTION ==== --> */
 
 #ptCoach {
-  padding-bottom: 10px;
 }
 
 .pt-coach {
@@ -7225,6 +7334,7 @@ input[type="number"] {
   display: flex;
   align-items: center;
   border: none;
+  background-color: var(--white-color);
 }
 
 #coachProfile .card-section .title {
@@ -7245,7 +7355,7 @@ input[type="number"] {
   font-weight: 600;
   padding: 5px 20px;
   background-color: var(--primary-color);
-  color: var(--white-color);
+  color: var(--primary-button-text);
   border: 1px solid var(--primary-color);
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -7310,31 +7420,6 @@ input[type="number"] {
 
 #coachProfile #videosSec {
   display: none;
-}
-
-.videos-box {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
-  gap: 12px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "first two three"
-    "four five six"
-    "seven eight nine";
-}
-
-.videos-box .box {
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  padding: 0;
-  /* box-shadow: var(--shadow-one) 0px 1px 2px 0px,
-    var(--shadow-two) 0px 1px 3px 1px; */
-  border: 1px solid var(--border-color);
-  position: relative;
 }
 
 #coachProfile .edit-icon {
@@ -7429,7 +7514,6 @@ input[type="number"] {
 
 #contactPage {
   min-height: 100vh;
-  padding-bottom: 10px;
 }
 
 #contactPage .head {
@@ -7498,11 +7582,10 @@ input[type="number"] {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
-  /* overflow: hidden; */
 }
 
 .group-head button {
-  color: var(--head-text);
+  color: var(--text-color);
   background-color: var(--white-color);
   text-transform: capitalize;
   font-weight: 500;
@@ -7562,11 +7645,12 @@ input[type="number"] {
   outline: none;
   border: 1px solid var(--border-color);
   padding: 5px 0px;
+  color: var(--text-color);
   padding-left: 10px;
   padding-right: 30px;
   border-radius: 4px;
   position: relative;
-  background-color: var(--card-bg);
+  background-color: var(--white-color);
 }
 
 #completeGroup .search-bar .input input::placeholder {
@@ -7584,7 +7668,7 @@ input[type="number"] {
   width: 40%;
   text-transform: capitalize;
   font-size: 16px;
-  color: var(--head-text);
+  color: var(--text-color);
   font-weight: 500;
 }
 
@@ -7597,7 +7681,7 @@ input[type="number"] {
   padding: 5px;
   padding-right: 10px;
   border-radius: 4px;
-  background-color: var(--card-bg);
+  background-color: var(--white-color);
   color: var(--alt-color);
   border: 1px solid var(--border-color);
   outline: none;
@@ -7621,7 +7705,7 @@ input[type="number"] {
   width: 40%;
   text-transform: capitalize;
   font-size: 16px;
-  color: var(--head-text);
+  color: var(--text-color);
 
   font-weight: 500;
 }
@@ -7651,7 +7735,7 @@ input[type="number"] {
 #completeGroup .add-players .add {
   font-size: 18px;
   font-weight: 500;
-  color: var(--head-text);
+  color: var(--text-color);
 
   text-transform: capitalize;
 }
@@ -7677,7 +7761,8 @@ input[type="number"] {
   padding-right: 30px;
   border-radius: 4px;
   position: relative;
-  background-color: var(--card-bg);
+  background-color: var(--white-color);
+  color: var(--text-color);
 }
 
 #completeGroup .search .input input::placeholder {
@@ -7721,7 +7806,7 @@ input[type="number"] {
 #completeGroup .players-box .left .name {
   font-size: 16px;
   font-weight: 500;
-  color: var(--head-text);
+  color: var(--text-color);
 
   text-transform: capitalize;
 }
@@ -7784,8 +7869,7 @@ input[type="number"] {
   text-align: center;
   line-height: 20px;
   font-size: 17px;
-
-  color: var(--primary-color);
+  color: #c8c8c8;
 }
 
 /* ! PROFILE IMAGE  */
@@ -7931,9 +8015,9 @@ input[type="number"] {
   cursor: pointer;
 }
 
-.chatroomHead .back-btn-section .center svg path {
+/* .chatroomHead .back-btn-section .center svg path {
   fill: var(--secondary-color);
-}
+} */
 
 .chatroomHead .back-btn-section .right .send-icon path {
   fill: var(--primary-color);
@@ -8121,209 +8205,88 @@ input[type="number"] {
   -o-border-radius: 4px;
 }
 
-/*.message-input {
-  padding: 8px 12px;
+.chatbox-section {
   display: flex;
-  gap: 8px;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 14px 12px;
+  padding-bottom: 15px;
+  border-top: 1px solid var(--border-color);
+  gap: 10px;
+  background-color: var(--white-color);
   position: sticky;
   bottom: 0px;
-  padding-bottom: 15px;
   margin-top: 10px;
-  border-top: 1px solid var(--border-color);
-  background-color: var(--white-color);
 }
 
- .message-input .left {
-  width: 100%;
-}
-
-.message-input .left .input-box {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  width: 100%;
-  padding: 0px 15px;
-  border-radius: 50px;
-  border: 1px solid var(--border-color);
-  background-color: var(--chat-bg);
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-}
-
-.message-input .left .input-box svg {
-  cursor: pointer;
-}
-
-.message-input .left .input-box .left {
-  width: 10%;
-  display: flex;
-  align-items: center;
-}
-
-.message-input .left .input-box .center {
-  width: 100%;
-  height: 100%;
-  display: block;
-  align-items: center;
-}
-
-.message-input .left .input-box .center textarea {
-  background-color: red;
-  min-height: 40px;
-  width: 100%;
-  line-height: 40px;
-  resize: none;
+.chatbox-section .center,
+.chatbox-section .center {
+  width: 90%;
   overflow: hidden;
-  appearance: none;
-  border: none;
-  outline: none;
-  padding: 0px 7px;
-  color: var(--text-color);
-} 
-
-
-
-.message-input .left .input-box .right {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-
-.message-input .right button {
-  height: 40px;
-  width: 40px;
-  border: none;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-
-.message-input #voiceSearch {
-  transition: 0.2s;
-  animation: anime 0.3s linear;
-  -webkit-animation: anime 0.3s linear;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-}
-
-.message-input #sendIcon {
-  display: none;
-  transition: 0.2s;
-  animation: anime 0.3s linear;
-  -webkit-animation: anime 0.3s linear;
-}
-
-@keyframes anime {
-  0% {
-    opacity: 1;
-    transform: scale(0.5);
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    -o-transform: scale(0.5);
-  }
-}
-*/
-
-.text-sec {
-  margin-top: 10px;
-  width: 100%;
-  border-top: 1px solid var(--border-color);
-  padding: 10px;
-  position: sticky;
-  bottom: 0;
+  padding-bottom: 0px;
+  margin: 0;
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
-  gap: 10px;
-
-  background-color: var(--white-color);
-}
-
-.text-sec .text-box {
-  display: flex;
+  position: relative;
+  padding: 0px 10px;
+  line-height: 10px;
   border: 1px solid var(--border-color);
   border-radius: 25px;
-  background-color: var(--gray-bg);
-  width: 90%;
-  padding-top: 0;
-  overflow: hidden;
-  min-height: 40px;
-  padding-bottom: 0px;
-  align-items: flex-end;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
+  background-color: var(--card-bg);
 }
 
-.text-sec .text-box .left {
-  width: 10%;
-  position: sticky;
-  bottom: 10px;
-  left: 0;
-  text-align: center;
-  padding-left: 5px;
-  height: 100%;
-}
-
-.text-sec .text-box .center {
-  width: 70%;
-  overflow: hidden;
-  padding-bottom: 0px;
-  margin: 0;
+.chatbox-section .center .comments-right-icon {
+  display: flex;
+  gap: 10px;
   position: relative;
-  top: 12px;
-  padding: 0;
-
-
-  
+  bottom: 10px;
 }
 
-.text-sec .text-box .center textarea {
+.chatbox-section .center .comments-right-icon svg {
+  cursor: pointer;
+}
+
+.chatbox-section .center .icon svg {
+  position: relative;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+.chatbox-section .center textarea {
   width: 100%;
   line-height: 18px;
   border: none;
   font-size: 16px;
-  min-height: 20px;
   overflow: hidden;
   background-color: transparent;
   resize: none;
   outline: none;
   appearance: none;
-  padding: 0px 5px;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
   color: var(--text-color);
 }
 
-.text-sec .text-box .right {
-  width: 20%;
-  position: sticky;
-  right: 0px;
-  bottom: 10px;
-  text-align: center;
+.chatbox-section .center textarea::placeholder {
+  color: var(--alt-color);
+  text-transform: capitalize;
 }
 
-.text-sec .text-box .right svg:nth-child(2) {
-  margin-left: 5px;
-}
-
-.text-sec .text-box svg {
+.chatbox-section .right {
   cursor: pointer;
 }
 
+.chatbox-section .text-box svg {
+  cursor: pointer;
+}
 
-.text-sec .search-box button {
+.chatbox-section .search-box button {
   height: 40px;
   width: 40px;
   border: none;
@@ -8339,7 +8302,7 @@ input[type="number"] {
   -o-border-radius: 50%;
 }
 
-.text-sec #voiceSearch {
+.chatbox-section #voiceSearch {
   transition: 0.2s;
   animation: anime 0.3s linear;
   -webkit-animation: anime 0.3s linear;
@@ -8349,7 +8312,7 @@ input[type="number"] {
   -o-transition: 0.2s;
 }
 
-.text-sec #sendIcon {
+.chatbox-section #sendIcon {
   display: none;
   transition: 0.2s;
   animation: anime 0.3s linear;
@@ -8367,10 +8330,17 @@ input[type="number"] {
   }
 }
 
+.chatbox-section .text-box svg path {
+  fill: var(--alt-color);
+}
+
+.chatbox-section .text-box svg circle {
+  stroke: var(--alt-color);
+}
+
 /* todo ==== GAME-INVITE-PAGE ==== --> */
 
 #gameInvite {
-  padding-bottom: 15px;
 }
 
 #gameInvite .team {
@@ -8381,8 +8351,6 @@ input[type="number"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* box-shadow: var(--shadow-one) 0px 1px 2px 0px,
-    var(--shadow-two) 0px 1px 3px 1px; */
   border: 1px solid var(--border-color);
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -8431,6 +8399,10 @@ input[type="number"] {
 #gameInvite .team .box .center svg {
   height: 50px;
   width: 50px;
+}
+
+#gameInvite .team .box .center svg path {
+  fill: var(--secondary-color);
 }
 
 /* add line up */
@@ -8486,7 +8458,7 @@ input[type="number"] {
   border: none;
   background-color: var(--primary-color);
   padding: 6px 22px;
-  color: var(--white-color);
+  color: var(--primary-button-text);
   font-weight: 500;
   text-transform: capitalize;
   border-radius: 4px;
@@ -8506,8 +8478,8 @@ input[type="number"] {
   margin-top: 10px;
   width: 100%;
   height: 40px;
-  background-color: var(--border-color);
-  color: var(--white-color);
+  background-color: var(--alt-color);
+  color: #fff !important;
   text-transform: capitalize;
   font-weight: 500;
   font-size: 16px;
@@ -8544,8 +8516,28 @@ input[type="number"] {
 }
 
 .details-box .text {
-  color: var(--secondary-color);
+  background-color: var(--dashboard-bg);
+  color: var(--text-color);
   text-transform: capitalize;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.details-box .name-text {
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.details-box .name-text .name {
+  color: var(--text-color);
+  font-weight: 600;
 }
 
 .details-box .game-name {
@@ -8566,7 +8558,9 @@ input[type="number"] {
 
 .details-box .specific-input input {
   border: 1px solid var(--border-color);
+  background-color: var(--card-bg);
   outline: none;
+  color: var(--text-color);
   margin-top: 10px;
   padding: 5px 10px;
   width: 100%;
@@ -8597,13 +8591,18 @@ input[type="number"] {
   width: 65%;
   padding: 5px 10px;
   border: 1px solid var(--border-color);
-  background-color: var(--white-color);
+  background-color: var(--card-bg);
+  color: var(--text-color);
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   outline: none;
+}
+
+.details-box .time-input input::placeholder {
+  color: var(--alt-color);
 }
 
 /* Venue ==== */
@@ -8828,11 +8827,12 @@ input[type="number"] {
   padding: 5px 0px;
 }
 
-.details-box .box-body .text {
+.details-box .box-body .game-details .details-box .box-body .text {
   color: var(--text-color);
   font-weight: 500;
   text-transform: capitalize;
 }
+
 .details-box .game-details .title {
   color: var(--primary-color);
   text-transform: capitalize;
@@ -8852,9 +8852,10 @@ input[type="number"] {
   color: var(--secondary-color);
 }
 
-.details-box .game-details .date .time {
+.details-box .game-details .date,
+.details-box .game-details .time {
   text-transform: capitalize;
-  color: var(--alt-color);
+  color: var(--text-color);
 }
 
 .details-box .game-details .date .location {
@@ -8862,12 +8863,17 @@ input[type="number"] {
   text-transform: capitalize;
   color: var(--alt-color);
 }
+
 .details-box .box-footer {
   border-top: 1px solid var(--border-color);
   padding: 10px 0px;
   margin-top: 8px;
   display: flex;
   gap: 10px;
+}
+
+.details-box .game-details .location {
+  color: var(--text-color);
 }
 
 .details-box .box-footer button {
@@ -8889,7 +8895,7 @@ input[type="number"] {
 
 .details-box .box-footer .decline-btn {
   background-color: var(--secondary-color);
-  color: var(--white-color);
+  color: var(--secondary-button-text);
 }
 
 /* !for LINE-UP doubles and teams page */
@@ -8924,7 +8930,6 @@ input[type="number"] {
 /* ! lineUpSingle page only one changes */
 #lineUpSingle,
 #lineUpTeams {
-  padding-bottom: 10px;
 }
 
 #lineUpSingle .team .box .left {
@@ -9275,7 +9280,19 @@ input[type="number"] {
 }
 
 #invitation .text {
-  color: var(--secondary-color);
+  color: var(--text-color);
+  font-weight: 500;
+  background-color: var(--dashboard-bg);
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+#invitation #ifNoText {
+  display: none;
 }
 
 #invitation .box {
@@ -9513,14 +9530,22 @@ input[type="number"] {
   text-align: center;
   line-height: 40px;
   font-weight: 500;
-  color: var(--text-color);
-  border: 1px solid var(--border-color);
-  background-color: var(--white-color);
   border-radius: 4px;
+  border: none;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+}
+
+#invitation .btn-section .edit-btn {
+  background-color: var(--secondary-color);
+  color: var(--secondary-button-text);
+}
+
+#invitation .btn-section .confirm-btn {
+  background-color: var(--primary-color);
+  color: var(--primary-button-text);
 }
 
 /* todo ==== BUDDY SCORE ==== --> */
@@ -9640,6 +9665,10 @@ input[type="number"] {
   -o-border-radius: 4px;
 }
 
+#buddyScore .result-list .list .count {
+  color: var(--text-color);
+}
+
 #buddyScore .result-list .list .right {
   width: 25%;
 }
@@ -9710,8 +9739,6 @@ input[type="number"] {
 #buddieResult .each-result .box {
   padding: 10px;
   position: relative;
-  /* box-shadow: var(--shadow-one) 0px 1px 2px 0px,
-    var(--shadow-two) 0px 1px 3px 1px; */
   border: 1px solid var(--border-color);
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -9727,7 +9754,7 @@ input[type="number"] {
   position: absolute;
   font-size: 14px;
   line-height: 30px;
-  color: var(--white-color);
+  color: #fff;
   background-color: var(--alt-color);
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -9787,7 +9814,7 @@ input[type="number"] {
   text-align: center;
   font-weight: 400;
   font-size: 16px;
-  color: var(--text-color);
+  color: var(--secondary-color);
   text-transform: capitalize;
 }
 
@@ -9807,7 +9834,7 @@ input[type="number"] {
   text-align: center;
   background-color: var(--primary-color);
   text-transform: capitalize;
-  color: var(--white-color);
+  color: var(--primary-button-text);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -9850,6 +9877,7 @@ input[type="number"] {
   outline: none;
   color: var(--text-color);
   border: 1px solid var(--border-color);
+  background-color: var(--card-bg);
   padding: 10px;
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -10142,6 +10170,10 @@ input[type="number"] {
 
   /* todo --> MENU BAR-SECTION   --> */
 
+  .menu-section {
+    padding-bottom: 5px;
+  }
+
   .menu-section .all-menu .notification .icon .badge {
     width: 10px;
     height: 15px;
@@ -10190,7 +10222,8 @@ input[type="number"] {
   #reportPostModal .modal-content,
   #editNameModal .modal-content,
   #experienceModal .modal-content,
-  #editModal .modal-content {
+  #editModal .modal-content,
+  #shareExperienceModal .modal-content {
     width: 80%;
     left: -8px;
   }
@@ -10215,10 +10248,6 @@ input[type="number"] {
 
   #allReaction .head-react {
     gap: 10px;
-  }
-
-  #singleImageModal .name {
-    color: var(--white-color);
   }
 
   /* todo ==== GAME-INVITE-PAGE ==== --> */

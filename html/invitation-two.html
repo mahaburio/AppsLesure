@@ -81,11 +81,12 @@
 
         <div class="head-of-section">
           <div id="invitation">
-            <div class="text">
-              Lorem Ipsum is simply to dummy text of the printing and
-              typesetting industries. Lorem Ipsum has been the industry's
-              standard for dummy text ever since the 1500s al over it.
+            <div class="text" id="ifYesText">
+               Scores submitted. Please confirm, Edits will be sent to the opponent for to approval.
             </div>
+            <div class="text" id="ifNoText">
+              The opponent choose not to score. Click "Confirm" or "Edit" to add scores. Edits will be sent back for confirmation.
+           </div>
             <div class="box">
               <div class="box-head">
                 <div class="game-name">football 11-a-side</div>
@@ -116,7 +117,7 @@
                       <div class="name">result type</div>
                     </div>
                     <div class="right">
-                      <input type="text" placeholder="1500 meters (optional)" />
+                      <input type="text" placeholder="scores (optional)" />
                     </div>
                   </div>
                   <div class="hello">
@@ -221,6 +222,9 @@
       let noBox = document.getElementById("noBox");
       let hideResult = document.getElementById("hideResult");
 
+      let ifYesText = document.getElementById("ifYesText");
+      let ifNoText = document.getElementById("ifNoText");
+
       yesBox.addEventListener("click", function () {
         if (this.checked) {
           noBox.checked = false;
@@ -235,9 +239,14 @@
 
       yesBox.addEventListener("click", function () {
         hideResult.style.display = "block";
+        ifYesText.style.display = "block";
+        ifNoText.style.display = "none";
+
       });
       noBox.addEventListener("click", function () {
         hideResult.style.display = "none";
+        ifYesText.style.display = "none";
+        ifNoText.style.display = "block";
       });
 
     </script>
