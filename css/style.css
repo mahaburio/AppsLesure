@@ -1779,6 +1779,14 @@ input[type="number"] {
   gap: 10px;
   align-items: center;
   padding: 10px;
+  position: relative;
+  padding-top: 40px;
+}
+
+#removeModal .modal-body .cancelBtn{
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 #removeModal .modal-body .img {
@@ -7885,7 +7893,7 @@ input[type="date"] {
   text-align: center;
   line-height: 20px;
   font-size: 17px;
-  color: #c8c8c8;
+  color: var(--text-color);
 }
 
 /* ! PROFILE IMAGE  */
