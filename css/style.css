@@ -7880,6 +7880,7 @@ input[type="date"] {
   height: 20px;
   border: 1px solid var(--primary-color);
   cursor: pointer;
+  color: var(--text-color) !important;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -7893,7 +7894,7 @@ input[type="date"] {
   text-align: center;
   line-height: 20px;
   font-size: 17px;
-  color: var(--text-color);
+  color: var(--text-color) !important;
 }
 
 /* ! PROFILE IMAGE  */
