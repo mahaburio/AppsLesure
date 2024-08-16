@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=Lorem ipsum dolor sit amet consectetur adipisicing elit.1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Menu</title>
     <!--! ======= CDN-> Bootstrap CSS, Fant Icon, Swiper CSS, Raw CSS ======= -->
 
@@ -47,7 +50,11 @@
               </button>
             </a>
           </div>
-          <div class="center">
+          <div
+            class="center"
+            data-bs-toggle="modal"
+            data-bs-target="#deleteGroupModal"
+          >
             <div class="img">
               <img src="../assets/team1.svg" alt="" />
             </div>
@@ -98,66 +105,66 @@
             </a>
 
             <button
-                      class="userBtn"
-                      id="userBtn"
-                      href="#playersModal"
-                      data-bs-toggle="modal"
-                      data-bs-target="#playersModal"
-                    >
-                      <svg
-                        width="28"
-                        height="28"
-                        viewBox="0 0 27 25"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.70068 19.7693C7.70068 15.0112 11.5579 11.1539 16.3161 11.1539C21.0742 11.1539 24.9314 15.0112 24.9314 19.7693V20.3847H7.70068V19.7693Z"
-                          fill="#667C97"
-                        />
-                        <ellipse
-                          cx="16.3161"
-                          cy="5.61538"
-                          rx="4.78632"
-                          ry="4.61538"
-                          fill="#667C97"
-                        />
-                        <path
-                          d="M18.2308 21.8077H18.7308V21.3077V20.6923C18.7308 15.658 14.6497 11.5769 9.61538 11.5769C4.58109 11.5769 0.5 15.658 0.5 20.6923V21.3077V21.8077H1H18.2308Z"
-                          fill="#667C97"
-                          stroke="white"
-                        />
-                        <path
-                          d="M9.61542 11.6539C12.5177 11.6539 14.9017 9.38061 14.9017 6.53848C14.9017 3.69635 12.5177 1.4231 9.61542 1.4231C6.71316 1.4231 4.3291 3.69635 4.3291 6.53848C4.3291 9.38061 6.71316 11.6539 9.61542 11.6539Z"
-                          fill="#667C97"
-                          stroke="white"
-                        />
-                        <path
-                          d="M26.346 18.5384C26.346 21.8139 23.5871 24.5 20.1452 24.5C16.7033 24.5 13.9443 21.8139 13.9443 18.5384C13.9443 15.263 16.7033 12.5769 20.1452 12.5769C23.5871 12.5769 26.346 15.263 26.346 18.5384Z"
-                          fill="white"
-                          stroke="#667C97"
-                        />
-                        <rect
-                          x="19.188"
-                          y="14.8461"
-                          width="1.91453"
-                          height="7.38462"
-                          rx="0.957264"
-                          fill="#667C97"
-                        />
-                        <rect
-                          x="23.9741"
-                          y="17.6154"
-                          width="1.84615"
-                          height="7.65811"
-                          rx="0.923077"
-                          transform="rotate(90 23.9741 17.6154)"
-                          fill="#667C97"
-                        />
-                      </svg>
+              class="userBtn"
+              id="userBtn"
+              href="#playersModal"
+              data-bs-toggle="modal"
+              data-bs-target="#playersModal"
+            >
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 27 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.70068 19.7693C7.70068 15.0112 11.5579 11.1539 16.3161 11.1539C21.0742 11.1539 24.9314 15.0112 24.9314 19.7693V20.3847H7.70068V19.7693Z"
+                  fill="#667C97"
+                />
+                <ellipse
+                  cx="16.3161"
+                  cy="5.61538"
+                  rx="4.78632"
+                  ry="4.61538"
+                  fill="#667C97"
+                />
+                <path
+                  d="M18.2308 21.8077H18.7308V21.3077V20.6923C18.7308 15.658 14.6497 11.5769 9.61538 11.5769C4.58109 11.5769 0.5 15.658 0.5 20.6923V21.3077V21.8077H1H18.2308Z"
+                  fill="#667C97"
+                  stroke="white"
+                />
+                <path
+                  d="M9.61542 11.6539C12.5177 11.6539 14.9017 9.38061 14.9017 6.53848C14.9017 3.69635 12.5177 1.4231 9.61542 1.4231C6.71316 1.4231 4.3291 3.69635 4.3291 6.53848C4.3291 9.38061 6.71316 11.6539 9.61542 11.6539Z"
+                  fill="#667C97"
+                  stroke="white"
+                />
+                <path
+                  d="M26.346 18.5384C26.346 21.8139 23.5871 24.5 20.1452 24.5C16.7033 24.5 13.9443 21.8139 13.9443 18.5384C13.9443 15.263 16.7033 12.5769 20.1452 12.5769C23.5871 12.5769 26.346 15.263 26.346 18.5384Z"
+                  fill="white"
+                  stroke="#667C97"
+                />
+                <rect
+                  x="19.188"
+                  y="14.8461"
+                  width="1.91453"
+                  height="7.38462"
+                  rx="0.957264"
+                  fill="#667C97"
+                />
+                <rect
+                  x="23.9741"
+                  y="17.6154"
+                  width="1.84615"
+                  height="7.65811"
+                  rx="0.923077"
+                  transform="rotate(90 23.9741 17.6154)"
+                  fill="#667C97"
+                />
+              </svg>
 
-                      <p class="count">25</p>
-                    </button>
+              <p class="count">25</p>
+            </button>
 
             <a href="../html/game-invite.html" class="send-icon">
               <?xml version="1.0" encoding="UTF-8"?>
@@ -706,6 +713,124 @@
       </div>
     </div>
 
+    <!--todo   DELETE GROUP-MODAL-SECTION  -->
+
+    <div
+      class="modal fade"
+      id="deleteGroupModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="left"></div>
+            <div class="center">
+              <h4 class="header-title">Alert</h4>
+            </div>
+            <div class="right">
+              <div
+                class="cancelBtn"
+                type="button"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M19.5816 2.43872C20.1395 1.88083 20.1395 0.976311 19.5816 0.418419C19.0237 -0.139473 18.1192 -0.139473 17.5613 0.418419L10 7.9797L2.43872 0.418419C1.88083 -0.139473 0.976311 -0.139473 0.418419 0.418419C-0.139473 0.976311 -0.139473 1.88083 0.418419 2.43872L7.9797 10L0.418419 17.5613C-0.139473 18.1192 -0.139473 19.0237 0.418419 19.5816C0.976311 20.1395 1.88083 20.1395 2.43872 19.5816L10 12.0203L17.5613 19.5816C18.1192 20.1395 19.0237 20.1395 19.5816 19.5816C20.1395 19.0237 20.1395 18.1192 19.5816 17.5613L12.0203 10L19.5816 2.43872Z"
+                    fill="#667C97"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="box">
+              <p class="imp-text">Do you want to delete group?</p>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button class="cancel-btn" data-bs-dismiss="modal">No</button>
+            <!-- todo *** When click this OK button then It will be show sent Modal  -->
+
+            <button
+              class="ok-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#deleteGroupAlert"
+            >
+              Yes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--todo   DELETE GROUP-MODAL-SECTION  -->
+
+    <div
+      class="modal fade"
+      id="deleteGroupAlert"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="left"></div>
+            <div class="center">
+              <h4 class="header-title">Alert</h4>
+            </div>
+            <div class="right">
+              <div
+                class="cancelBtn"
+                type="button"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M19.5816 2.43872C20.1395 1.88083 20.1395 0.976311 19.5816 0.418419C19.0237 -0.139473 18.1192 -0.139473 17.5613 0.418419L10 7.9797L2.43872 0.418419C1.88083 -0.139473 0.976311 -0.139473 0.418419 0.418419C-0.139473 0.976311 -0.139473 1.88083 0.418419 2.43872L7.9797 10L0.418419 17.5613C-0.139473 18.1192 -0.139473 19.0237 0.418419 19.5816C0.976311 20.1395 1.88083 20.1395 2.43872 19.5816L10 12.0203L17.5613 19.5816C18.1192 20.1395 19.0237 20.1395 19.5816 19.5816C20.1395 19.0237 20.1395 18.1192 19.5816 17.5613L12.0203 10L19.5816 2.43872Z"
+                    fill="#667C97"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="box">
+              <p class="imp-text">are you sure you want to delete group?</p>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button class="cancel-btn" data-bs-dismiss="modal">No</button>
+            <!-- todo *** When click this OK button then It will be show sent Modal  -->
+
+            <button class="ok-btn">Yes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--! ======= CDN-> Jquery, Swiper JS, Bootstrap JS, Raw JS ======= -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -714,7 +839,7 @@
     <script src="../js/chatroom.js"></script>
     <script src="../js/darkmode.js"></script>
     <script>
-     const textareas = document.querySelectorAll("textarea");
+      const textareas = document.querySelectorAll("textarea");
       const minHeight = "40px";
 
       textareas.forEach((textarea) => {
